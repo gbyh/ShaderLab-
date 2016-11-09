@@ -1,0 +1,21 @@
+{    
+    "plugins": 
+    [        
+        "-search",        
+        "expandable-chapters"    
+    ],    
+    "pluginsConfig": 
+    {        
+        "fontsettings": {            
+            "theme": "white",            
+            "family": "sans",            
+            "size": 2        
+        },        
+    "expandable-chapteers":{}    
+    },    
+    "gitbook": ">=2.0.0",    
+    "dirction": "沈军",    
+    "title": "ShaderLab 开发实战",    
+    "language": "zh-cn",    
+    "description": "Cg语法及ShaderLab开发实战"
+}
