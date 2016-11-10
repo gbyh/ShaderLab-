@@ -23,7 +23,8 @@
 ```javascript
         ZTest Less | Greater | LEqual | GEqual | Equal | NotEqual | Always
 ```
-应该如何进行深度测试。默认是LEqual(画对象从或在现有对象的距离;背后隐藏的对象)。
+如何进行深度测试。LEqual（默认是绘制对象或在距离为现有对象；隐藏在他们身后的物体）。
+
 
 
 
