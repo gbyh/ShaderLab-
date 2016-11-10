@@ -20,4 +20,12 @@
 控制像素从这个对象是否写入深度缓冲(默认)。如果你drawng固体物质,离开这。如果你要画半透明效果,切换到ZWrite。
 
 ####&emsp;&emsp;2.1 ZTest
+```javascript
+        ZTest Less | Greater | LEqual | GEqual | Equal | NotEqual | Always
+```
+
+
+
+
+
 
