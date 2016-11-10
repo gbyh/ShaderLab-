@@ -19,7 +19,10 @@ Pass 可以定义名字（Name）和任意数量的标签（Tags）字符串。
 ```
 设置多边形剔除模式。
 
-
+####ZTest
+```javascript
+        ZTest (Less | Greater | LEqual | GEqual | Equal | NotEqual | Always)
+```
 
 
 
