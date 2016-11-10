@@ -33,7 +33,13 @@
 
 
 **示例**
-
+```javascript
+        Properties
+        {
+            _WaveScale ("Wave scale", Range (0.02, 0.15)) = 0.07
+            _ReflDistort ("Reflection distort", Range (0, 1.5)) = 0.5
+        }
+```
 
 
 
