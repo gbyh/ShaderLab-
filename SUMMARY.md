@@ -4,7 +4,7 @@
 * [1. ShaderLab 框架](1. ShaderLab 框架/1.0 ShaderLab 框架.md)
     * [第1章 ShaderLab 语法](1. ShaderLab 框架/第1章-shaderlab-语法.md)
         * [1.1 属性（Properties）](1. ShaderLab 框架/11-属性（properties）.md)
-        * 1.2 子着色器（SubShader）
+        * [1.2 子着色器（SubShader）](1. ShaderLab 框架/12-子着色器（subshader）.md)
             * [1.2.1 Pass](1. ShaderLab 框架/121-pass.md)
                 * 1.2.1.1 Culling & Depth Testing
                 * 1.2.1.2 Blending
