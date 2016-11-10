@@ -9,7 +9,7 @@
 ```javascript
     Cull Back | Front | Off
 ```
-控制多边形的面应该剔除(不绘制)
+控制多边形应该剔除的面(不绘制)
 
 
 
