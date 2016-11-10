@@ -12,14 +12,18 @@
 ```javascript
         Shader "Simple colored lighting"
         {
-            Properties {
+            Properties 
+            {
                 _Color ( "Main Color", Color ) = (1, .5, .5, 1)
             }
         }
 
-        SubShader {
-            Pass {
-                Material {
+        SubShader 
+        {
+            Pass 
+            {
+                Material 
+                {
                     Diffuse [_Color]
                 }
                 Lighting On
