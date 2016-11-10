@@ -1,35 +1,69 @@
 ##Pass
+通过块使一个对象的几何形状被渲染一次。
+
 
 
 ###语法
 ```javascript
     Pass { [Name and Tags] [RenderSetup] }
 ```
+基本通命令包含一个呈现状态设置命令的列表。
 
-#### Name and tags
-Pass 可以定义名字（Name）和任意数量的标签（Tags）字符串。
 
-####RenderSetup
+####● Name and tags
+Pass 可以定义它的名称和任意数量的标签-传递给渲染引擎的传递意图的名称/值的字符串。
+
+
+####● RenderSetup
 设置图形硬件的各种状态,例如α混合应打开,深度测试应使用,等等。这些命令是:
 
 
-####Cull
+####1. Cull
 ```javascript
     Cull Back | Front | Off
 ```
 设置多边形剔除模式。
 
-####ZTest
+####2. ZTest
 ```javascript
     ZTest (Less | Greater | LEqual | GEqual | Equal | NotEqual | Always)
 ```
 设置深度缓冲测试模式。
 
+####3. ZWrite
+```javascript
+    ZWrite On | Off
+```
+设置深度缓冲的写模式。
+
+####4. Blend
+```javascript
+    Blend SourceBlendMode DestBlendMode
+    Blend SourceBlendMode DestBlendMode, AlphaSourceBlendMode AlphaDestBlendMode
+```
+设置α混合模式。
+
+####5. ColorMask
+```javascript
+    ColorMask RGB | A | 0 | any combination of R, G, B, A
+```
+设置彩色通道写掩码。设置为0将关闭所有渲染的颜色通道。默认模式是写所有通道（RGBA），但是对于一些特殊的效果，你可能想离开一定的渠道不被修改，或完全禁用颜色写。
 
 
+####6. Offset
+```javascript
+    Offset OffsetFactor, OffsetUnits
+```
+设置Z缓冲深度偏移量。
 
 
+###● 固定功能着色器命令
 
+     固定功能的照明和材质
+```javascript
+        Lighting On | Off
+        Material { Material Block }
+```
 
 
 
