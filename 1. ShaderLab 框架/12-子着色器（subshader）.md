@@ -2,7 +2,7 @@
 
 ###语法
 ```javascript
-        SubShader { [Tags] [CommonState] Passdef [Passdef ...] }
+    SubShader { [Tags] [CommonState] Passdef [Passdef ...] }
 ```
 
 
