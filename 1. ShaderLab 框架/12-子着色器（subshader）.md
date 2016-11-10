@@ -12,7 +12,7 @@
         {
             Pass 
             {
-                Lightiing Off
+                Lightiing Off        // 关闭灯光
                 SetTexture [_MainTex] { }
             }
         }
