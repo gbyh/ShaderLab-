@@ -2,3 +2,10 @@
 
 
 ![](/assets/PipelineCullDepth.png)
+
+剔除是一种优化,不渲染背对观众的多边形。背面剔除。
+
+
+
+
+
