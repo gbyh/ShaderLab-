@@ -74,6 +74,10 @@ Pass 可以定义它的名称和任意数量的标签-传递给渲染引擎的�
     Fog { Fog Block }
 ```
 
+####2. AlphaTest
+```javascript
+    AlphaTest ( Less | Greater | LEqual | GEqual | Equal | NotEqual | Always ) CutoffValue
+```
 
 
 
