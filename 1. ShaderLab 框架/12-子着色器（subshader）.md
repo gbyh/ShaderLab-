@@ -7,7 +7,16 @@
 
 
 **示例**
-
+```javascript
+        SubShader
+        {
+            Pass 
+            {
+                Lightiing Off
+                SetTexture [_MainTex] { }
+            }
+        }
+```
 
 
 
