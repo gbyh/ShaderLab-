@@ -25,7 +25,10 @@
 ```
 如何进行深度测试。LEqual（默认是绘制对象或在距离为现有对象；隐藏在他们身后的物体）。
 
-
+####&emsp;&emsp;2.2 Offset
+```javascript
+        offset Factor, Units
+```
 
 
 
