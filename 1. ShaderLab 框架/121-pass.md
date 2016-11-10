@@ -15,13 +15,13 @@ Pass 可以定义名字（Name）和任意数量的标签（Tags）字符串。
 
 ####Cull
 ```javascript
-        Cull Back | Front | Off
+    Cull Back | Front | Off
 ```
 设置多边形剔除模式。
 
 ####ZTest
 ```javascript
-        ZTest (Less | Greater | LEqual | GEqual | Equal | NotEqual | Always)
+    ZTest (Less | Greater | LEqual | GEqual | Equal | NotEqual | Always)
 ```
 
 
