@@ -5,7 +5,8 @@
 
 背面剔除：剔除是一种优化,不渲染背对观众的多边形。
 
-###语法####1. Cull
+###语法
+####1. Cull
 ```javascript    
     Cull Back | Front | Off
 ```
