@@ -23,6 +23,7 @@ Pass 可以定义名字（Name）和任意数量的标签（Tags）字符串。
 ```javascript
     ZTest (Less | Greater | LEqual | GEqual | Equal | NotEqual | Always)
 ```
+设置深度缓冲测试模式。
 
 
 
