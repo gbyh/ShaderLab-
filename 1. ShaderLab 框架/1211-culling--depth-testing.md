@@ -33,6 +33,22 @@
 
 ###示例
 这个对象只渲染对象的背面:
-
+```javascript
+    Shader "Show Insides"
+    {
+        SubShader
+        {
+            Pass
+            {
+                Material
+                {
+                    Diffuse (1,1,1,1)
+                }
+                Lighting On
+                Cull Front
+            }
+        }
+    }
+```
 
 
