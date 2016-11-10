@@ -16,8 +16,11 @@
 ```
 这些都定义了一个数字(标量)属性默认值。Range 形式使它显示滑块之间的最小和最大范围。
 
-
-
+**颜色和向量**
+```javascript
+        name ("display name", Color) = (number, number, number, number)
+        name ("display name", Vector) = (number, number, number, number)
+```
 
 
 
