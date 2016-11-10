@@ -3,7 +3,7 @@
 
 ###语法
 ```javascript
-        Pass { [Name and Tags] [RenderSetup] }
+    Pass { [Name and Tags] [RenderSetup] }
 ```
 
 #### Name and tags
