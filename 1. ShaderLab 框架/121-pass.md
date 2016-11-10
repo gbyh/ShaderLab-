@@ -63,6 +63,9 @@ Pass 可以定义它的名称和任意数量的标签-传递给渲染引擎的�
 ```javascript
         Lighting On | Off
         Material { Material Block }
+        SeparateSpecular On | Off
+        Color Color-value
+        ColorMaterial AmbientAndDiffuse | Emission
 ```
 
 
