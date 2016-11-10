@@ -22,6 +22,7 @@
         {
             Pass 
             {
+                // 使用固定功能着色器的逐顶点光照
                 Material 
                 {
                     Diffuse [_Color]
