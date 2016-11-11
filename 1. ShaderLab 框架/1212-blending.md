@@ -45,7 +45,7 @@
 |DstColor|这个阶段的值乘以帧缓冲源颜色值。|
 |DstAlpha|这个阶段的值乘以帧缓冲 alpha 值。|
 |OneMinusSrcColor| 1 - 源颜色值 |
-|OneMinusSrcAlpha| 1 - 源 alhpa 值|
+|OneMinusSrcAlpha| 1 - 源 alpha 值|
 
 
 
