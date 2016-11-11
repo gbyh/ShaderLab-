@@ -50,5 +50,6 @@
 |OneMinusDstAlpha| 1 - 目标 alpha 值|
 
 
-
+####细节
+下面是最常见的混合类型：
 
