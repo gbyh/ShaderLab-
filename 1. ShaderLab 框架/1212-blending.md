@@ -18,6 +18,9 @@
     Blend SrcFactor DstFactor, ScrFactorA DstFactorA: 后面两个参数是Alpha通道的混合因子
 ```
 
+```javascript
+    BlendOp BlendOp: 非颜色混合操作
+```
 
 
 
