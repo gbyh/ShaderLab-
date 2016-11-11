@@ -135,7 +135,48 @@
 
 ####5. 玻璃剔除
 
-Shader "Simple Glass" { Properties { _MainTex ("Texture", 2D) = "white" {} _Color ("Main Color", Color) = (1,1,1,0) _SpecColor ("Spce Color", Color) = (1,1,1,1) _Shininess ("Shininess", Range(0.01, 1)) = 0.7 _Emission ("Emission Color", Color) = (0,0,0,0)  }  SubShader { Material { Diffuse [_Color] Ambient [_Color] Shininess [_Shininess] Specular [_SpecColor] Emission [_Emission] } Lighting On SeparateSpecular On  Blend SrcAlpha OneMinusSrcAlpha  Pass  { Cull Front SetTexture [_MainTex] { Combine Primary * Texture } }  Pass { Cull Back SetTexture [_MainTex] { Combine Primary * Texture } } } } 
+```javascript
+    Shader "Simple Glass" 
+    { 
+        Properties { _MainTex ("Texture", 2D) = "white" {} 
+        _Color ("Main Color", Color) = (1,1,1,0) 
+        _SpecColor ("Spce Color", Color) = (1,1,1,1) 
+        _Shininess ("Shininess", Range(0.01, 1)) = 0.7 
+        _Emission ("Emission Color", Color) = (0,0,0,0)  
+    }  
+    SubShader 
+    { 
+        Material 
+        { 
+            Diffuse [_Color] 
+            Ambient [_Color] 
+            Shininess [_Shininess] 
+            Specular [_SpecColor] 
+            Emission [_Emission] 
+        } 
+        Lighting On 
+        SeparateSpecular On  
+        Blend SrcAlpha OneMinusSrcAlpha  
+        Pass  
+        { 
+            Cull Front 
+            SetTexture [_MainTex] 
+            { 
+                Combine Primary * Texture 
+            } 
+        }  
+        Pass 
+        { 
+            Cull Back 
+            SetTexture [_MainTex] 
+            { 
+                Combine Primary * Texture 
+            } 
+        } 
+    } 
+} 
+
+```
 
 
 
