@@ -100,34 +100,35 @@
 
 ####4. 调试法线
 
-Shader "Reveal BackfaceTest" 
-{ 
-    Properties 
+```
+    Shader "Reveal BackfaceTest" 
     { 
-        _MainTex ("Texture", 2D) = "white" {} 
-    } 
-    SubShader 
-    {  
-        Pass 
+        Properties 
         { 
-            Material  
-            { 
-                Diffuse (1,1,1,1) 
-            } 
-            Lighting On 
-            SetTexture [_MainTex] 
-            { 
-                Combine Primary * Texture DOUBLE 
-            } 
-        }  
-        Pass  
-        { 
-            Color (1, 0, 1, 1) 
-            Cull Front } 
+            _MainTex ("Texture", 2D) = "white" {} 
         } 
-    } 
-}
-
+        SubShader 
+        {  
+            Pass 
+            { 
+                Material  
+                { 
+                    Diffuse (1,1,1,1) 
+                } 
+                Lighting On 
+                SetTexture [_MainTex] 
+                { 
+                    Combine Primary * Texture DOUBLE 
+                } 
+            }  
+            Pass  
+            { 
+                Color (1, 0, 1, 1) 
+                Cull Front } 
+            } 
+        } 
+    }
+```
 
 
 
