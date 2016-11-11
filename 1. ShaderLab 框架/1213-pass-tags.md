@@ -22,11 +22,11 @@ LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的�
 
 &emsp;&emsp;**Always**: 总是渲染，无光照
 
-&emsp;&emsp;ForwardBase: 用于 Forward 渲染，主要应用于平行光、顶点／SH 光照和光照贴图。
+&emsp;&emsp;ForwardBase: 用于前向渲染，主要应用于平行光、顶点／SH 光照和光照贴图。
 
-&emsp;&emsp;ForwardAdd: 用于 Forward 渲染，用于叠加逐像素光照，每个灯光使用一个 Pass。
+&emsp;&emsp;ForwardAdd: 用于前向渲染，用于叠加逐像素光照，每个灯光使用一个 Pass。
 
-&emsp;&emsp;
+&emsp;&emsp;Deferred: 用于延迟渲染
 
 
 
