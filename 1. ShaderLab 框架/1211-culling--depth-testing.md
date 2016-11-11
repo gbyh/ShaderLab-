@@ -58,9 +58,11 @@
 
 ![](/assets/TransparentDiffuseZWrite.png)
 
-半透明对象;左:标准 `Transparent/Diffuse` 着色器;
+半透明对象
 
-右:着色器写入深度缓冲。
+左：标准 `Transparent/Diffuse` 着色器;
+
+右：着色器写入深度缓冲。
 
 ```javascript
     Shader "Transparent/DiffuseZwrite"    
