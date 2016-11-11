@@ -53,3 +53,8 @@
 ####细节
 下面是最常见的混合类型：
 
+```javascript
+    Blend SrcAlpha OneMinusSrcAlpha        // Alpha blending
+    Blend One Ond                          // Additive
+
+```
