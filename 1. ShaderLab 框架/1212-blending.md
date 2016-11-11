@@ -56,5 +56,5 @@
 ```javascript
     Blend SrcAlpha OneMinusSrcAlpha        // Alpha blending
     Blend One Ond                          // Additive
-
+    Blend OneMinusDstColor One             // Soft Additive
 ```
