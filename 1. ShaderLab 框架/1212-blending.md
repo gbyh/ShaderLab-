@@ -54,7 +54,9 @@
 下面是最常见的混合类型：
 
 ```javascript
-    Blend SrcAlpha OneMinusSrcAlpha        // Alpha blending
-    Blend One Ond                          // Additive
-    Blend OneMinusDstColor One             // Soft Additive
+    Blend SrcAlpha OneMinusSrcAlpha        // Alpha 混合
+    Blend One Ond                          // 叠加
+    Blend OneMinusDstColor One             // 软叠加
+    Blend DstColor Zero                    // 乘法
+    Blend DstColor SrcColor                // 2 倍乘法
 ```
