@@ -60,3 +60,11 @@
 
 半透明对象;左:标准透明/扩散着色器;右:着色器写入深度缓冲。
 
+```javascript
+    Shader "Transparent/DiffuseZwrite"    {        Properties         {            _MainTex ("MainTex(RGB)", 2D) = "white" {}            _Color ("Color", Color) = (1,1,1,1)        }         SubShader        {            Tags { "Queue"="Transparent" "RenderType"="Transparent" "IgnoreProjector"="true" }            LOD 200             Pass             {                ZWrite On // 开启深度缓冲写                ColorMask 0 // 关闭所有渲染染色通道            }             UsePass "Transparent/Diffuse/FORWARD"        }         FallBack "Transparent/VertexLit"} 
+
+```
+
+
+
+
