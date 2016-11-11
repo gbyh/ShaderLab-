@@ -41,9 +41,11 @@
 |One|让源或目标颜色完全通过。|
 |Zero|删除源或目标的值。|
 |SrcColor|这个阶段的值乘以源颜色值。|
-|SrcAlpha|这个阶段的值乘以源alpha值。|
+|SrcAlpha|这个阶段的值乘以源 alpha 值。|
 |DstColor|这个阶段的值乘以帧缓冲源颜色值。|
-|DstAlpha|这个阶段的值乘以帧缓冲alpha值。|
+|DstAlpha|这个阶段的值乘以帧缓冲 alpha 值。|
+|OneMinusSrcColor| 1 - 源颜色值 |
+|OneMinusSrcAlpha| 1 - 源 alhpa 值|
 
 
 
