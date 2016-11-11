@@ -14,7 +14,9 @@
     Blend Off: 关闭混合
     Blend SrcFactor DstFactor: 启用混合。生成的颜色乘以 SrcFactor。已经在屏幕上的颜色乘以 DstFactor 和两个加在一起。
 ```
-
+```javascript
+    Blend SrcFactor DstFactor, ScrFactorA DstFactorA: 后面两个参数是Alpha通道的混合因子
+```
 
 
 
