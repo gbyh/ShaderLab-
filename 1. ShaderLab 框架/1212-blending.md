@@ -1,3 +1,5 @@
 ##混合（Blending）
 
 混合用于透明或半透明物体
+
+![](/assets/PipelineBlend.png)
