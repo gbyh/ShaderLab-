@@ -60,3 +60,7 @@
     Blend DstColor Zero                    // 乘法
     Blend DstColor SrcColor                // 2 倍乘法
 ```
+
+
+####示例
+叠加一个纹理到屏幕
