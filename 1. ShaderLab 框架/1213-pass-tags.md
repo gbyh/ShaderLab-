@@ -22,6 +22,6 @@ LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的�
 
 &emsp;&emsp;**Always**: 总是渲染，无光照
 
-&emsp;&emsp;ForwardBase: 用于 Forward 渲染，主要方向型光源，顶点／SH 灯光和光照贴图。
+&emsp;&emsp;ForwardBase: 用于 Forward 渲染，主要应用于方向型光源，顶点／SH 灯光和光照贴图。
 
 
