@@ -64,5 +64,21 @@
 
 ####示例
 叠加一个纹理到屏幕
-
-Shader "Simple Additive" { Properties { _MainTex ("MainTex", 2D) = ""{} }  SubShader { Tags { "Queue"="Transparent" }  Pass  { Blend One One SetTexture [_MainTex] { combine Texture } } } } 
+```javascript
+    Shader "Simple Additive" 
+    { 
+        Properties 
+        { 
+            _MainTex ("MainTex", 2D) = ""{} 
+        }  
+        SubShader 
+        { 
+            Tags { "Queue"="Transparent" }  
+            Pass  
+            { 
+                Blend One One 
+                SetTexture [_MainTex] { combine Texture } 
+            } 
+        } 
+    } 
+```
