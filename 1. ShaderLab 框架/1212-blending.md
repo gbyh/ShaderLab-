@@ -12,7 +12,7 @@
 
 ```javascript
     Blend Off: 关闭混合
-    Blend SrcFactor DstFactor: 启用混合。生成的颜色由 `SrcFactor` 相乘得到的。
+    Blend SrcFactor DstFactor: 启用混合。生成的颜色乘以 SrcFactor。已经在屏幕上的颜色乘以 DstFactor 和两个加在一起。
 ```
 
 
