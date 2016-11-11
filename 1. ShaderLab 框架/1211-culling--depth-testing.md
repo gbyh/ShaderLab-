@@ -74,8 +74,8 @@
             LOD 200             
             Pass             
             {                
-                ZWrite On // 开启深度缓冲写                            
-                ColorMask 0 // 关闭所有渲染染色通道            
+                ZWrite On     // 开启深度缓冲写                            
+                ColorMask 0   // 关闭所有渲染染色通道            
             }             
             UsePass "Transparent/Diffuse/FORWARD"        
         }         
