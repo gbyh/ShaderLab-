@@ -60,9 +60,9 @@
 
 半透明对象
 
-左：标准 `Transparent/Diffuse`；
+左：标准 `Transparent/Diffuse`
 
-右：写入深度缓冲。
+右：写入深度缓冲
 
 ```javascript
     Shader "Transparent/DiffuseZwrite"    
