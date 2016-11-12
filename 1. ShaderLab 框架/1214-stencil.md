@@ -31,7 +31,7 @@
 当写入缓存区时使用的一个8位元0～255的遮罩，默认为：255。
 
 
-####4. 比较（Comp）
+####4. Comp（比较）
 ```javascript
     Comp comparisonFunction
 ```
