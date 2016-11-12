@@ -9,7 +9,7 @@
                 * [1.2.1.1 Culling & Depth Testing](1. ShaderLab 框架/1211-culling--depth-testing.md)
                 * [1.2.1.2 Blending](1. ShaderLab 框架/1212-blending.md)
                 * [1.2.1.3 Pass Tags](1. ShaderLab 框架/1213-pass-tags.md)
-                * 1.2.1.4 Stencil
+                * [1.2.1.4 Stencil](1. ShaderLab 框架/1214-stencil.md)
                 * 1.2.1.5 Name
                 * 1.2.1.6 Legacy Lightiing
                 * 1.2.1.7 Legacy Texture Combiners
