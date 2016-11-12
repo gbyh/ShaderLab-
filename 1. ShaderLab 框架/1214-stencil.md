@@ -28,7 +28,7 @@ Stencil 与颜色缓冲区和深度缓冲区类似，模板缓冲区可以为屏
     Ref referenceValue
 ```
 
-Ref用来设定参考值referenceValue，这个值将用来与模板缓冲中的值进行比较。referenceValue是一个取值范围位0-255的整数。
+Ref用来设定参考值 `referenceValue`，这个值将用来与模板缓冲中的值进行比较。`referenceValue` 是一个取值范围位 0~255 的整数。
 
 
 ####2. ReadMask（读遮罩）
