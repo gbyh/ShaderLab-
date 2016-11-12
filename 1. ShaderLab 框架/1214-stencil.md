@@ -35,12 +35,12 @@
 ```javascript
     Comp comparisonFunction
 ```
-该函数用于比较参考值与当前缓存区的值。默认：always
+该函数用于比较参考值与当前缓存区的值。默认：always。
 
 
 ####5. Pass
 ```javascript
     Pass stencilOperation
 ```
-如果模板测试（和深度测试）通过，该缓冲区的内容将如何处理。默认：keep
+如果模板测试（和深度测试）通过，该缓冲区的内容将如何处理。默认：keep。
 
