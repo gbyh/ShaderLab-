@@ -61,3 +61,7 @@
 
 
 ####8. Comparison Function（比较函数）
+比较函数是下列之一:
+
+
+
