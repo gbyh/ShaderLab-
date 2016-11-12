@@ -3,10 +3,24 @@
 模板缓冲区具有作为保存或丢弃像素的每个像素掩码的通用作用。
 
 
-模板缓冲区通常是一个每像素8位的整数。该值可以是书面的，递增或递减。随后绘制调用可以对值进行测试，以决定在运行像素着色之前是否应该被丢弃。
+Stencil 与颜色缓冲区和深度缓冲区类似，模板缓冲区可以为屏幕上的每个像素点保存一个无符号整数值(通常的话是个8位整数)。这个值的具体意义视程序的具体应用而定。在渲染的过程中，可以用这个值与一个预先设定的参考值相比较，根据比较的结果来决定是否更新相应的像素点的颜色值。这个比较的过程被称为模板测试。模板测试发生在透明度测试（alpha test）之后，深度测试（depth test）之前。如果模板测试通过，则相应的像素点更新，否则不更新
+
 
 
 ###语法
+
+```javascript
+    stencil 
+    {
+        Ref referenceValue
+        ReadMask readMask
+        WriteMask writeMask
+        Comp comparisonFunction
+        Pass stencilOperation
+        Fail stencilOperation
+        ZFail stencilOperation
+    }
+```
 
 ---
 
@@ -15,7 +29,7 @@
     Ref referenceValue
 ```
 
-与被写入缓存区中的值比较（除了 `always` 的任何值），如果没有通过，将使用 `Fail` 或者 `ZFail` 的值替代。值为 0～255 的整数。
+与被写入缓存区中的值比较（除了 `always` 的任何值），如果任何一个通过，`Fail` 或 `ZFail` 将取代。值为 0～255 的整数。
 
 ####2. ReadMask（读遮罩）
 ```javascript
