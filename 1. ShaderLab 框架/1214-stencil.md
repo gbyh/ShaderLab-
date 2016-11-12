@@ -78,7 +78,7 @@ ZFail 是定义当模板测试通过而深度测试失败时，则根据（stenc
 >Comp、Pass、Fail 和 ZFail 被应用于背面消隐的几何体（只渲染正面的几何体），除非指定 Cull Front 时才会被应用于正面消隐的几何体（只渲染几何体的背面）。你也可以明确指定双面的模板状态通过定义 CompFront，PassFront，FailFront，ZFailFront（几何体正面），和 CompBack、PassBack、FailBack、ZFailBack（几何体背面）。
 
 ####模板测试判断依据
-和深度测试一样，在unity中，每个像素的模板测试也有它自己一套独立的依据，具体公式如下：
+和深度测试一样，在 unity 中，每个像素的模板测试也有它自己一套独立的依据，具体公式如下：
 
 if（referenceValue&readMask comparisonFunction stencilBufferValue&readMask）
 通过像素
