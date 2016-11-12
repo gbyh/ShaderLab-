@@ -30,17 +30,9 @@ LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的�
 |PrepassBase|用于 Legacy 的延迟光照，渲染法线和高光指数。|
 |PrepassFinal|用于 Legacy 的延迟光照，结合纹理贴图，灯光和自发光渲染最终颜色。|
 |Vertex|当物体没有被烘焙，用于 Legacy 的顶点光照渲染；应用于所有的顶点光照。|
+|VertexLMRGBM|当物体被烘焙以后，用于 Legacy 的顶点光照渲染；用于光照贴图使用 RGBM 编码的平台上（PC & 控制台）。|
+|VertexLM|当物体被烘焙，用于 Legacy 顶点光照渲染，用于光照贴图使用 double-LDR 编码的平台上（移动平台）。|
 
-
-
-
-
-
-
-
-&emsp;&emsp;**VertexLMRGBM**:当物体被烘焙以后，用于 Legacy 的顶点光照渲染；用于光照贴图使用 RGBM 编码的平台上（PC & 控制台）。
-
-&emsp;&emsp;**VertexLM**: 当物体被烘焙，用于 Legacy 顶点光照渲染，用于光照贴图使用 double-LDR 编码的平台上（移动平台）。
 
 
 
