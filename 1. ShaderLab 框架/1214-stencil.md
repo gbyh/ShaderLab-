@@ -24,7 +24,7 @@
 
 一个8位掩码为0–255整数，用于比较的参考值与该缓冲区的内容（referenceValue & readMask) 比较方法（stencilBufferValue & readMask）。默认：255
 
-####3. 写遮罩（WriteMask）
+####3. WriteMask（写遮罩）
 ```javascript
     WriteMask writeMask
 ```
