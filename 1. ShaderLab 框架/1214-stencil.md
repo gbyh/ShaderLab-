@@ -51,7 +51,7 @@ WriteMask 是当写入模板缓冲时进行掩码操作（按位与【&】），
 ```javascript
     Comp comparisonFunction
 ```
-Comp是定义参考值（referenceValue）与缓冲值（stencilBufferValue）比较的操作函数，默认值：always。
+Comp 是定义参考值（referenceValue）与缓冲值（stencilBufferValue）比较的操作函数，默认值：always。
 
 
 
@@ -59,7 +59,7 @@ Comp是定义参考值（referenceValue）与缓冲值（stencilBufferValue）�
 ```javascript
     Pass stencilOperation
 ```
-Pass是定义当模板测试（和深度测试）通过时，则根据（stencilOperation值）对模板缓冲值（stencilBufferValue）进行处理，默认值：keep。
+Pass 是定义当模板测试（和深度测试）通过时，则根据（stencilOperation值）对模板缓冲值（stencilBufferValue）进行处理，默认值：keep。
 
 
 
@@ -67,13 +67,13 @@ Pass是定义当模板测试（和深度测试）通过时，则根据（stencil
 ```javascript
     Fail stencilOperation
 ```
-Fail是定义当模板测试（和深度测试）失败时，则根据（stencilOperation值）对模板缓冲值（stencilBufferValue）进行处理，默认值：keep。
+Fail 是定义当模板测试（和深度测试）失败时，则根据（stencilOperation值）对模板缓冲值（stencilBufferValue）进行处理，默认值：keep。
 
 ####7. ZFail
 ```javascript
     ZFail stencilOperation
 ```
-如果模板测试通过，但深度测试失败了，将如何处理缓冲区的内容。默认：keep。
+ZFail 是定义当模板测试通过而深度测试失败时，则根据（stencilOperation值）对模板缓冲值（stencilBufferValue）进行处理，默认值：keep。
 
 >Comp、Pass、Fail 和 ZFail 被应用于几何体的正面，除非指定 Cull Front 时才会被应用于几何体的背面。你也可以明确指定双面模板状态定义 CompFront，PassFront，FailFront，ZFailFront（几何体正面），和 CompBack、PassBack、FailBack、ZFailBack（几何体背面）。
 
