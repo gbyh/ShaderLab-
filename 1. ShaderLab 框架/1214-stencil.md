@@ -73,3 +73,5 @@
 |NotEqual|仅当参考值不等于缓冲区中的值的时候渲染像素。|
 |Always|使模版测试总是通过|
 
+
+####9. Stencil Operation
