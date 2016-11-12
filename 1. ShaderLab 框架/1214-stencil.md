@@ -46,5 +46,8 @@
 
 
 ####6. Fail
+```javascript
+    Fail stencilOperation
+```
 
 
