@@ -112,6 +112,7 @@ Stencil 与颜色缓冲区和深度缓冲区类似，模板缓冲区可以为屏
 第一个示例着色将编写值2，无论深度测试是否通过（模板测试设置为总是通过），如果深度测试失败将减量（和 wrap）当前值为255（假设我们开始用一个干净的模板缓冲区）。
 
 ```javascript
+Shader "Red" { SubShader { Tags { "RenderType"="Opaque" "Queue"="Geometry" }  Pass { Stencil { Ref 2 // 参考值为 2，stencilBuffer 值默认为 0 Comp always // stencil 比较方式是永远通过 Pass replace // pass 的处理是替换，就是拿 2 替换 buffer 的值 ZFail decrWrap // ZFail 的处理是溢出型减 1 }   // 下面是 stencil 和 zbuffer 都通过的话就执行。把点渲染成红色。  CGPROGRAM #pragma vertex vert #pragma fragment frag  struct appdata { float4 vertex : POSITION; };  struct v2f { float4 pos : SV_POSITION; };  v2f vert(appdata v) { v2f o; o.pos = mul(UNITY_MATRIX_MVP, v.vertex); return o; }  half4 frag(v2f i) : SV_Target { return half4(1, 0, 0, 1); } ENDCG } } } 
 
 ```
 
