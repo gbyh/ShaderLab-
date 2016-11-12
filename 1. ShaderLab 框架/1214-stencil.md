@@ -36,7 +36,8 @@ Ref用来设定参考值referenceValue，这个值将用来与模板缓冲中的
     ReadMask readMask
 ```
 
-一个 8 位掩码为 0～255 整数，用于比较的参考值与该缓冲区的内容，比较方法：（referenceValue & readMask) （stencilBufferValue & readMask）。默认：255
+readMask将和referenceValue以及stencilBufferValue进行按位与（&）操作，readMask取值范围也是0-255的整数，默认值为255，二进制位11111111，即读取的时候不对referenceValue和stencilBufferValue产生效果，读取的还是原始值。
+
 
 ####3. WriteMask（写遮罩）
 ```javascript
