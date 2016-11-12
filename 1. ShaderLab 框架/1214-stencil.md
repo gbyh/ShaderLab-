@@ -56,3 +56,8 @@
     ZFail stencilOperation
 ```
 如果模板测试通过，但深度测试失败了，将如何处理缓冲区的内容。默认：keep。
+
+Comp、Pass、Fail 和 ZFail 被应用于几何体的正面，除非指定 Cull Front 才会被应用于几何体的背面。
+
+
+
