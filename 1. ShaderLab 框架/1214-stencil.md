@@ -28,7 +28,7 @@ Stencil 与颜色缓冲区和深度缓冲区类似，模板缓冲区可以为屏
     Ref referenceValue
 ```
 
-与被写入缓存区中的值比较（除了 `always` 的任何值），如果任何一个通过，`Fail` 或 `ZFail` 将取代。值为 0～255 的整数。
+与被写入缓存区中的值比较（除了 `always` 的任何值），如果任何一个通过，`Fail` 或 `ZFail` 将取代。referenceValue 是一个取值范围位0-255的整数。
 
 ####2. ReadMask（读遮罩）
 ```javascript
