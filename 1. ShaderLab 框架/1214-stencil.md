@@ -59,7 +59,7 @@ Comp 是定义参考值（`referenceValue`）与缓冲值（`stencilBufferValue`
 ```javascript
     Pass stencilOperation
 ```
-Pass 是定义当模板测试（和深度测试）通过时，则根据（stencilOperation值）对模板缓冲值（stencilBufferValue）进行处理，默认值：keep。
+Pass 是定义当模板测试（和深度测试）通过时，则根据（`stencilOperation`值）对模板缓冲值（`stencilBufferValue`）进行处理，默认值：keep。
 
 
 
