@@ -55,3 +55,4 @@
 ```javascript
     ZFail stencilOperation
 ```
+如果模板测试通过，但深度测试失败了，将如何处理缓冲区的内容。默认：keep。
