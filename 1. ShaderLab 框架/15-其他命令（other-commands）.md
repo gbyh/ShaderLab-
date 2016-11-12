@@ -25,3 +25,19 @@ float4 col = tex2Dproj(Samp,screenProj.xyzw);
  DX11:
 
 float4 col = Samp.Sample(g_samLinear, .creenProj.xy / screenProj.w );
+
+
+
+
+
+// Display as a toggle.
+
+ [Toggle] _Invert ("Invert color?", Float) = 0
+
+ // Blend mode values
+
+ [Enum(UnityEngine.Rendering.BlendMode)] _Blend ("Blend mode", Float) = 1
+
+ //setup corresponding shader keywords.
+
+ [KeywordEnum(Off, On)] _UseSpecular ("Use Specular", Float) = 0
