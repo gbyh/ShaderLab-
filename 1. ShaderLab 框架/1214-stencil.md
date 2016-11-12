@@ -51,4 +51,7 @@
 ```
 如果模板测试失败，将如何处理缓冲区的内容。默认：keep。
 
-
+####7. ZFail
+```javascript
+    ZFail stencilOperation
+```
