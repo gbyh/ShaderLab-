@@ -42,3 +42,5 @@
 ```javascript
     Pass stencilOperation
 ```
+如果模板测试（和深度测试）通过，该缓冲区的内容将如何处理。默认：keep
+
