@@ -67,7 +67,7 @@ Pass是定义当模板测试（和深度测试）通过时，则根据（stencil
 ```javascript
     Fail stencilOperation
 ```
-如果模板测试失败，将如何处理缓冲区的内容。默认：keep。
+Fail是定义当模板测试（和深度测试）失败时，则根据（stencilOperation值）对模板缓冲值（stencilBufferValue）进行处理，默认值：keep。
 
 ####7. ZFail
 ```javascript
