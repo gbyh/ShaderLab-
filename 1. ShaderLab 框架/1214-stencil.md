@@ -36,7 +36,7 @@ Ref用来设定参考值referenceValue，这个值将用来与模板缓冲中的
     ReadMask readMask
 ```
 
-readMask将和referenceValue以及stencilBufferValue进行按位与（&）操作，readMask取值范围也是0-255的整数，默认值为255，二进制位11111111，即读取的时候不对referenceValue和stencilBufferValue产生效果，读取的还是原始值。
+readMask将和referenceValue以及stencilBufferValue进行按位与（&）操作，readMask取值范围也是0-255的整数，默认值为255，二进制位 1111 1111，即读取的时候不对referenceValue和stencilBufferValue产生效果，读取的还是原始值。
 
 
 ####3. WriteMask（写遮罩）
