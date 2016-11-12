@@ -34,5 +34,5 @@ LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的�
 |VertexLM|当物体被烘焙，用于 Legacy 顶点光照渲染，用于光照贴图使用 double-LDR 编码的平台上（移动平台）。|
 
 
-
+---
 
