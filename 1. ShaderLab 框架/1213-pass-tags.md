@@ -40,5 +40,6 @@ LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的�
 
 只有当外部条件满足的情况下 Pass 才能被执行。这是通过使用requireoptions标签，其值是一个空格分隔的字符串选项。目前，Unity 支持的选项是：
 
+&emsp;&emsp;SoftVegetation: 只有在 `Quality Settings` 中设置 `Soft Vegetaion` 为 `on` 的时候才被渲染。
 
 
