@@ -10,7 +10,7 @@
 
 ---
 
-####1. 参考值（Ref）
+####1. Ref（参考值）
 ```javascript
     Ref referenceValue
 ```
