@@ -32,5 +32,7 @@
 
 
 ####4. 比较（Comp）
-
+```javascript
+    Comp comparisonFunction
+```
 
