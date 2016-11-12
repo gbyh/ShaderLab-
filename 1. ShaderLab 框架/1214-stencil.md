@@ -43,7 +43,8 @@ readMask将和referenceValue以及stencilBufferValue进行按位与（&）操作
 ```javascript
     WriteMask writeMask
 ```
-当写入缓存区时使用的一个8位元0～255的遮罩，默认为：255。
+WriteMask是当写入模板缓冲时进行掩码操作（按位与【&】），writeMask取值范围是0-255的整数，默认值也是255，即当修改stencilBufferValue值时，写入的仍然是原始值。
+
 
 
 ####4. Comp（比较）
