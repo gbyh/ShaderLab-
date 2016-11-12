@@ -74,4 +74,4 @@
 |Always|使模版测试总是通过|
 
 
-####9. Stencil Operation
+####9. Stencil Operation（模版操作）
