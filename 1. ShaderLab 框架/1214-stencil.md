@@ -36,14 +36,14 @@ Ref用来设定参考值referenceValue，这个值将用来与模板缓冲中的
     ReadMask readMask
 ```
 
-readMask 将和 referenceValue 以及 stencilBufferValue 进行按位与（&）操作，readMask 取值范围也是 0～255 的整数，默认值为 255，二进制位 1111 1111，即读取的时候不对referenceValue 和 stencilBufferValue 产生效果，读取的还是原始值。
+`readMask` 将和 `referenceValue` 以及 `stencilBufferValue` 进行按位与（&）操作，`readMask` 取值范围也是 0～255 的整数，默认值为 255，二进制位 1111 1111，即读取的时候不对`referenceValue` 和 `stencilBufferValue` 产生效果，读取的还是原始值。
 
 
 ####3. WriteMask（写遮罩）
 ```javascript
     WriteMask writeMask
 ```
-WriteMask 是当写入模板缓冲时进行掩码操作（按位与【&】），writeMask 取值范围是 0～255 的整数，默认值也是 255，即当修改 stencilBufferValue 值时，写入的仍然是原始值。
+`WriteMask` 是当写入模板缓冲时进行掩码操作（按位与【&】），`writeMask` 取值范围是 0～255 的整数，默认值也是 255，即当修改 `stencilBufferValue` 值时，写入的仍然是原始值。
 
 
 
