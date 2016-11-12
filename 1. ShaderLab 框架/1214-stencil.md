@@ -10,21 +10,21 @@
 
 ---
 
-####1. 参考值(Ref)
+####1. 参考值（Ref）
 ```javascript
     Ref referenceValue
 ```
 
 相比对的被写入缓存区中的值（除了 `always` 的任何值），如果没有通过，将使用 `Fail` 或者 `ZFail` 的值替代。值为 0～255 的整数。
 
-####2. 读遮罩(ReadMask)
+####2. 读遮罩（ReadMask）
 ```javascript
     ReadMask readMask
 ```
 
 一个8位掩码为0–255整数，用于比较的参考值与该缓冲区的内容（referenceValue & readMask) 比较方法（stencilBufferValue & readMask）。默认：255
 
-####3. 写遮罩(WriteMask)
+####3. 写遮罩（WriteMask）
 ```javascript
     WriteMask writeMask
 ```
