@@ -60,4 +60,4 @@
 >Comp、Pass、Fail 和 ZFail 被应用于几何体的正面，除非指定 Cull Front 时才会被应用于几何体的背面。你也可以明确指定双面模板状态定义 CompFront，PassFront，FailFront，ZFailFront（几何体正面），和 CompBack、PassBack、FailBack、ZFailBack（几何体背面）。
 
 
-####8. Comparison Function
+####8. Comparison Function（比较函数）
