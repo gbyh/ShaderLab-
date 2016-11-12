@@ -92,6 +92,9 @@ referenceValue 是有 Ref 来定义的，这个是由程序员来定义的，rea
 
 stencilBufferValue 是对应位置当前模板缓冲区的值，同样与readMask 做按位掩码与操作，结果做为右边的部分。
 
+comparisonFunction 比较操作通过 Comp 命令定义，公式左右两边的结果将通过它进行判断，其取值及其意义如下面列表所示。
+
+
 ####8. Comparison Function（比较函数）
 比较函数是下列之一:
 
