@@ -21,7 +21,7 @@
             * 1.2.4 SubShader Tags
         * 1.3 回滚语句（Fallback）
         * 1.4 自定义编译器（CustomEditor）
-        * 1.5 其他命令（other commands）
+        * [1.5 其他命令（other commands）](1. ShaderLab 框架/15-其他命令（other-commands）.md)
     * [第2章 顶点和片段着色器](1. ShaderLab 框架/第2章-顶点和片段着色器.md)
         * 1.1 顶点和片段着色器 举例
         * [1.2 着色器语义](1. ShaderLab 框架/12-shader-语义（semantics）.md)
