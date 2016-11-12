@@ -90,9 +90,7 @@ ZFail 是定义当模板测试通过而深度测试失败时，则根据（stenc
 
 referenceValue 是有 Ref 来定义的，这个是由程序员来定义的，readMask 是模板值读取掩码，它和 referenceValue 进行按位与（&）操作作为公式左边的结果，默认值为255，即按位与（&）的结果就是 referenceValue 本身。
 
-stencilBufferValue是对应位置当前模板缓冲区的值，同样与readMask做按位掩码与操作，结果做为右边的部分。
-
-
+stencilBufferValue 是对应位置当前模板缓冲区的值，同样与readMask 做按位掩码与操作，结果做为右边的部分。
 
 ####8. Comparison Function（比较函数）
 比较函数是下列之一:
