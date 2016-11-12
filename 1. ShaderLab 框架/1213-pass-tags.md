@@ -28,7 +28,7 @@ LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的�
 |Deferred|用于延迟渲染， 渲染 g-buffer。|
 |ShadowCaster|将物体的深度渲染到深度图中或 shadowmap。|
 |PrepassBase|用于 Legacy 的延迟光照，渲染法线和高光指数。|
-
+|PrepassFinal|用于 Legacy 的延迟光照，结合纹理贴图，灯光和自发光渲染最终颜色。|
 
 
 
