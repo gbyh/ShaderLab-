@@ -36,3 +36,9 @@
     Comp comparisonFunction
 ```
 该函数用于比较参考值与当前缓存区的值。默认：always
+
+
+####5. Pass
+```javascript
+    Pass stencilOperation
+```
