@@ -51,7 +51,8 @@ WriteMask 是当写入模板缓冲时进行掩码操作（按位与【&】），
 ```javascript
     Comp comparisonFunction
 ```
-该函数用于比较参考值与当前缓存区的值。默认：always。
+Comp是定义参考值（referenceValue）与缓冲值（stencilBufferValue）比较的操作函数，默认值：always
+
 
 
 ####5. Pass
