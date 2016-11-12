@@ -28,5 +28,5 @@
 ```javascript
     WriteMask writeMask
 ```
-
+当写入缓存区时使用的一个8位元0～255的遮罩，默认为：255.
 
