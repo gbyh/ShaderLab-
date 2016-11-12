@@ -42,4 +42,4 @@ LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的�
 
 &emsp;&emsp;**SoftVegetation**: 只有在 `Quality Settings` 中设置 `Soft Vegetaion` 为 `on` 的时候才被渲染。
 
-
+🔚
