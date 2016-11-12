@@ -17,7 +17,7 @@
 
 相比对的被写入缓存区中的值（除了 `always` 的任何值），如果没有通过，将使用 `Fail` 或者 `ZFail` 的值替代。值为 0～255 的整数。
 
-####2. 读遮罩（ReadMask）
+####2. ReadMask（读遮罩）
 ```javascript
     ReadMask readMask
 ```
