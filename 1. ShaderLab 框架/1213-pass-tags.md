@@ -34,7 +34,7 @@ LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的�
 
 
 
-&emsp;&emsp;**PrepassFinal**: 用于 Legacy 的延迟光照，结合纹理贴图，灯光和自发光渲染最终颜色。
+
 
 &emsp;&emsp;**Vertex**: 当物体没有被烘焙，用于 Legacy 的顶点光照渲染；应用于所有的顶点光照。
 
