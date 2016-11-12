@@ -75,7 +75,25 @@ Fail 是定义当模板测试（和深度测试）失败时，则根据（stenci
 ```
 ZFail 是定义当模板测试通过而深度测试失败时，则根据（stencilOperation值）对模板缓冲值（stencilBufferValue）进行处理，默认值：keep。
 
->Comp、Pass、Fail 和 ZFail 被应用于背面消隐的几何体（只渲染正面的几何体），除非指定 Cull Front 时才会被应用于正面消隐的几何体（只渲染几何体的背面）。你也可以明确指定双面模板状态通过定义 CompFront，PassFront，FailFront，ZFailFront（几何体正面），和 CompBack、PassBack、FailBack、ZFailBack（几何体背面）。
+>Comp、Pass、Fail 和 ZFail 被应用于背面消隐的几何体（只渲染正面的几何体），除非指定 Cull Front 时才会被应用于正面消隐的几何体（只渲染几何体的背面）。你也可以明确指定双面的模板状态通过定义 CompFront，PassFront，FailFront，ZFailFront（几何体正面），和 CompBack、PassBack、FailBack、ZFailBack（几何体背面）。
+
+模板测试判断依据
+
+
+
+和深度测试一样，在unity中，每个像素的模板测试也有它自己一套独立的依据，具体公式如下：
+
+if（referenceValue&readMask comparisonFunction stencilBufferValue&readMask）
+通过像素
+else
+抛弃像素
+
+在这个公式中，主要分comparisonFunction的左边部分和右边部分
+
+referenceValue是有Ref来定义的，这个是由程序员来定义的，readMask是模板值读取掩码，它和referenceValue进行按位与（&）操作作为公式左边的结果，默认值为255，即按位与（&）的结果就是referenceValue本身。
+
+stencilBufferValue是对应位置当前模板缓冲区的值，同样与readMask做按位掩码与操作，结果做为右边的部分。
+
 
 
 ####8. Comparison Function（比较函数）
