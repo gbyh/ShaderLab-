@@ -80,7 +80,7 @@ ZFail 是定义当模板测试通过而深度测试失败时，则根据（stenc
 ####模板测试判断依据
 和深度测试一样，在 unity 中，每个像素的模板测试也有它自己一套独立的依据，具体公式如下：
 ```javascript
-    if（referenceValue&readMask comparisonFunction stencilBufferValue&readMask）
+    if（referenceValue&readMask **comparisonFunction** stencilBufferValue&readMask）
         通过像素
     else
         抛弃像素
