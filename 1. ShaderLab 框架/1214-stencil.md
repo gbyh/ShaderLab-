@@ -35,7 +35,7 @@ Stencil 与颜色缓冲区和深度缓冲区类似，模板缓冲区可以为屏
     ReadMask readMask
 ```
 
-一个8位掩码为0–255整数，用于比较的参考值与该缓冲区的内容（referenceValue & readMask) 比较方法（stencilBufferValue & readMask）。默认：255
+一个 8 位掩码为 0～255 整数，用于比较的参考值与该缓冲区的内容（referenceValue & readMask) 比较方法（stencilBufferValue & readMask）。默认：255
 
 ####3. WriteMask（写遮罩）
 ```javascript
