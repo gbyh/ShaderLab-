@@ -122,7 +122,7 @@ ZFail 是定义当模板测试通过而深度测试失败时，则根据（`sten
 |DecrSat|`stencilBufferValue` 减1，如果 `stencilBufferValue` 超过 0，那么保留为 0，即不小于 0。|
 |Invert|将当前模板缓冲值（ `stencilBufferValue` ）按位取反。|
 |IncrWrap|当前缓冲的值加 1，如果缓冲值超过 255 了，那么变成 0，（然后继续自增）。|
-|DecrWrap|递减缓存区当前的值，如果该值已经是 0，那么将变成 255。|
+|DecrWrap|当前缓冲的值减 1，如果缓冲值已经为 0，那么变成255，（然后继续自减）。|
 
 
 ####10. Deferred rendering path（延迟渲染）
