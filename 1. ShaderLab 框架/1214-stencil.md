@@ -115,7 +115,7 @@ ZFail 是定义当模板测试通过而深度测试失败时，则根据（`sten
 
 |关键字|说明|
 |:--|:--|
-|Keep|保持缓冲区的当前内容，即 **stencilBufferValue** 不变。|
+|Keep|保持缓冲区的当前内容，即 `stencilBufferValue` 不变。|
 |Zero|将 0 写入缓存区。|
 |Replace|将参考值写入缓存区。|
 |IncrSat|递增缓存区当前的值，最大到255。|
