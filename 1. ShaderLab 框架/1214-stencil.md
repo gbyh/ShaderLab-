@@ -346,3 +346,4 @@ stencilBufferValue 值为2。
         } 
     } 
 ```
+![](/assets/StencilExample2.png)
