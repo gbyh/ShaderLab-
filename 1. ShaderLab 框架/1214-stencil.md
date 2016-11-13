@@ -185,7 +185,7 @@ stencilBufferValue 值为2。
 ```
 
 ![](/assets/stencil_red.png)
->现在在平面以上的点，stencilbuffer值全为2，因为都被replace了。在平面下面的点，通过了stencil测试但是没有通过深度测试，stencil值减一全为255。
+>现在在平面以上的点，stencilbuffer 值全为2，因为都被 replace 了。在平面下面的点，通过了 stencil 测试但是没有通过深度测试，stencil 值减 1 全为255。
 
 
 第二个着色只会传递给第一个（红色）的像素的像素，因为它是为与值2的值进行检查的。它也将递减缓冲区中的值，无论它失败模板测试
