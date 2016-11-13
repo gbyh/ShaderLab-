@@ -187,7 +187,7 @@ stencilBufferValue 值为2。
 ![](/assets/stencil_red.png)
 >现在在平面以上的点，stencilbuffer 值全为 2，因为都被 replace 了。在平面下面的点，通过了 stencil 测试但是没有通过深度测试，stencil 值减 1 全为255。
 
->小节
+####小节：
 
 ● 使用模板缓冲区最重要的两个值：当前模板缓冲值（stencilBufferValue）和模板参考值（referenceValue）。
 
