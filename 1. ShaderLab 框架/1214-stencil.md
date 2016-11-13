@@ -215,23 +215,28 @@ stencilBufferValue 值为2。
                     Pass replace 
                     Fail decrWrap 
                     ZFail keep 
-                }  
+                }
+
                 CGPROGRAM 
                 #pragma vertex vert 
-                #pragma fragment frag  
+                #pragma fragment frag
+
                 struct appdata 
                 { 
                     float4 vertex : POSITION; 
                 };
+
                 struct v2f 
                 { 
                     float4 pos : SV_POSITION; 
-                };  
+                };
+
                 v2f vert(appdata v) 
                 { 
                     v2f o; o.pos = mul(UNITY_MATRIX_MVP, v.vertex); 
                     return o; 
-                }  
+                }
+
                 float4 frag(v2f o) : SV_Target 
                 { 
                     return float4(0, 1, 0, 1); 
