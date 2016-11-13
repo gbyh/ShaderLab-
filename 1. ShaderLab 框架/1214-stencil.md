@@ -246,3 +246,6 @@ stencilBufferValue 值为2。
         }  
     } 
 ```
+
+
+![](/assets/stencil_greed.png)
