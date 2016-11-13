@@ -301,5 +301,6 @@ stencilBufferValue 值为2。
 
 ```
 
-![](/assets/stencil_blue.png)
+![](/assets/StencilExample.png)
+
 
