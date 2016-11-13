@@ -143,7 +143,7 @@ ZFail 是定义当模板测试通过而深度测试失败时，则根据（`sten
             { 
                 Stencil 
                 { 
-                    // 参考值为 2，stencilBuffer 值默认为 0 
+                    // 参考值为 2，stencilBuffer 值默认为 0。
                     Ref 2    
                     // stencil 比较方式是永远通过，此时我们不管 stencilBufferValue 是多少，模版测试都是成功通过的。        
                     Comp always     
