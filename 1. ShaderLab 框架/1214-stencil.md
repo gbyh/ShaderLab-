@@ -304,3 +304,4 @@ stencilBufferValue 值为2。
 ![](/assets/StencilExample.png)
 
 
+然后使用标准表面着色器再渲染一次，使用正面剔除，禁用深度测试和模版测试丢弃之前标记的像素。
