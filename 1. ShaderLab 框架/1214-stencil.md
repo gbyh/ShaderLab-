@@ -187,6 +187,10 @@ stencilBufferValue 值为2。
 ![](/assets/stencil_red.png)
 >现在在平面以上的点，stencilbuffer 值全为 2，因为都被 replace 了。在平面下面的点，通过了 stencil 测试但是没有通过深度测试，stencil 值减 1 全为255。
 
+>小节
+
+使用模板缓冲区最重要的两个值：当前模板缓冲值（stencilBufferValue）和模板参考值（referenceValue）。模板测试主要就是对这个两个值使用特定的比较操作：Never，Always，Less ，LEqual，Greater，Equal 等等。模板测试之后要对模板缓冲区的值（stencilBufferValue）进行更新操作，更新操作包括：Keep，Zero，Replace，IncrSat，DecrSat，Invert 等等。模板测试之后可以根据结果对模板缓冲区做不同的更新操作，比如模板测试成功操作 Pass，模板测试失败操作 Fail，深度测试失败操作 ZFail，还有正对正面和背面精确更新操作 PassBack，PassFront，FailBack等等。
+
 
 第二个着色只会传递给第一个（红色）的像素的像素，因为它是为与值2的值进行检查的。它也将递减缓冲区中的值，无论它失败模板测试
 
