@@ -148,8 +148,9 @@ ZFail 是定义当模板测试通过而深度测试失败时，则根据（`sten
                     // stencil 比较方式是永远通过，此时我们不管 stencilBufferValue 是多少，模版测试都是成功通过的。        
                     Comp always
                     // pass 的处理是替换，就是拿 2 替换 buffer 的值。
-                    Pass replace    
-                    ZFail decrWrap  // ZFail 的处理是溢出型减 1 
+                    Pass replace
+                    // ZFail 的处理是溢出型减 1。
+                    ZFail decrWrap  
                 }   
                 // 下面是 stencil 和 zbuffer 都通过的话就执行。把点渲染成红色。
   
