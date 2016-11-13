@@ -325,13 +325,17 @@ stencilBufferValue 值为2。
                 Ref 1 
                 Comp notequal 
             }  
+
             CGPROGRAM 
             #pragma surface surf Lambert 
+
             float4 _Color; 
+
             struct Input 
             { 
                 float4 color : COLOR; 
-            };  
+            };
+
             void surf(Input IN, inout SurfaceOutput o) 
             { 
                 o.Albedo = _Color.rgb; 
