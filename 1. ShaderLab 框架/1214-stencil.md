@@ -120,7 +120,7 @@ ZFail 是定义当模板测试通过而深度测试失败时，则根据（`sten
 |Replace|将参考值写入缓存区，即将 `referenceValue` 赋值给 `stencilBufferValue`。|
 |IncrSat|`stencilBufferValue` 加1，如果 `stencilBufferValue` 超过 255 了，那么保留为 255，即不大于 255。|
 |DecrSat|`stencilBufferValue` 减1，如果 `stencilBufferValue` 超过 0，那么保留为 0，即不小于 0。|
-|Invert|使所有的位无效。|
+|Invert|将当前模板缓冲值（ `stencilBufferValue` ）按位取反。|
 |IncrWrap|递增缓存区当前的值，如果该值已经是 255，那么将变成 0。|
 |DecrWrap|递减缓存区当前的值，如果该值已经是 0，那么将变成 255。|
 
