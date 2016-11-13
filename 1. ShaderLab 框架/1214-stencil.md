@@ -201,3 +201,4 @@ stencilBufferValue 值为2。
 第二个着色器将只对第一个(红色)着色器通过,因为它是检查值等于 2。如果模版测试失败将值溢出型减 1。
 
 
+Shader "Green" { SubShader { Tags { "RenderType"="Opaque" "Queue"="Geometry+1" } Pass  { Stencil { Ref 2 Comp Equal Pass replace Fail decrWrap ZFail keep }  CGPROGRAM #pragma vertex vert #pragma fragment frag  struct appdata { float4 vertex : POSITION; }; u struct v2f { float4 pos : SV_POSITION; };  v2f vert(appdata v) { v2f o; o.pos = mul(UNITY_MATRIX_MVP, v.vertex); return o; }  float4 frag(v2f o) : SV_Target { return float4(0, 1, 0, 1); }  ENDCG  }  }  } 
