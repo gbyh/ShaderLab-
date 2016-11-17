@@ -1,6 +1,6 @@
 # Summary
 
-* [封面](README.md)
+* [简介](README.md)
 * [1. ShaderLab 框架](1. ShaderLab 框架/1.0 ShaderLab 框架.md)
     * [第1章 ShaderLab 语法](1. ShaderLab 框架/第1章-shaderlab-语法.md)
         * [1.1 属性（Properties）](1. ShaderLab 框架/11-属性（properties）.md)
