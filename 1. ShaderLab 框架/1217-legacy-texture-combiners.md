@@ -34,17 +34,15 @@ Constant 是ConstantColor指定的颜色。
 修饰符：
 
 上述公式可由Double或Quad使得颜色亮度2倍或4倍。
-	
+
 所有的src属性的值，除了lerp，可以选择之前一使颜色的否定。	
 
 所有的src属性可以跟一个alpha用来只使用alpha通道。 
 		
 Texture block constantColor command
-ConstantColor color: Defines a constant color that can be used in the combine command.
-定义了一个不变颜色,可用于组合命令。
+ConstantColor color: 定义了一个固定颜色,可用于组合命令。
 
-Functionality removed in Unity 5.0
-功能在Unity 5.0删除
+固定功能在Unity 5.0移除。
 
 Unity versions before 5.0 did support texture coordinate transformations with a matrix command inside a texture block. If you need this functionality now, consider rewriting your shader as a programmable shader instead, and do the UV transformation in the vertex shader.
 Unity版本5.0之前支持纹理坐标转换矩阵纹理块内部的命令。如果你现在需要这个功能,考虑重写你的材质作为可编程着色器相反,顶点着色器和做紫外转换。
