@@ -64,15 +64,15 @@ Ambient * Lighting Window’s Ambient Intensity setting + (Light Color * Diffuse
 通常你想继续扩散和环境颜色相同的（所有的Unity内置的着色器这样做）。
 
 
-Examples
-Always render object in pure red:
-总是在纯红色渲染对象:
+例如：
+总是纯红色渲染对象:
+```
 Shader "Solid Red" {
     SubShader {
         Pass { Color (1,0,0,0) }
     }
 }
-
+```
 Basic Shader that colors the object white and applies vertex lighting:
 基本的材质,颜色白色和适用对象顶点照明:
 Shader "VertexLit White" {
