@@ -14,8 +14,7 @@ AlphaTest Off
 渲染所有像素（默认）或…
 比较alphavalue AlphaTest
 
-Set up the alpha test to only render pixels whose alpha value is within a certain range.
-设置α测试只显示像素的α值是在一定的范围内。
+设置alpha测试只渲染alpha值在一定范围内的像素。
 
 Comparison
 比较
