@@ -18,9 +18,11 @@ Mode Off | Global | Linear | Exp | Exp2
 ```
 定义雾模式。默认是全局的，这意味着关闭或EXP2取决于是否打开渲染设置中的雾。
 
+```
 Color
 Color ColorValue
 Sets fog color.
+```
 
 Density
 密度
