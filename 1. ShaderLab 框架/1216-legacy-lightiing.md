@@ -43,7 +43,7 @@
     ColorMaterial AmbientAndDiffuse | Emission
 ```
 Makes per-vertex color be used instead of the colors set in the material. AmbientAndDiffuse replaces Ambient and Diffuse values of the material; Emission replaces Emission value of the material.
-使种每个顶点都具备的颜色而不是使用颜色的材料。AmbientAndDiffuse替换材料的环境和扩散值;发射取代发射材料的价值。
+使用每个顶点颜色代替材质中设置的颜色。ambientanddiffuse取代环境和漫反射的材质的值；自发光取代颜色的自发光。
 
 Material Block
 
