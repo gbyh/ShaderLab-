@@ -1,7 +1,6 @@
 ##传统的 Alpha Testing
 
-The alpha test is a last chance to reject a pixel from being written to the screen.
-α测试是一个最后的机会拒绝一个像素被写到屏幕上。
+alpha测试是拒绝将像素写入屏幕的最后机会。
 
 Note: AlphaTest commands have no effect when fragment programs are used; on most platforms alpha testing is done in the shader using HLSL clip() function. It is advisable to use programmable shaders these days instead of SetTexture commands.
 注意:AlphaTest命令使用片段程序时没有影响;在大多数平台上α测试做的材质使用HLSL夹()函数。建议使用这些天可编程着色器代替SetTexture命令。
