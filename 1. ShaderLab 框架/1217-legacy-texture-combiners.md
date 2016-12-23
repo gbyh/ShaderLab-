@@ -165,7 +165,7 @@ Shader "Examples/Self-Illumination 2" {
 
 And finally, we take all the lighting properties of the vertexlit shader and pull that in:
 最后，我们把所有的照明性能的顶点着色器和拉：
-
+```
 Shader "Examples/Self-Illumination 3" {
     Properties {
         _IlluminCol ("Self-Illumination color (RGB)", Color) = (1,1,1,1)
@@ -200,5 +200,5 @@ Shader "Examples/Self-Illumination 3" {
         }
     }
 }
-
+```
 
