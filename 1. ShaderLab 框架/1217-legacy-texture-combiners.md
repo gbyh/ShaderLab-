@@ -23,8 +23,7 @@
 |combine src1 + src2|src1 加 src2，结果是比每个单独的输入亮。
 |combine src1 - src2|src1 减 src2。|
 |combine src1 lerp (src2) src3|使用src2的alpha值在src3和src1之间插值。注意，插值是相反的方向：当alpha是1的时候是src1，当alpha是0的时候使用src3。|
-combine src1 * src2 + src3: Multiplies src1 with the alpha component of src2, then adds src3.
-src1 乘 scr2的alpha , 然后加src3.
+|combine src1 * src2 + src3|src1 乘 scr2的alpha，然后加src3。|
 All the src properties can be either one of previous, constant, primary or texture.
 所有先前的src属性可以是一个,常数,主要或纹理。
 		Previous is the the result of the previous SetTexture.	
