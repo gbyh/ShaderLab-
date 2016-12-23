@@ -1,5 +1,5 @@
-ShaderLab: Legacy Texture Combiners
-ShaderLab:遗产纹理组合器
+##Legacy Texture Combiners（传统的纹理合成）
+
 After the basic vertex lighting has been calculated, textures are applied. In ShaderLab this is done using SetTexture command.
 基本的顶点光照后计算,应用纹理。在ShaderLab这是使用SetTexture命令来完成的。
 
