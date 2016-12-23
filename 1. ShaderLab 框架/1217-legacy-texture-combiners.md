@@ -49,9 +49,8 @@ Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩�
 
 同样，5删除纹理相结合的模式。如果需要，请在像素着色器中做数学运算。
 
-Details
-Before fragment programs existed, older graphics cards used a layered approach to textures. The textures are applied one after each other, modifying the color that will be written to the screen. For each texture, the texture is typically combined with the result of the previous operation. These days it is advisable to use actual fragment programs.
-之前片段程序存在,旧显卡使用纹理的分层的方法。应用纹理后,修改的颜色将会写入到屏幕上。对于每一个纹理,纹理通常是结合前面的操作的结果。这些天是明智的使用实际的片段程序。
+细节：
+片段程序存在之前，旧的图形卡使用分层的纹理方法。纹理被一个接一个地应用，修改将被写入屏幕的颜色。对于每个纹理，纹理通常与前一个操作的结果相结合。所以使用实际的片段程序是明智的。
 
 ￼
 
