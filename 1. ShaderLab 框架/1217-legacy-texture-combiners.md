@@ -30,7 +30,7 @@ Previous 是之前SetTexture的结果。
 Primary 是从照明计算或顶点颜色的颜色。	
 Texture 纹理是在SetTexture TextureName指定纹理的颜色（见上图）。
 Constant是ConstantColor指定的颜色。
-		常数是ConstantColor中指定的颜色。
+		
 Modifiers:
 修饰符
 		The formulas specified above can optionally be followed by the keywords Double or Quad to make the resulting color 2x or 4x as bright.
