@@ -81,7 +81,7 @@ Alpha 混合两个纹理
 
 这个小例子需要两个纹理。第一集的第一组合是以_maintex，然后利用_blendtex Alpha通道在_blendtex RGB颜色褪色
 这个小例子有两个纹理。第一集第一组合器取_MainTex,然后使用alpha通道_BlendTex淡入_BlendTex的RGB颜色
-
+```
 Shader "Examples/2 Alpha Blended Textures" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
@@ -100,6 +100,7 @@ Shader "Examples/2 Alpha Blended Textures" {
         }
     }
 }
+```
 
 Alpha Controlled Self-illumination
 α控制自发光
