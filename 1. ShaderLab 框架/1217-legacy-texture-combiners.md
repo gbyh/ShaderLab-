@@ -26,10 +26,9 @@
 |combine src1 * src2 + src3|src1 乘 scr2的alpha，然后加src3。|
 所有的src属性可以是previous、constant、primary或texture其中之一。
 
-		Previous 是之前SetTexture的结果。	
-		Previous是SetTexture先前的结果。
-		Primary is the color from the lighting calculation or the vertex color if it is bound.
-		Primary是颜色的照明计算或顶点颜色如果是绑定。
+Previous是之前SetTexture的结果。		
+Primary是从照明计算或顶点颜色的颜色。
+		
 		Texture is the color of the texture specified by TextureName in the SetTexture (see above).
 		指定纹理的颜色纹理的TextureName SetTexture(见上图)。
 		Constant is the color specified in ConstantColor.
