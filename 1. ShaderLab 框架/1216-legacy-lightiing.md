@@ -51,15 +51,18 @@ Material Block
 Diffuse color: 漫反射颜色分量。这是一个对象的基本颜色。
 
 Ambient color: 环境颜色分量。这是对象的颜色，在照明窗口中被环境光照射。
+
 Specular color: 对象的高光的颜色。
+
 Shininess number: 突出的清晰度，在1和0之间。0你得到了一个巨大的亮点，看起来像漫反射照明，1的时候你得到一个小的斑点。
+
 Emission color: 物体不被任何光线击中时的颜色。
-The full color of lights hitting the object is:
-全彩色的灯光打对象是:
+
+灯光打到物体的全部颜色是:
 Ambient * Lighting Window’s Ambient Intensity setting + (Light Color * Diffuse + Light Color * Specular) + Emission
-The light parts of the equation (within parenthesis) is repeated for all lights that hit the object.
-Typically you want to keep the Diffuse and Ambient colors the same (all built-in Unity shaders do this).
-光部分的方程(括号内)重复所有灯袭击的对象。通常你想保持扩散和周围颜色相同的(所有内置统一着色器这样做)。
+该方程的光部分（括号内）是所有的灯光打在对象重复。
+通常你想继续扩散和环境颜色相同的（所有的Unity内置的着色器这样做）。
+
 
 Examples
 Always render object in pure red:
