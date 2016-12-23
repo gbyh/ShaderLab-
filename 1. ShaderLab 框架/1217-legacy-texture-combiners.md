@@ -29,8 +29,7 @@
 Previous 是之前SetTexture的结果。		
 Primary 是从照明计算或顶点颜色的颜色。	
 Texture 纹理是在SetTexture TextureName指定纹理的颜色（见上图）。
-		指定纹理的颜色纹理的TextureName SetTexture(见上图)。
-		Constant is the color specified in ConstantColor.
+Constant是ConstantColor指定的颜色。
 		常数是ConstantColor中指定的颜色。
 Modifiers:
 修饰符
