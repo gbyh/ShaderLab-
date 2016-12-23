@@ -49,7 +49,7 @@ AlphaValue
 示例：
 
 最简单的例子，给它分配一个alpha通道的纹理。只有alpha大于0.5时，对象才会可见。
-
+```
 Shader "Simple Alpha Test" {
     Properties {
         _MainTex ("Base (RGB) Transparency (A)", 2D) = "" {}
@@ -62,6 +62,7 @@ Shader "Simple Alpha Test" {
         }
     }
 }
+```
 
 This is not much good by itself. Let us add some lighting and make the cutoff value tweakable:
 这不是多好。让我们添加一些照明,使截断值tweakable:
