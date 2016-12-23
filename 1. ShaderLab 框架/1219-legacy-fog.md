@@ -26,16 +26,18 @@ Color ColorValue
 
 
 ####密度
-
+```
 Density FloatValue
-Sets density for exponential fog.
-集密度指数雾。
-
+指数雾集密度。
+```
+```
 Range
 Range FloatValue, FloatValue
 
-Sets near & far range for linear fog.
-集近与远范围线性雾。
+设置线性雾的 near & far 范围。
+```
+
+设置线性雾的 near & far 范围。
 
 Details
 Default fog settings are based on settings in the Lighting Window: fog mode is either Exp2 or Off; density & color taken from settings as well.
