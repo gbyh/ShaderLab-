@@ -1,7 +1,6 @@
 ##传统的 BindChannels
 
-BindChannels command allows you to specify how vertex data maps to the graphics hardware.
-BindChannels命令允许您指定顶点数据映射到图形硬件。
+bindchannels命令允许您指定顶点数据映射到图形硬件。
 
 Note: _BindChannels has no effect when vertex programs are used, as in that case bindings are controlled by vertex shader inputs. It is advisable to use programmable shaders these days instead of fixed function vertex processing.
 注意:_BindChannels使用顶点程序时没有影响,在这种情况下绑定由顶点着色器的输入控制。建议使用可编程着色器这些天,而不是固定顶点处理函数。
