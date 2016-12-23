@@ -13,8 +13,7 @@
 
 分配一个纹理。TextureName必须定义为一个纹理属性。如何应用一个在纹理块内定义的纹理。
 
-The texture block controls how the texture is applied. Inside the texture block can be up to two commands: combine and constantColor.
-纹理块控制结构是如何应用的。在纹理块可以到两个命令:combine和constantColor。
+纹理块控制纹理的应用。在纹理块内可以达到两个命令：combine和constantColor。
 
 Texture block combine command
 纹理块结合命令
