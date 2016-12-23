@@ -39,7 +39,8 @@ Constant 是ConstantColor指定的颜色。
 
 所有的src属性可以跟一个alpha用来只使用alpha通道。 
 		
-Texture block constantColor command
+Texture 块 constantColor 命令：
+
 ConstantColor color: 定义了一个固定颜色，可用于组合命令。
 
 固定功能在Unity 5.0移除。
