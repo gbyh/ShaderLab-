@@ -20,22 +20,16 @@ AlphaTest Off
 ####比较
 比较是下列单词之一：
 
-Greater
-Only render pixels whose alpha is greater than AlphaValue.
-GEqual
-Only render pixels whose alpha is greater than or equal to AlphaValue.
-Less
-Only render pixels whose alpha value is less than AlphaValue.
-LEqual
-Only render pixels whose alpha value is less than or equal to from AlphaValue.
-Equal
-Only render pixels whose alpha value equals AlphaValue.
-NotEqual
-Only render pixels whose alpha value differs from AlphaValue.
-Always
-Render all pixels. This is functionally equivalent to AlphaTest Off.
-Never
-Don’t render any pixels.
+|关键字|说明|
+|:--|:--|
+|Greater|只渲染像素的α大于alphavalue。|
+|GEqual|只渲染像素的α大于或等于alphavalue。|
+|Less|小于|
+|LEqual|小于等于|
+|Equal|等于|
+|NotEqual|不等于|
+|Always|渲染所有像素。这是功能上等同于透明度测试了。|
+|Never|不渲染任何像素。|
 
 AlphaValue
 A floating-point number between 0 and 1. This can also be a variable reference to a float or range property, in which case it should be written using the standard square bracket notation ([VariableName]).
