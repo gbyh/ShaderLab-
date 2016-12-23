@@ -67,8 +67,7 @@ Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩�
 ```
 在这里,我们RGB颜色相乘和叠加alpha。
 
-Specular highlights
-高光
+高光：
 
 By default the primary color is the sum of the diffuse, ambient and specular colors (as defined in the Lighting calculation). If you specify SeparateSpecular On in the pass options, the specular color will be added in after the combiner calculation, rather than before. This is the default behavior of the built-in VertexLit shader.
 默认情况下的主要颜色是和分散,环境和镜面的颜色(如照明计算中定义)。在传递选项,如果您指定SeparateSpecular组合器后的高光颜色将被添加在计算,而不是之前。这是默认行为的内置VertexLit材质。
