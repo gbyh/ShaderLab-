@@ -47,8 +47,7 @@ ConstantColor color: 定义了一个固定颜色，可用于组合命令。
 
 Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩阵命令。如果你现在需要这个功能，考虑重写你的着色器作为可编程着色器代替，并在顶点着色器中进行UV变换。
 
-Similarly, 5.0 removed signed add (a+-b), multiply signed add (a*b+-c), multiply subtract (a*b-c) and dot product (dot3, dot3rgba) texture combine modes. If you need them, do the math in the pixel shader instead.
-同样,5.0删除签名添加(a + b),乘以签署添加(a * b + c),乘减(* c)、点积(dot3 dot3rgba)纹理结合模式。如果你需要它们,在像素着色器而不是做数学。
+同样，5删除纹理相结合的模式。如果需要，请在像素着色器中做数学运算。
 
 Details
 Before fragment programs existed, older graphics cards used a layered approach to textures. The textures are applied one after each other, modifying the color that will be written to the screen. For each texture, the texture is typically combined with the result of the previous operation. These days it is advisable to use actual fragment programs.
