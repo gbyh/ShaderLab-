@@ -50,7 +50,7 @@ Material Block
 
 Diffuse color: 漫反射颜色分量。这是一个对象的基本颜色。
 Ambient color: The ambient color component. This is the color the object has when it’s hit by the ambient light set in the Lighting Window.
-环境颜色组件。这是颜色的对象时受环境光照明中设置窗口。
+环境颜色分量。这是对象的颜色，在照明窗口中被环境光照射。
 Specular color: The color of the object’s specular highlight.
 对象的高光的颜色。
 Shininess number: The sharpness of the highlight, between 0 and 1. At 0 you get a huge highlight that looks a lot like diffuse lighting, at 1 you get a tiny speck.
