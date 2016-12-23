@@ -52,10 +52,9 @@ Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩�
 细节：
 片段程序存在之前，旧的图形卡使用分层的纹理方法。纹理被一个接一个地应用，修改将被写入屏幕的颜色。对于每个纹理，纹理通常与前一个操作的结果相结合。所以使用实际的片段程序是明智的。
 
-￼
 
-Note that each texture stage may or might not be clamped to 0..1 range, depending on the platform. This might affect SetTexture stages that can produce values higher than 1.0.
-注意,每个纹理阶段可能或可能不会夹到0 . .1,根据平台。这可能影响SetTexture阶段可以产生值高于1.0。
+请注意，每个纹理阶段可能会或可能不会被限制到0～1的范围内，这取决于平台。这可能会影响SetTexture阶段，可以产生大于1的值。
+
 
 Separate Alpha & Color computation
 单独的α&颜色计算
