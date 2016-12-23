@@ -1,5 +1,5 @@
-ShaderLab: Legacy Alpha Testing
-ShaderLab:遗产α测试
+##传统的 Alpha Testing
+
 The alpha test is a last chance to reject a pixel from being written to the screen.
 α测试是一个最后的机会拒绝一个像素被写到屏幕上。
 
