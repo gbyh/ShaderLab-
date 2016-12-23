@@ -67,12 +67,11 @@ Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩�
 ```
 在这里,我们RGB颜色相乘和叠加alpha。
 
-高光：
+**高光：**
 
 默认情况下，原色是漫射、环境和镜面颜色的总和（如照明计算中定义的）。如果你将通道设置中的SeparateSpecular打开，镜面的颜色将被添加在合并计算后，而不是之前。这是内置顶点着色器的默认行为。
 
-Graphics hardware support
-图形硬件的支持
+**图形硬件的支持**
 
 Modern graphics cards with fragment shader support (“shader model 2.0” on desktop, OpenGL ES 2.0 on mobile) support all SetTexture modes and at least 4 texture stages (many of them support 8). If you’re running on really old hardware (made before 2003 on PC, or before iPhone3GS on mobile), you might have as low as two texture stages. The shader author should write separate SubShaders for the cards he or she wants to support.
 现代图形卡和片段着色器支持(在桌面“着色模型2.0”,OpenGL ES 2.0移动)支持所有SetTexture模式和至少4纹理阶段(他们中的许多人支持8)。如果你真的老硬件上运行(在2003年之前在电脑,或在iPhone3GS移动),你可能会低至两个纹理阶段。牌的材质作家应该写独立SubShaders他或她想要的支持。
