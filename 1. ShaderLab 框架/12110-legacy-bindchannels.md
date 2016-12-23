@@ -41,6 +41,8 @@ There are two typical use cases for BindChannels:
 		Shaders that use two UV sets.
 
 Examples
+
+```
 // Maps the first UV set to the first texture stage
 // and the second UV set to the second texture stage
 BindChannels {
@@ -56,7 +58,7 @@ BindChannels {
    Bind "texcoord", texcoord
    Bind "Color", color
 }
-
+```
 
 
 
