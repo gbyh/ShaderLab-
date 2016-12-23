@@ -37,9 +37,8 @@ AlphaValue
 
 ([VariableName])。
 
-Details
-The alpha test is important when rendering concave objects with transparent parts. The graphics card maintains a record of the depth of every pixel written to the screen. If a new pixel is further away than one already rendered, the new pixel is not written to the display. This means that even with Blending, objects will not show through.
-α测试是非常重要的在呈现凹对象与透明的部分。的显卡维护记录每个像素的深度书写到屏幕上。如果一个新的像素远比一个已经呈现,新的像素不写入显示。这意味着即使混合,对象将不会显示。
+细节：
+在透明物体上绘制凹形物体时，α测试非常重要.。图形卡维护记录到屏幕上的每个像素的深度记录.。如果一个新像素比已经渲染的像素更远，新像素就不会写入显示器。这意味着即使混合，对象也不会显示通过。
 
 ￼
 
