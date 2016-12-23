@@ -24,8 +24,8 @@ Color ColorValue
 Sets fog color.
 ```
 
-Density
-密度
+
+####密度
 
 Density FloatValue
 Sets density for exponential fog.
