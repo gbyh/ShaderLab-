@@ -10,11 +10,12 @@ Fog
 Fog {Fog Commands}
 ```
 
-Specify fog commands inside curly braces.
-指定雾在花括号内的命令。
+指定花括号内的雾命令。
 
+```
 Mode
 Mode Off | Global | Linear | Exp | Exp2
+```
 
 Defines fog mode. Default is global, which translates to Off or Exp2 depending whether fog is turned on in Render Settings.
 定义了雾模式。默认是全球性的,这意味着根据或者Exp2雾是否打开渲染设置。
