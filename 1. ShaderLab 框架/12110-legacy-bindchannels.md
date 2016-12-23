@@ -4,8 +4,7 @@ bindchannels命令允许您指定顶点数据映射到图形硬件。
 
 注：当使用顶点程序时，_bindchannels没有效果的，在这种情况下，绑定是由顶点着色器的输入控制。建议使用可编程着色器而不是固定功能顶点处理。
 
-By default, Unity figures out the bindings for you, but in some cases you want custom ones to be used.
-默认情况下,统一数据绑定,但在某些情况下,你想要使用自定义的。
+默认情况下，Unity为你绘制绑定，但在某些情况下，你希望使用自定义绑定。
 
 For example you could map the primary UV set to be used in the first texture stage and the secondary UV set to be used in the second texture stage; or tell the hardware that vertex colors should be taken into account.
 例如可以地图主紫外线组在第一次使用纹理阶段和二级紫外线组中使用第二个纹理阶段;或者告诉硬件顶点颜色应该考虑。
