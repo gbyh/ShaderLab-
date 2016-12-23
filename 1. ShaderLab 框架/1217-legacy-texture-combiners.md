@@ -132,7 +132,7 @@ Shader "Examples/Self-Illumination" {
 ```
 
 We can do something else for free here, though; instead of blending to solid white, we can add a self-illumination color and blend to that. Note the use of ConstantColor to get a _SolidColor from the properties into the texture blending.
-我们可以免费做其他的事情,尽管;而不是混合纯白色,我们可以添加一个自发光的颜色和混合。注意使用ConstantColor得到_SolidColor从性质到纹理混合。
+我们可以做一些免费的东西在这里，虽然，而不是混合到固体白色，我们可以添加一个自我照明的颜色和混合到。注意设置有_solidcolor从性质到纹理混合使用。
 
 Shader "Examples/Self-Illumination 2" {
     Properties {
