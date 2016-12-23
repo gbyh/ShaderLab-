@@ -2,8 +2,7 @@
 
 bindchannels命令允许您指定顶点数据映射到图形硬件。
 
-Note: _BindChannels has no effect when vertex programs are used, as in that case bindings are controlled by vertex shader inputs. It is advisable to use programmable shaders these days instead of fixed function vertex processing.
-注意:_BindChannels使用顶点程序时没有影响,在这种情况下绑定由顶点着色器的输入控制。建议使用可编程着色器这些天,而不是固定顶点处理函数。
+注：当使用顶点程序时，_bindchannels没有效果的，在这种情况下，绑定是由顶点着色器的输入控制。建议使用可编程着色器而不是固定功能顶点处理。
 
 By default, Unity figures out the bindings for you, but in some cases you want custom ones to be used.
 默认情况下,统一数据绑定,但在某些情况下,你想要使用自定义的。
