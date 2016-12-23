@@ -8,8 +8,10 @@ bindchannels命令允许您指定顶点数据映射到图形硬件。
 
 例如，你可以在第一个纹理阶段和在第二个纹理阶段使用的二次UV集绘制主UV集，或者告诉硬件顶点颜色应该被考虑在内。
 
-Syntax
+语法：
+```
 BindChannels { Bind "source", target }
+```
 
 Specifies that vertex data source maps to hardware target.
 数据源指定顶点映射到硬件的目标。
