@@ -65,8 +65,7 @@ Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩�
         combine previous * texture, previous + texture 
     }
 ```
-Here, we multiply the RGB colors and add the alpha.
-在这里,我们用RGB颜色和添加α。
+在这里,我们RGB颜色相乘和叠加alpha。
 
 Specular highlights
 高光
