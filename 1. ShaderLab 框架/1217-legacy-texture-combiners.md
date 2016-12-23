@@ -100,8 +100,7 @@ Shader "Examples/2 Alpha Blended Textures" {
 }
 ```
 
-Alpha Controlled Self-illumination
-α控制自发光
+**Alpha控制自发光**
 This shader uses the alpha component of the _MainTex to decide where to apply lighting. It does this by applying the texture to two stages; In the first stage, the alpha value of the texture is used to blend between the vertex color and solid white. In the second stage, the RGB values of the texture are multiplied in.
 这个材质使用的α组件_MainTex决定在何处应用照明。它通过纹理应用到两个阶段,在第一阶段,α值之间的纹理混合使用顶点颜色和白色固体。在第二阶段,纹理的RGB值增加。
 
