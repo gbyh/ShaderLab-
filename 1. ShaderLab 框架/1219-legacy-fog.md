@@ -16,9 +16,7 @@ Fog {Fog Commands}
 Mode
 Mode Off | Global | Linear | Exp | Exp2
 ```
-
-Defines fog mode. Default is global, which translates to Off or Exp2 depending whether fog is turned on in Render Settings.
-定义了雾模式。默认是全球性的,这意味着根据或者Exp2雾是否打开渲染设置。
+定义雾模式。默认是全局的，这意味着关闭或EXP2取决于是否打开渲染设置中的雾。
 
 Color
 Color ColorValue
