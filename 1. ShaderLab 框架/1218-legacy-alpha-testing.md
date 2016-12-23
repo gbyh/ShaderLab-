@@ -137,6 +137,7 @@ Shader "Vegetation" {
     }
 }
 ```
+
 Note that we have some setup inside the SubShader, rather than in the individual passes. Any state set in the SubShader is inherited as defaults in passes inside it.
 
 
