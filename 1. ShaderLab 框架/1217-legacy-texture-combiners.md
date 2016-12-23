@@ -5,7 +5,7 @@
 注意：当片段程序使用时，SetTexture命令没有效果；。建议使用可编程着色器替代SetTexture命令。
 
 Fixed function texturing is the place to do old-style combiner effects. You can have multiple SetTexture commands inside a pass - all textures are applied in sequence, like layers in a painting program. SetTexture commands must be placed at the end of a Pass.
-固定函数变形的地方做老式组合器效果。可以有多个SetTexture命令在一个通过——所有纹理应用于序列,像层在绘画程序。SetTexture命令必须放置在一个通过。
+固定功能纹理用于做旧风格的组合效果。你可以在一个Pass中有多个SetTexture命令，所有纹理被顺序的应用，如绘图程序的层。SetTexture命令必须放在Pass的最后。
 
 Syntax
 SetTexture [TextureName] {Texture Block}
