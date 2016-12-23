@@ -10,8 +10,8 @@
                 * [1.2.1.2 Blending](1. ShaderLab 框架/1212-blending.md)
                 * [1.2.1.3 Pass Tags](1. ShaderLab 框架/1213-pass-tags.md)
                 * [1.2.1.4 Stencil](1. ShaderLab 框架/1214-stencil.md)
-                * 1.2.1.5 Name
-                * 1.2.1.6 Legacy Lightiing
+                * [1.2.1.5 Name](1. ShaderLab 框架/1215-name.md)
+                * [1.2.1.6 Legacy Lightiing](1. ShaderLab 框架/1216-legacy-lightiing.md)
                 * 1.2.1.7 Legacy Texture Combiners
                 * 1.2.1.8 Legacy Alpha Testing
                 * 1.2.1.9 Legacy Fog
@@ -23,7 +23,7 @@
         * 1.4 自定义编译器（CustomEditor）
         * [1.5 其他命令（other commands）](1. ShaderLab 框架/15-其他命令（other-commands）.md)
     * [第2章 顶点和片段着色器](1. ShaderLab 框架/第2章-顶点和片段着色器.md)
-        * 1.1 顶点和片段着色器 举例
+        * [1.1 顶点和片段着色器 举例](1. ShaderLab 框架/11-顶点和片段着色器-举例.md)
         * [1.2 着色器语义](1. ShaderLab 框架/12-shader-语义（semantics）.md)
         * [1.3 在 Cg\/HLSL 中访问着色器属性](1. ShaderLab 框架/13-在-cghlsl-中访问-shader-属性.md)
         * 1.4 为顶点程序提供顶点数据
