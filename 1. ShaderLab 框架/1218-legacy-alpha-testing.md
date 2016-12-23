@@ -2,8 +2,7 @@
 
 alpha测试是拒绝将像素写入屏幕的最后机会。
 
-Note: AlphaTest commands have no effect when fragment programs are used; on most platforms alpha testing is done in the shader using HLSL clip() function. It is advisable to use programmable shaders these days instead of SetTexture commands.
-注意:AlphaTest命令使用片段程序时没有影响;在大多数平台上α测试做的材质使用HLSL夹()函数。建议使用这些天可编程着色器代替SetTexture命令。
+注：当使用片段程序时，透明度测试命令是没有效果的；大多数平台上的测试是使用HLSL着色器做clip()功能。建议使用可编程着色器这些天而不是SetTexture命令。
 
 After the final output color has been calculated, the color can optionally have its alpha value compared to a fixed value. If the test fails, the pixel is not written to the display.
 计算最终的输出颜色后,颜色可以选择α值相对于一个固定的值。如果测试失败,像素不写入显示。
