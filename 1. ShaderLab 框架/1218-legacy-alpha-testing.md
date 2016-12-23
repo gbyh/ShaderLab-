@@ -32,8 +32,8 @@ AlphaTest Off
 |Never|不渲染任何像素。|
 
 AlphaValue
-A floating-point number between 0 and 1. This can also be a variable reference to a float or range property, in which case it should be written using the standard square bracket notation ([VariableName]).
-浮点数在0和1之间。这也可以是一个浮动或范围属性变量引用,在这种情况下,应该使用标准的方括号([VariableName])。
+介于1和0之间的浮点数。这也可以是一个变量引用类型或范围的属性，在这种情况下，应该使用标准的方括号（[变量名]）。
+([VariableName])。
 
 Details
 The alpha test is important when rendering concave objects with transparent parts. The graphics card maintains a record of the depth of every pixel written to the screen. If a new pixel is further away than one already rendered, the new pixel is not written to the display. This means that even with Blending, objects will not show through.
