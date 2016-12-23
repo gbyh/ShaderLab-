@@ -11,8 +11,8 @@ alpha测试是拒绝将像素写入屏幕的最后机会。
 AlphaTest Off
 ```
 
-Render all pixels (default) or…
-AlphaTest comparison AlphaValue
+渲染所有像素（默认）或…
+比较alphavalue AlphaTest
 
 Set up the alpha test to only render pixels whose alpha value is within a certain range.
 设置α测试只显示像素的α值是在一定的范围内。
