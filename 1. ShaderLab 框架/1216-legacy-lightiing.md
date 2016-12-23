@@ -49,11 +49,11 @@ Material Block
 这包含材料如何反应光的设置。任何这些属性都可以忽略，在这种情况下，它们默认为黑色（即没有影响）。
 
 Diffuse color: 漫反射颜色分量。这是一个对象的基本颜色。
+
 Ambient color: 环境颜色分量。这是对象的颜色，在照明窗口中被环境光照射。
 Specular color: 对象的高光的颜色。
 Shininess number: 突出的清晰度，在1和0之间。0你得到了一个巨大的亮点，看起来像漫反射照明，1的时候你得到一个小的斑点。
-Emission color: The color of the object when it is not hit by any light.
-物体的颜色的时候不受任何光。
+Emission color: 物体不被任何光线击中时的颜色。
 The full color of lights hitting the object is:
 全彩色的灯光打对象是:
 Ambient * Lighting Window’s Ambient Intensity setting + (Light Color * Diffuse + Light Color * Specular) + Emission
