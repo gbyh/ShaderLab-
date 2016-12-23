@@ -1,7 +1,6 @@
 ##Legacy Texture Combiners（传统的纹理合成）
 
-After the basic vertex lighting has been calculated, textures are applied. In ShaderLab this is done using SetTexture command.
-基本的顶点光照后计算,应用纹理。在ShaderLab这是使用SetTexture命令来完成的。
+在计算基本顶点照明后，应用纹理.。在ShaderLab，这是通过使用SetTexture命令。
 
 Note: SetTexture commands have no effect when fragment programs are used; as in that case pixel operations are completely described in the shader. It is advisable to use programmable shaders these days instead of SetTexture commands.
 注意:SetTexture命令使用片段程序时没有影响;在这种情况下像素操作完全描述的材质。建议使用这些天可编程着色器代替SetTexture命令。
