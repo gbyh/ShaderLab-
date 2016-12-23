@@ -24,10 +24,10 @@ Material {Material Block}
 ```
 材质块用于定义对象的材质属性。
 
-Lighting
+**Lighting**
 Lighting On | Off
 For the settings defined in the Material block to have any effect, you must enable Lighting with the Lighting On command. If lighting is off instead, the color is taken straight from the Color command.
-为材料的块中定义的设置有什么效果,你必须使照明与照明命令。如果照明是相反的,是直接从颜色命令。
+对于在材质块中定义的设置有任何影响，您必须启用灯光与灯光的命令。如果灯光是关闭的，颜色是直接从颜色命令。
 
 SeparateSpecular
 SeparateSpecular On | Off
