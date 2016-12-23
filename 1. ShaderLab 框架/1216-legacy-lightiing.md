@@ -20,13 +20,13 @@
 
 **Material**
 ```
-Material {Material Block}
+    Material {Material Block}
 ```
 材质块用于定义对象的材质属性。
 
 **Lighting**
 ```
-Lighting On | Off
+    Lighting On | Off
 ```
 对于在材质块中定义的设置有任何影响，您必须启用灯光与灯光的命令。如果灯光是关闭的，颜色是直接从颜色命令。
 
