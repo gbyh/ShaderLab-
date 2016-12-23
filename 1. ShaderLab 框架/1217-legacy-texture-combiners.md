@@ -58,10 +58,10 @@ Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩�
 
 单独的 Alpha & Color 计算
 
-By default, the combiner formula is used for calculating both the RGB and alpha component of the color. Optionally, you can specify a separate formula for the alpha calculation. This looks like this:
-默认情况下,合路器公式用于计算颜色的RGB和阿尔法组成部分。可选地,您可以指定一个单独的α的计算公式。这看起来像这样:
+默认情况下，合并公式用于计算颜色的RGB和alpha分量。可选地，可以指定alpha计算的单独公式.。这看起来像这样：
+```
 SetTexture [_MainTex] { combine previous * texture, previous + texture }
-
+```
 Here, we multiply the RGB colors and add the alpha.
 在这里,我们用RGB颜色和添加α。
 
