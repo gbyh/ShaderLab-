@@ -73,8 +73,8 @@ Shader "Solid Red" {
     }
 }
 ```
-Basic Shader that colors the object white and applies vertex lighting:
-基本的材质,颜色白色和适用对象顶点照明:
+基本的着色对象白色和应用顶点照明：
+```
 Shader "VertexLit White" {
     SubShader {
         Pass {
@@ -86,7 +86,7 @@ Shader "VertexLit White" {
         }
     }
 }
-
+```
 An extended version that adds material color as a property visible in Material Inspector:
 延长版本,增加了材料颜色属性可见材料检查员:
 Shader "VertexLit Simple" {
