@@ -17,10 +17,10 @@
 
 
 纹理块组合命令
-combine src1 * src2: src1乘src2。结果将比任何输入暗。
-src1 乘 src2, 结果是比每个单独的输入要暗。
-combine src1 + src2: Adds src1 and src2 together. The result will be lighter than either input.
-src1 加 src2 , 结果是比每个单独的输入亮。
+combine src1 * src2: src1 乘 src2, 结果是比每个单独的输入要暗。
+combine src1 + src2: src1 加 src2 , 结果是比每个单独的输入亮。
+
+
 combine src1 - src2: Subtracts src2 from src1.
 src1 减 src2.
 combine src1 lerp (src2) src3: Interpolates between src3 and src1, using the alpha of src2. Note that the interpolation is opposite direction: src1 is used when alpha is one, and src3 is used when alpha is zero.
