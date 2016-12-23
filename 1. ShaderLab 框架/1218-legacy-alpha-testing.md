@@ -46,9 +46,9 @@ AlphaValue
 
 在这张图中，左边的树使用透明度测试。注意它的像素是完全透明的还是不透明的。中心树只使用alpha混合，注意附近分支的透明部分是如何覆盖远端叶子的，因为深度缓冲。右边的树使用最后一个示例着色器渲染，它实现了混合和alpha测试的组合，以隐藏任何伪影。
 
-Examples
-The simplest possible example, assign a texture with an alpha channel to it. The object will only be visible where alpha is greater than 0.5
-最简单的例子,分配一个纹理的alpha通道。的对象只能是可见α大于0.5
+示例：
+
+最简单的例子，给它分配一个alpha通道的纹理。只有alpha大于0.5时，对象才会可见。
 
 Shader "Simple Alpha Test" {
     Properties {
