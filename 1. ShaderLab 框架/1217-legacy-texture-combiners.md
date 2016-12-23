@@ -76,9 +76,10 @@ Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩�
 
 与片段着色器支持现代图形卡（“Shader Model 2的桌面上，OpenGL ES 2移动）支持所有SetTexture模式和至少4个纹理贴图（他们中的许多人支持8）。如果你真的很老的硬件上运行（前2003 PC，或在iPhone3GS手机），你可能有两个纹理阶段低。着色器作者要写他或她想要支持的卡分开着色器。
 
-Examples
-Alpha Blending Two Textures
-This small examples takes two textures. First it sets the first combiner to just take the _MainTex, then is uses the alpha channel of _BlendTex to fade in the RGB colors of _BlendTex
+例如：
+Alpha 混合两个纹理
+
+这个小例子需要两个纹理。第一集的第一组合是以_maintex，然后利用_blendtex Alpha通道在_blendtex RGB颜色褪色
 这个小例子有两个纹理。第一集第一组合器取_MainTex,然后使用alpha通道_BlendTex淡入_BlendTex的RGB颜色
 
 Shader "Examples/2 Alpha Blended Textures" {
