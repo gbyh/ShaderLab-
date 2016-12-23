@@ -30,7 +30,7 @@ Target can be one of:
 		Texcoord: texture coordinates for all texture stages
 		Color: vertex color
 
-**细节：**
+####细节：
 Unity放置一些限制，哪些源可以映射到哪个目标.。源和目标必须匹配顶点，法线，切线和颜色。纹理坐标网格（Texcoord和Texcoord1）可以映射到纹理坐标的目标（Texcoord所有纹理阶段，或texcoordn为一个特定的阶段）。
 
 BindChannels有两个典型的用例：
