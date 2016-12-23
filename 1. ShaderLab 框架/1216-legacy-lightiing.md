@@ -44,8 +44,8 @@ Makes per-vertex color be used instead of the colors set in the material. Ambien
 使种每个顶点都具备的颜色而不是使用颜色的材料。AmbientAndDiffuse替换材料的环境和扩散值;发射取代发射材料的价值。
 
 Material Block
-This contains settings for how the material reacts to the light. Any of these properties can be left out, in which case they default to black (i.e. have no effect).
-它包含设置材料对光线的方式。这些属性可以被排除在外,在这种情况下它们默认为黑色(即没有影响)。
+
+这包含材料如何反应光的设置。任何这些属性都可以忽略，在这种情况下，它们默认为黑色（即没有影响）。
 
 Diffuse color: The diffuse color component. This is an object’s base color.
 漫射颜色组件。这是一个对象的基本色。
