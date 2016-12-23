@@ -15,9 +15,9 @@
 
 纹理块控制纹理的应用。在纹理块内可以有两个命令：combine和constantColor。
 
-Texture block combine command
-纹理块结合命令
-combine src1 * src2: Multiplies src1 and src2 together. The result will be darker than either input.
+
+纹理块组合命令
+combine src1 * src2: src1乘src2。结果将比任何输入暗。
 src1 乘 src2, 结果是比每个单独的输入要暗。
 combine src1 + src2: Adds src1 and src2 together. The result will be lighter than either input.
 src1 加 src2 , 结果是比每个单独的输入亮。
