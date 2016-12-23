@@ -74,8 +74,7 @@ Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩�
 
 **图形硬件的支持**
 
-Modern graphics cards with fragment shader support (“shader model 2.0” on desktop, OpenGL ES 2.0 on mobile) support all SetTexture modes and at least 4 texture stages (many of them support 8). If you’re running on really old hardware (made before 2003 on PC, or before iPhone3GS on mobile), you might have as low as two texture stages. The shader author should write separate SubShaders for the cards he or she wants to support.
-现代图形卡和片段着色器支持(在桌面“着色模型2.0”,OpenGL ES 2.0移动)支持所有SetTexture模式和至少4纹理阶段(他们中的许多人支持8)。如果你真的老硬件上运行(在2003年之前在电脑,或在iPhone3GS移动),你可能会低至两个纹理阶段。牌的材质作家应该写独立SubShaders他或她想要的支持。
+与片段着色器支持现代图形卡（“Shader Model 2的桌面上，OpenGL ES 2移动）支持所有SetTexture模式和至少4个纹理贴图（他们中的许多人支持8）。如果你真的很老的硬件上运行（前2003 PC，或在iPhone3GS手机），你可能有两个纹理阶段低。着色器作者要写他或她想要支持的卡分开着色器。
 
 Examples
 Alpha Blending Two Textures
