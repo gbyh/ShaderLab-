@@ -20,7 +20,9 @@
 
 **Material**
 ```
-    Material {Material Block}
+    Material {
+        Material Block
+    }
 ```
 材质块用于定义对象的材质属性。
 
@@ -47,8 +49,7 @@ Material Block
 
 这包含材料如何反应光的设置。任何这些属性都可以忽略，在这种情况下，它们默认为黑色（即没有影响）。
 
-Diffuse color: The diffuse color component. This is an object’s base color.
-漫射颜色组件。这是一个对象的基本色。
+Diffuse color: 漫反射颜色分量。这是一个对象的基本颜色。
 Ambient color: The ambient color component. This is the color the object has when it’s hit by the ambient light set in the Lighting Window.
 环境颜色组件。这是颜色的对象时受环境光照明中设置窗口。
 Specular color: The color of the object’s specular highlight.
