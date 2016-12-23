@@ -32,12 +32,14 @@
 
 **SeparateSpecular**
 ```
-SeparateSpecular On | Off
+    SeparateSpecular On | Off
 ```
 此命令使镜面照明添加到着色通道的末端，所以镜面照明不受纹理的影响。只有在使用照明时才有效果。
 
-ColorMaterial
-ColorMaterial AmbientAndDiffuse | Emission
+**ColorMaterial**
+```
+    ColorMaterial AmbientAndDiffuse | Emission
+```
 Makes per-vertex color be used instead of the colors set in the material. AmbientAndDiffuse replaces Ambient and Diffuse values of the material; Emission replaces Emission value of the material.
 使种每个顶点都具备的颜色而不是使用颜色的材料。AmbientAndDiffuse替换材料的环境和扩散值;发射取代发射材料的价值。
 
