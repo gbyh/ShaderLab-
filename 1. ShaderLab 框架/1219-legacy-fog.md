@@ -21,7 +21,7 @@ Mode Off | Global | Linear | Exp | Exp2
 ```
 Color
 Color ColorValue
-Sets fog color.
+设置雾的颜色
 ```
 
 
