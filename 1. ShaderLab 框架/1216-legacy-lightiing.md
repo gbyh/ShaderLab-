@@ -1,12 +1,7 @@
-##Legacy Lighting
+##Legacy Lighting(传统照明)
 
-ShaderLab:传统照明
-
-The material and lighting parameters are used to control the built-in vertex lighting. Vertex lighting is the standard Direct3D/OpenGL lighting model that is computed for each vertex. Lighting on turns it on. Lighting is affected by Material block, ColorMaterial and SeparateSpecular commands.
 
 材料和照明参数用于控制内置顶点照明。顶点光照是标准的Direct3D和OpenGL的光照模型，计算每一个顶点。照明打开它。照明是由料块的影响，材料和separatespecular命令。
-
-Note: Material/Lighting commands have no effect when vertex programs are used; as in that case all calculations are completely described in the shader. It is advisable to use programmable shaders these days instead of legacy vertex lighting. For these you don’t use any of the commands described here, instead you define your own vertex and fragment programs where you do all lighting, texturing and anything else yourself.
 
 注意：当顶点程序使用时，材质/灯光命令没有影响；在这种情况下，所有计算都在着色器中完全描述。建议使用可编程着色器而不是传统的顶点照明。对于这些你不使用任何这里所描述的命令，而是定义自己的顶点和片段程序，完成所有的照明，纹理和任何其他的。
 
@@ -18,10 +13,11 @@ Vertex Coloring & Lighting is the first effect to be calculated for any rendered
 The top level commands control whether to use fixed function lighting or not, and some configuration options. The main setup is in the Material Block, detailed further below.
 顶层命令控制是否使用固定功能的灯光，以及一些配置选项。主要安装在材料块，进一步详细如下。
 
+```
 Color
 Color color
-Sets the object to a solid color. A color is either four RGBA values in parenthesis, or a color property name in square brackets.
-将对象设置为一个纯色。颜色是四RGBA括号中的值,在方括号或颜色属性的名字。
+```
+将对象设置为固体颜色。颜色是四RGBA值在括号，或颜色属性的名称在方括号。
 
 Material
 Material {Material Block}
