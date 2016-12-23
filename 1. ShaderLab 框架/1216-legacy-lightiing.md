@@ -104,9 +104,8 @@ Shader "VertexLit Simple" {
     }
 }
 
-And finally, a full fledged vertex-lit shader (see also SetTexture reference page):
-最后,一个完整的vertex-lit材质(见还SetTexture参考页面):
-
+最后，一个完整的顶点光照着色器（参见SetTexture参考页）：
+```
 Shader "VertexLit" {
     Properties {
         _Color ("Main Color", Color) = (1,1,1,0)
@@ -132,7 +131,7 @@ Shader "VertexLit" {
         }
     }
 }
-
+```
 
 
 
