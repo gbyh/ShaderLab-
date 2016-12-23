@@ -35,7 +35,7 @@ Constant 是ConstantColor指定的颜色。
 
 上述公式可由Double或Quad使得颜色亮度2倍或4倍。
 
-所有的src属性的值，除了lerp，可以选择之前一使颜色的否定。	
+所有的src属性的值，除了lerp，可以选择之前之一。	
 
 所有的src属性可以跟一个alpha用来只使用alpha通道。 
 		
