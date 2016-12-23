@@ -4,8 +4,7 @@ alpha测试是拒绝将像素写入屏幕的最后机会。
 
 注：当使用片段程序时，透明度测试命令是没有效果的；大多数平台上的测试是使用HLSL着色器做clip()功能。建议使用可编程着色器这些天而不是SetTexture命令。
 
-After the final output color has been calculated, the color can optionally have its alpha value compared to a fixed value. If the test fails, the pixel is not written to the display.
-计算最终的输出颜色后,颜色可以选择α值相对于一个固定的值。如果测试失败,像素不写入显示。
+在计算最终输出颜色后，颜色可以相对于固定值具有alpha值。如果测试失败，则像素不会写入显示器。
 
 Syntax
 AlphaTest Off
