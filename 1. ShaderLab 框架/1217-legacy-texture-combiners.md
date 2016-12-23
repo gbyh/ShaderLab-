@@ -45,8 +45,7 @@ ConstantColor color: 定义了一个固定颜色，可用于组合命令。
 
 固定功能在Unity 5.0移除。
 
-Unity versions before 5.0 did support texture coordinate transformations with a matrix command inside a texture block. If you need this functionality now, consider rewriting your shader as a programmable shader instead, and do the UV transformation in the vertex shader.
-Unity版本5.0之前支持纹理坐标转换矩阵纹理块内部的命令。如果你现在需要这个功能,考虑重写你的材质作为可编程着色器相反,顶点着色器和做紫外转换。
+Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩阵命令。如果你现在需要这个功能，考虑重写你的着色器作为可编程着色器代替，并在顶点着色器中进行UV变换。
 
 Similarly, 5.0 removed signed add (a+-b), multiply signed add (a*b+-c), multiply subtract (a*b-c) and dot product (dot3, dot3rgba) texture combine modes. If you need them, do the math in the pixel shader instead.
 同样,5.0删除签名添加(a + b),乘以签署添加(a * b + c),乘减(* c)、点积(dot3 dot3rgba)纹理结合模式。如果你需要它们,在像素着色器而不是做数学。
