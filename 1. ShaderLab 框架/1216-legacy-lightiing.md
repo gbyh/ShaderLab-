@@ -34,7 +34,7 @@
 ```
 SeparateSpecular On | Off
 ```
-此命令使镜面照明添加到着色通道的末端，所以镜面照明不受纹理的影响.。只有在使用照明时才有效果。
+此命令使镜面照明添加到着色通道的末端，所以镜面照明不受纹理的影响。只有在使用照明时才有效果。
 
 ColorMaterial
 ColorMaterial AmbientAndDiffuse | Emission
