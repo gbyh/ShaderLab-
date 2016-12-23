@@ -1,7 +1,6 @@
 ##传统的 Fog
 
-Fog parameters are controlled with Fog command.
-与雾雾参数控制命令。
+用雾命令控制雾参数。
 
 Fogging blends the color of the generated pixels down towards a constant color based on distance from camera. Fogging does not modify a blended pixel’s alpha value, only its RGB components.
 蒙上水汽混合生成像素的颜色对一个常数基于距离相机的颜色。成雾不修改混合像素的alpha值,只有它的RGB分量。
