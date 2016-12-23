@@ -4,9 +4,11 @@
 
 雾化混合生成的像素到基于摄像头的距离不变的颜色。雾不修改像素的alpha值，只有它的RGB分量。
 
-Syntax
+####语法：
+```
 Fog
 Fog {Fog Commands}
+```
 
 Specify fog commands inside curly braces.
 指定雾在花括号内的命令。
