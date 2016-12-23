@@ -56,8 +56,7 @@ Unity版本在5之前确实支持纹理坐标转换，在纹理块内使用矩�
 请注意，每个纹理阶段可能会或可能不会被限制到0～1的范围内，这取决于平台。这可能会影响SetTexture阶段，可以产生大于1的值。
 
 
-Separate Alpha & Color computation
-单独的α&颜色计算
+单独的 Alpha & Color 计算
 
 By default, the combiner formula is used for calculating both the RGB and alpha component of the color. Optionally, you can specify a separate formula for the alpha calculation. This looks like this:
 默认情况下,合路器公式用于计算颜色的RGB和阿尔法组成部分。可选地,您可以指定一个单独的α的计算公式。这看起来像这样:
