@@ -2,8 +2,7 @@
 
 在计算基本顶点照明后，应用纹理.。在ShaderLab，这是通过使用SetTexture命令。
 
-Note: SetTexture commands have no effect when fragment programs are used; as in that case pixel operations are completely described in the shader. It is advisable to use programmable shaders these days instead of SetTexture commands.
-注意:SetTexture命令使用片段程序时没有影响;在这种情况下像素操作完全描述的材质。建议使用这些天可编程着色器代替SetTexture命令。
+注意：当片段程序使用时，SetTexture命令没有效果；。建议使用可编程着色器替代SetTexture命令。
 
 Fixed function texturing is the place to do old-style combiner effects. You can have multiple SetTexture commands inside a pass - all textures are applied in sequence, like layers in a painting program. SetTexture commands must be placed at the end of a Pass.
 固定函数变形的地方做老式组合器效果。可以有多个SetTexture命令在一个通过——所有纹理应用于序列,像层在绘画程序。SetTexture命令必须放置在一个通过。
