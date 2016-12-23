@@ -7,9 +7,10 @@
 Fixed function texturing is the place to do old-style combiner effects. You can have multiple SetTexture commands inside a pass - all textures are applied in sequence, like layers in a painting program. SetTexture commands must be placed at the end of a Pass.
 固定功能纹理用于做旧风格的组合效果。你可以在一个Pass中有多个SetTexture命令，所有纹理被顺序的应用，如绘图程序的层。SetTexture命令必须放在Pass的最后。
 
-Syntax
-SetTexture [TextureName] {Texture Block}
-
+语法：
+```
+    SetTexture [TextureName] {Texture Block}
+```
 Assigns a texture. TextureName must be defined as a texture property. How to apply the texture is defined inside the TextureBlock.
 分配一个纹理。TextureName必须被定义为一个纹理属性。如何应用在TextureBlock定义的纹理。
 The texture block controls how the texture is applied. Inside the texture block can be up to two commands: combine and constantColor.
