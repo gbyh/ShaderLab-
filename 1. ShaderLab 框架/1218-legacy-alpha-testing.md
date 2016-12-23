@@ -6,7 +6,7 @@ alpha测试是拒绝将像素写入屏幕的最后机会。
 
 在计算最终输出颜色后，颜色可以相对于固定值具有alpha值。如果测试失败，则像素不会写入显示器。
 
-Syntax
+####语法：
 AlphaTest Off
 
 Render all pixels (default) or…
