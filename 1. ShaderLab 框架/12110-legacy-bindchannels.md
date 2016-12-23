@@ -34,6 +34,7 @@ Details
 Unity places some restrictions on which sources can be mapped to which targets. Source and target must match for Vertex, Normal, Tangent and Color. Texture coordinates from the mesh (Texcoord and Texcoord1) can be mapped into texture coordinate targets (Texcoord for all texture stages, or TexcoordN for a specific stage).
 统一的地方一些限制源可以被映射到目标。源和目标必须匹配顶点,法线,切线和颜色。的纹理坐标网格(Texcoord和Texcoord1)可以映射到纹理坐标目标(Texcoord纹理阶段,或TexcoordN为一个特定的阶段)。
 
+
 BindChannels有两个典型的用例：
 
 		Shaders that take vertex colors into account.
