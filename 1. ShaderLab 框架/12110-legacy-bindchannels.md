@@ -13,8 +13,7 @@ bindchannels命令允许您指定顶点数据映射到图形硬件。
 BindChannels { Bind "source", target }
 ```
 
-Specifies that vertex data source maps to hardware target.
-数据源指定顶点映射到硬件的目标。
+指定顶点数据源映射到硬件目标。
 
 Source can be one of:
 		Vertex: vertex position
