@@ -24,8 +24,8 @@
 |combine src1 - src2|src1 减 src2。|
 |combine src1 lerp (src2) src3|使用src2的alpha值在src3和src1之间插值。注意，插值是相反的方向：当alpha是1的时候是src1，当alpha是0的时候使用src3。|
 |combine src1 * src2 + src3|src1 乘 scr2的alpha，然后加src3。|
-All the src properties can be either one of previous, constant, primary or texture.
-所有先前的src属性可以是一个,常数,主要或纹理。
+所有的src属性可以是previous、constant、primary或texture其中之一。
+
 		Previous is the the result of the previous SetTexture.	
 		Previous是SetTexture先前的结果。
 		Primary is the color from the lighting calculation or the vertex color if it is bound.
