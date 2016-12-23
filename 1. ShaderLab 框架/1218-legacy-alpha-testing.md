@@ -42,9 +42,7 @@ AlphaValue
 在透明物体上绘制凹形物体时，α测试非常重要。图形卡维护记录到屏幕上的每个像素的深度记录。如果一个新像素比已经渲染的像素更远，新像素就不会写入显示器。这意味着即使混合，对象也不会显示通过。
 
 ￼
-
-In this figure, the tree on the left is rendered using AlphaTest. Note how the pixels in it are either completely transparent or opaque. The center tree is rendered using only Alpha Blending - notice how transparent parts of nearby branches cover the distant leaves because of the depth buffer. The tree on the right is rendered using the last example shader - which implements a combination of blending and alpha testing to hide any artifacts.
-在这个图中,左边的树使用AlphaTest呈现。注意它的像素是完全透明或不透明的。中心树呈现只使用Alpha混合——注意透明部分附近的树枝覆盖遥远的树叶因为深度缓冲。右边的树呈现使用最后一个例子材质——实现混合和α测试的组合来隐藏任何工件。
+在这张图中，左边的树使用透明度测试。注意它的像素是完全透明的还是不透明的。中心树只使用alpha混合，注意附近分支的透明部分是如何覆盖远端叶子的，因为深度缓冲。右边的树使用最后一个示例着色器渲染，它实现了混合和alpha测试的组合，以隐藏任何伪影。
 
 Examples
 The simplest possible example, assign a texture with an alpha channel to it. The object will only be visible where alpha is greater than 0.5
