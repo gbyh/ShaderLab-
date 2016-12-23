@@ -31,12 +31,13 @@ Primary 是从照明计算或顶点颜色的颜色。
 Texture 纹理是在SetTexture TextureName指定纹理的颜色（见上图）。
 Constant 是ConstantColor指定的颜色。
 		
-Modifiers:
-修饰符
-		The formulas specified above can optionally be followed by the keywords Double or Quad to make the resulting color 2x or 4x as bright.
-		All the src properties, except lerp argument, can optionally be preceded by one - to make the resulting color negated.
-		All the src properties can be followed by alpha to take only the alpha channel.
-		所有的src属性只能是紧随其后的是αalpha通道。
+修饰符：
+
+上述公式可由Double或Quad使得颜色亮度2倍或4倍。
+	
+所有的src属性的值，除了lerp，可以选择之前一使颜色的否定。	
+
+所有的src属性可以跟一个alpha用来只使用alpha通道。 
 		
 Texture block constantColor command
 ConstantColor color: Defines a constant color that can be used in the combine command.
