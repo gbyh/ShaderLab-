@@ -6,8 +6,7 @@ bindchannels命令允许您指定顶点数据映射到图形硬件。
 
 默认情况下，Unity为你绘制绑定，但在某些情况下，你希望使用自定义绑定。
 
-For example you could map the primary UV set to be used in the first texture stage and the secondary UV set to be used in the second texture stage; or tell the hardware that vertex colors should be taken into account.
-例如可以地图主紫外线组在第一次使用纹理阶段和二级紫外线组中使用第二个纹理阶段;或者告诉硬件顶点颜色应该考虑。
+例如，你可以在第一个纹理阶段和在第二个纹理阶段使用的二次UV集绘制主UV集，或者告诉硬件顶点颜色应该被考虑在内。
 
 Syntax
 BindChannels { Bind "source", target }
