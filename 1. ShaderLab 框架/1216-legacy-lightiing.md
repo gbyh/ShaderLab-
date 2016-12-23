@@ -11,7 +11,7 @@ Note: Material/Lighting commands have no effect when vertex programs are used; a
 注意：当顶点程序使用时，材质/灯光命令没有影响；在这种情况下，所有计算都在着色器中完全描述。建议使用可编程着色器而不是传统的顶点照明。对于这些你不使用任何这里所描述的命令，而是定义自己的顶点和片段程序，完成所有的照明，纹理和任何其他的。
 
 Vertex Coloring & Lighting is the first effect to be calculated for any rendered geometry. It operates on the vertex level, and calculates the base color that is used before textures are applied.
-顶点着色和照明是第一个为任何呈现几何效应计算。它作用于顶点水平,计算出基本颜色纹理应用之前使用。
+顶点着色和照明是任何渲染几何计算的第一个效果。它在顶点级别上运行，并计算在纹理应用之前使用的基色.。
 
 Syntax
 The top level commands control whether to use fixed function lighting or not, and some configuration options. The main setup is in the Material Block, detailed further below.
