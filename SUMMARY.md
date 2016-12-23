@@ -12,7 +12,7 @@
                 * [1.2.1.4 Stencil](1. ShaderLab 框架/1214-stencil.md)
                 * [1.2.1.5 Name](1. ShaderLab 框架/1215-name.md)
                 * [1.2.1.6 Legacy Lightiing](1. ShaderLab 框架/1216-legacy-lightiing.md)
-                * 1.2.1.7 Legacy Texture Combiners
+                * [1.2.1.7 Legacy Texture Combiners](1. ShaderLab 框架/1217-legacy-texture-combiners.md)
                 * 1.2.1.8 Legacy Alpha Testing
                 * 1.2.1.9 Legacy Fog
                 * 1.2.1.10 Legacy BindChannels
