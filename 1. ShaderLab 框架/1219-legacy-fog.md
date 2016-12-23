@@ -33,11 +33,10 @@ Density FloatValue
 ```
 Range
 Range FloatValue, FloatValue
-
 设置线性雾的 near & far 范围。
 ```
 
-设置线性雾的 near & far 范围。
+
 
 Details
 Default fog settings are based on settings in the Lighting Window: fog mode is either Exp2 or Off; density & color taken from settings as well.
