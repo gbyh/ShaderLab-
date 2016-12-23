@@ -11,16 +11,18 @@
 
 顶层命令控制是否使用固定功能的灯光，以及一些配置选项。主要设置在材料块，进一步详细如下。
 
+**Color**
+
 ```
-Color
-Color color
+    Color color
 ```
 将对象设置为固体颜色。颜色是四RGBA值在括号，或颜色属性的名称在方括号。
 
-Material
+**Material**
+```
 Material {Material Block}
-The Material block is used to define the material properties of the object.
-材料块用于定义材料属性的对象。
+```
+材质块用于定义对象的材质属性。
 
 Lighting
 Lighting On | Off
