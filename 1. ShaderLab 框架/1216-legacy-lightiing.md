@@ -30,10 +30,11 @@
 ```
 对于在材质块中定义的设置有任何影响，您必须启用灯光与灯光的命令。如果灯光是关闭的，颜色是直接从颜色命令。
 
-SeparateSpecular
+**SeparateSpecular**
+```
 SeparateSpecular On | Off
-This command makes specular lighting be added to the end of the shader pass, so specular lighting is unaffected by texturing. Only has effect when Lighting On is used.
-这个命令让镜面照明被添加到结束的材质,所以反射光是受变形影响。只有当照明使用效果。
+```
+此命令使镜面照明添加到着色通道的末端，所以镜面照明不受纹理的影响.。只有在使用照明时才有效果。
 
 ColorMaterial
 ColorMaterial AmbientAndDiffuse | Emission
