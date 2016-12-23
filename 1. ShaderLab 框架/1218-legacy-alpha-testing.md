@@ -16,10 +16,9 @@ AlphaTest Off
 
 设置alpha测试只渲染alpha值在一定范围内的像素。
 
-Comparison
-比较
-Comparison is one of the following words:
-比较下列单词:
+
+####比较
+比较是下列单词之一：
 
 Greater
 Only render pixels whose alpha is greater than AlphaValue.
