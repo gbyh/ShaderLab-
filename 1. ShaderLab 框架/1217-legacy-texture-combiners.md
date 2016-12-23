@@ -102,8 +102,8 @@ Shader "Examples/2 Alpha Blended Textures" {
 
 **Alpha控制自发光**
 
-这个着色器使用的_maintex alpha分量来决定在哪里使用照明。它通过将纹理应用到两个阶段，在第一阶段中，纹理的alpha值被用来在顶点颜色和实心颜色之间进行混合。在第二阶段，纹理的RGB值乘以。
-
+这个着色器使用的_maintex alpha分量来决定在哪里使用照明。它通过将纹理应用到两个阶段，在第一阶段中，纹理的alpha值被用来在顶点颜色和实心颜色之间进行混合。在第二阶段，乘以纹理的RGB值。
+```
 Shader "Examples/Self-Illumination" {
     Properties {
         _MainTex ("Base (RGB) Self-Illumination (A)", 2D) = "white" {}
@@ -129,7 +129,7 @@ Shader "Examples/Self-Illumination" {
         }
     }
 }
-
+```
 
 We can do something else for free here, though; instead of blending to solid white, we can add a self-illumination color and blend to that. Note the use of ConstantColor to get a _SolidColor from the properties into the texture blending.
 我们可以免费做其他的事情,尽管;而不是混合纯白色,我们可以添加一个自发光的颜色和混合。注意使用ConstantColor得到_SolidColor从性质到纹理混合。
