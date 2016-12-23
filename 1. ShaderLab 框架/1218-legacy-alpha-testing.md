@@ -32,7 +32,9 @@ AlphaTest Off
 |Never|不渲染任何像素。|
 
 AlphaValue
+
 介于1和0之间的浮点数。这也可以是一个变量引用类型或范围的属性，在这种情况下，应该使用标准的方括号（[变量名]）。
+
 ([VariableName])。
 
 Details
