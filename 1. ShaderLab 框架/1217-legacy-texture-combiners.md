@@ -163,8 +163,7 @@ Shader "Examples/Self-Illumination 2" {
 }
 ```
 
-And finally, we take all the lighting properties of the vertexlit shader and pull that in:
-最后，我们把所有的照明性能的顶点着色器和拉：
+在顶点照明着色器中使用所有的照明属性：
 ```
 Shader "Examples/Self-Illumination 3" {
     Properties {
