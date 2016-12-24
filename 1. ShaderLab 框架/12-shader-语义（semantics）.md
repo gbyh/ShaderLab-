@@ -182,7 +182,7 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
 ####Face orientation: VFACE（面向）
 
 
-
+一个片段着色器可以接收一个变量，该变量指示被渲染的表面是否面向相机，或者面向相机.。这是有用的，当渲染几何，应该是可见的双方-经常使用的叶子和类似的薄对象。vface语义的输入变量将包含前置三角形的积极价值，和背面的负价值。
 
 
 
