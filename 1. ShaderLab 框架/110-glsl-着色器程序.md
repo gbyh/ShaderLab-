@@ -16,12 +16,12 @@ GLSL程序片段被写入在GLSLPROGRAM和ENDGLSL关键字之间。
     UnityCG.glslinc
 ```
 
-Vertex shader inputs come from predefined GLSL variables (gl_Vertex, gl_MultiTexCoord0, …) or are user defined attributes. Usually only the tangent vector needs a user defined attribute:
 顶点着色器的输入来自预定义GLSL变量(gl_Vertex、gl_MultiTexCoord0…)或用户定义的属性。切向量通常只需要一个用户定义的属性:
 
-attribute vec4 Tangent;
+```
+    attribute vec4 Tangent;
+```
 
-Data from vertex to fragment programs is passed through varying variables, for example:
 数据从顶点到片段程序通过不同的变量,例如:
 
 varying vec3 lightDir; // vertex shader computes this, fragment shader uses this
