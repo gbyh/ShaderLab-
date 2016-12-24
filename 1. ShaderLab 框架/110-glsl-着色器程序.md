@@ -2,11 +2,9 @@
 
 除了使用Cg/HSL着色器程序，OpenGL着色语言（GLSL着色器可以直接写）。
 
-However, use of raw GLSL is only recommended for testing, or when you know you will only target Mac OS X, OpenGL ES 2.0 mobile devices or Linux. In all normal cases, Unity will cross-compile Cg/HLSL into optimized GLSL when needed.
 然而,使用原始GLSL只是推荐给测试,或者当你知道你只会针对Mac OS X,OpenGL ES 2.0移动设备或Linux。在正常情况下,Unity将保存Cg / HLSL优化GLSL时必要的。
 
-GLSL snippets
-GLSL片段
+####GLSL片段
 
 GLSL program snippets are written between GLSLPROGRAM and ENDGLSL keywords.
 GLSL GLSLPROGRAM和编写程序片段ENDGLSL关键词。
