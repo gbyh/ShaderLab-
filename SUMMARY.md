@@ -16,7 +16,7 @@
                 * [1.2.1.8 Legacy Alpha Testing](1. ShaderLab 框架/1218-legacy-alpha-testing.md)
                 * [1.2.1.9 Legacy Fog](1. ShaderLab 框架/1219-legacy-fog.md)
                 * [1.2.1.10 Legacy BindChannels](1. ShaderLab 框架/12110-legacy-bindchannels.md)
-            * 1.2.2 UsePass
+            * [1.2.2 UsePass](1. ShaderLab 框架/122-usepass.md)
             * 1.2.3 GrabPass
             * 1.2.4 SubShader Tags
         * 1.3 回滚语句（Fallback）
