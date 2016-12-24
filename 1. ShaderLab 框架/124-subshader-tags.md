@@ -16,9 +16,8 @@
 Unity除了内置标签,你可以使用你自己的标签和使用Material.GetTag函数查询它们。
 
 Rendering Order - Queue tag
-You can determine in which order your objects are drawn using the Queue tag. A Shader decides which render queue its objects belong to, this way any Transparent shaders make sure they are drawn after all opaque objects and so on.
-您可以确定订单对象的使用队列标记。材质决定渲染队列对象所属,这样任何透明着色器确保他们在不透明的物体之后被绘制等等。
-可以使用队列标记确定对象的顺序。一个着色器决定对象属于的渲染队列，这样任何透明材质确保他们得到所有不透明的物体等。
+
+可以使用队列标记确定对象的顺序。一个着色器决定对象属于的渲染队列，这样任何透明着色器确保他们在不透明的物体之后被绘制等等。
 
 There are four pre-defined render queues, but there can be more queues in between the predefined ones. The predefined queues are:
 有四个预定义的渲染队列,但可以有更多的队列在预定义的。预定义的队列:
