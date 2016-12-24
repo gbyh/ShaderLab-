@@ -27,7 +27,7 @@
         * [1.2 着色器语义](1. ShaderLab 框架/12-shader-语义（semantics）.md)
         * [1.3 在 Cg\/HLSL 中访问着色器属性](1. ShaderLab 框架/13-在-cghlsl-中访问-shader-属性.md)
         * [1.4 为顶点程序提供顶点数据](1. ShaderLab 框架/14-为顶点程序提供顶点数据.md)
-        * 1.5 内置 Shader 包含的文件
+        * [1.5 内置 Shader 包含的文件](1. ShaderLab 框架/15-内置-shader-包含的文件.md)
         * [1.6 预定义着色器预处理宏](1. ShaderLab 框架/16-预定义着色器预处理宏.md)
         * [1.7 内置的辅助功能](1. ShaderLab 框架/17-内置的辅助功能.md)
         * [1.8 内置的着色器变量](1. ShaderLab 框架/18-内置的着色器变量.md)
