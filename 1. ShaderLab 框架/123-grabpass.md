@@ -3,11 +3,11 @@
 GrabPass是一个特殊的passtype -它抓住对象所在的屏幕即将进入一个纹理的内容。这种纹理可以在后续的传递中使用先进的基于图像的效果。
 
 ####语法：
-The GrabPass belongs inside a subshader. It can take two forms:
+
 GrabPass所属subshader。它可以采取两种形式:
 
 		Just GrabPass { } will grab current screen contents into a texture. The texture can be accessed in further passes by _GrabTexture name. Note: this form of grab pass will do the expensive screen grabbing operation for each object that uses it!
-		只是GrabPass { }将抓住当前屏幕内容结构。纹理可以访问进一步经过_GrabTexture名字。注意:这种形式的抓住通过将每个对象的昂贵的屏幕抓取操作,使用它!
+		只是GrabPass {}将抓取当前屏幕内容到一个纹理。纹理可以在之后的Pass中通过_grabtexture名称使用。注：这种形式抓取的pass将对每个对象做昂贵的屏幕抓取操作！
 		GrabPass { "TextureName" } will grab screen contents into a texture, but will only do that once per frame for the first object that uses the given texture name. The texture can be accessed in further passes by the given texture name. This is a more performant way when you have multiple objects using grab pass in the scene.
 		GrabPass {“TextureName”}将抓取屏幕内容到一个纹理,但只会做,一旦第一对象,每帧使用给定的结构名称。纹理可以访问进一步经过给定的结构名称。这是一个更好的性能方法当你有多个对象在现场使用抓住通过。
 		
