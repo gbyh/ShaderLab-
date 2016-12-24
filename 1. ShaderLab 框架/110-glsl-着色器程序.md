@@ -24,8 +24,9 @@ GLSL程序片段被写入在GLSLPROGRAM和ENDGLSL关键字之间。
 
 数据从顶点到片段程序通过不同的变量,例如:
 
+```
 varying vec3 lightDir; // vertex shader computes this, fragment shader uses this
-
+```
 
 
 
