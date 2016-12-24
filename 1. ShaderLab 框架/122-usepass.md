@@ -1,5 +1,5 @@
 ##UsePass
-UsePass 命令使用另一个着色器中的命名为Name的pass。
+UsePass 命令使用另一个着色器中命名为Name的pass。
 
 Syntax
 UsePass "Shader/Name"
