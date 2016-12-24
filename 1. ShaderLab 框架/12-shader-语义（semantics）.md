@@ -88,10 +88,10 @@ SV_Target1，SV_Target2，等：这些额外的颜色由着色器编写。这是
 
 许多现代GPU真的不在乎这些变量的语义；但是一些老的系统（最值得注意的是，Shader Model 2的GPU在Direct3D 9）有关于语义的特殊规则：
 
-```
-TEXCOORD0, TEXCOORD1 etc are used to indicate arbitrary high precision data such as texture coordinates and positions.
-COLOR0 and COLOR1 semantics on vertex outputs and fragment inputs are for low-precision, 0–1 range data (like simple color values).
-```
+
+TEXCOORD0 TEXCOORD1等，用来表示任意高精度数据如纹理坐标和位置。
+
+Color0和COLOR1语义在顶点输出和片段输入是低精度的，0–1范围内的数据（如简单的颜色值）。
 
 
 
