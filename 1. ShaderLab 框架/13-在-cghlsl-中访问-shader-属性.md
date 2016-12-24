@@ -26,7 +26,7 @@ Cg / HLSL也可以接受uniform的关键字,但没有必要:
 	uniform float4 _MyColor;
 
 Property types in ShaderLab map to Cg/HLSL variable types this way:
-属性类型在ShaderLab映射到Cg / HLSL变量类型：
+在ShaderLab的属性类型通过这种方式映射到Cg / HLSL变量类型：
 
 		Color and Vector properties map to float4, half4 or fixed4 variables.
 		Range and Float properties map to float, half or fixed variables.
