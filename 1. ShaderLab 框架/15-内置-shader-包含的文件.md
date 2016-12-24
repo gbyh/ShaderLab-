@@ -22,17 +22,10 @@ Unity的着色器包含文件的用.cginc扩展,内置的是:
     Lighting.cginc - 标准的表面材质照明模型;自动包括当你写表面着色器。
     TerrainEngine.cginc - 辅助函数的地形和植被着色器。
 
-These files are found inside Unity application ({unity install path}/Data/CGIncludes/UnityCG.cginc on Windows,
-这些文件在里面Unity应用程序({统一安装路径} /数据/ CGIncludes / UnityCG。cginc在Windows上,
-/Applications/Unity/Unity.app/Contents/CGIncludes/UnityCG.cginc on Mac), if you want to take a look at what exactly is done in any of the helper code.
-如果你想看看究竟是什么做的辅助代码。
-
 HLSLSupport.cginc
-This file is automatically included when compiling shaders. It declares various preprocessor macros to aid in multi-platform shader development.
 这个文件是编译时自动包括着色器。它声明了各种预处理器宏在多平台材质发展援助。
 
 UnityShaderVariables.cginc
-This file is automatically included when compiling shaders. It declares various built-in global variables that are commonly used in shaders.
 这个文件是编译时自动包括着色器。它宣称各种内置的着色器中常用的全局变量。
 
 UnityCG.cginc
