@@ -4,7 +4,7 @@ In Unity, shader programs are written in a variant of HLSL language (also called
 
 Currently, for maximum portability between different platforms, writing in DX9-style HLSL (e.g. use DX9 style sampler2D and tex2D for texture sampling instead of DX10 style Texture2D, SamplerState and tex.Sample).
 
-Shader Compilers
+####Shader Compilers
 
 Internally, different shader compilers are used for shader program compilation:
 
