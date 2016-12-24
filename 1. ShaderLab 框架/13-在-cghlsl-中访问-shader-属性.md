@@ -28,7 +28,7 @@ Cg / HLSL也可以接受uniform的关键字,但没有必要:
 Property types in ShaderLab map to Cg/HLSL variable types this way:
 在ShaderLab的属性类型通过这种方式映射到Cg / HLSL变量类型：
 
-		Color and Vector properties map to float4, half4 or fixed4 variables.
-		Range and Float properties map to float, half or fixed variables.
-		Texture properties map to sampler2D variables for regular (2D) textures; Cubemaps map to samplerCUBE; and 3D textures map to sampler3D.
+		Color 和 Vector 属性用 float4, half4 或者 fixed4 变量。
+		Range 和 Float 属性用 float, half 或者 fixed 变量。
+		Texture 属性用 sampler2D 变量 for 规则的 (2D) 纹理; Cubemaps 用 samplerCUBE; 以及 3D 纹理用 sampler3D.
 
