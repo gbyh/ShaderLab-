@@ -38,3 +38,5 @@
         }
     }
 ```
+
+![](/assets/SemanticsShowUVs.png)
