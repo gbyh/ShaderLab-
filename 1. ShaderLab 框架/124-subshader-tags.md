@@ -61,7 +61,6 @@ Shader "Transparent Queue Example"
 
 队列2500（“Geometry + 500”）被认为“不透明”和优化为最佳性能对象的绘制顺序。更高的渲染队列被认为是“透明对象”和对象根据距离排序，开始渲染从最远到最接近的。天空盒被绘制在所有不透明和透明物体之间。
 
-
 RenderType tag
 RenderType tag categorizes shaders into several predefined groups, e.g. is is an opaque shader, or an alpha-tested shader etc. This is used by Shader Replacement and in some cases used to produce camera’s depth texture.
 RenderType标签分类着色器分成几个预定义组,例如,是一个不透明的材质,或一个alpha-tested材质等。这是材质替换和在某些情况下使用的用于生产相机的深度纹理。
