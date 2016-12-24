@@ -325,6 +325,7 @@ Phong镶嵌修改细分面位置，这样产生的表面网格法线点如下。
 
 Unity的表面着色器可以使用tessphong自动计算Phong镶嵌：variablename汇编指令。下面是一个例子着色：
 
+```
 Shader "Phong Tessellation" {
         Properties {
             _EdgeLength ("Edge length", Range(2,50)) = 5
@@ -373,13 +374,12 @@ Shader "Phong Tessellation" {
         }
         FallBack "Diffuse"
     }
+```
 
 
+这是间定期材质比较（第一排）和一个使用Phong Tessellation（底部）。你可以看到，即使没有任何位移映射，表面变得更圆。
 
-Here’s a comparison between regular shader (top row) and one that uses Phong tessellation (bottom row). You can see that even without any displacement mapping, the surface becomes more round.
-这是一个比较常规的材质(上面一行),另一个使用冯氏镶嵌(底下一行)。您可以看到,即使没有任何位移映射,表面变得更圆。
-
-
+![](/assets/SurfaceShaderPhongTess.png)
 ￼
 
 
