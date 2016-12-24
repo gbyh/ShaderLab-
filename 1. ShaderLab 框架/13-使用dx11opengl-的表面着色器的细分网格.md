@@ -306,16 +306,13 @@ Shader "Tessellation Sample" {
     }
 ```
 
-Here again, we just call UnityEdgeLengthBasedTess function from Tessellation.cginc to do all the actual work.
-在这里,我们调用UnityEdgeLengthBasedTess函数从镶嵌。cginc做实际的工作。
 
+在这里，我们称unityedgelengthbasedtess功能Tessellation.cginc做实际工作。
+
+![](/assets/SurfaceShaderTess4-edgelength.png)
 
 ￼
-
-
-
-For performance reasons, it’s advisable to call UnityEdgeLengthBasedTessCull function instead, which will do patch frustum culling. This makes the shader a bit more expensive, but saves a lot of GPU work for parts of meshes that are outside of camera’s view.
-由于性能的原因,建议调用UnityEdgeLengthBasedTessCull函数相反,它将做补丁截头扑杀。这使得材质更贵,但是可以节省大量GPU的工作部件的网格之外的相机的视图。
+出于性能原因，叫unityedgelengthbasedtesscull功能相反它是可取的，它会做补丁的裁剪。这使得着色有点贵，但节省了大量GPU工作部分的网格，在相机的视野。
 
 
 
