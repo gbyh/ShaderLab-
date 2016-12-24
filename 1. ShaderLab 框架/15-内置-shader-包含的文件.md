@@ -12,20 +12,15 @@ ENDCG
 ```
 
 Shader include files in Unity are with .cginc extension, and the built-in ones are:
-Unity的材质包含文件。cginc扩展,内置的是:
+Unity的着色器包含文件的用.cginc扩展,内置的是:
 
-		HLSLSupport.cginc - (automatically included) Helper macros and definitions for cross-platform shader compilation.
-		(包括自动)助手为跨平台的着色器编译宏和定义。
-		UnityShaderVariables.cginc - (automatically included) Commonly used global variables.
-		(包括自动)常用的全局变量。
-		UnityCG.cginc - commonly used helper functions.
-		常用的辅助函数。
-		AutoLight.cginc - lighting & shadowing functionality, e.g. surface shaders use this file internally.
-		照明&跟踪功能,如表面着色器在内部使用这个文件。
-		Lighting.cginc - standard surface shader lighting models; automatically included when you’re writing surface shaders.
-		标准的表面材质照明模型;自动包括当你写表面着色器。
-		TerrainEngine.cginc - helper functions for Terrain & Vegetation shaders.
-		TerrainEngine。cginc——辅助函数的地形和植被着色器。
+    HLSLSupport.cginc - (包括自动)跨平台着色器编译的自动宏和定义。
+		
+    UnityShaderVariables.cginc - (包括自动) 常用的全局变量。
+    UnityCG.cginc - 常用的辅助函数。
+    AutoLight.cginc - 照明&跟踪功能,如表面着色器在内部使用这个文件。
+    Lighting.cginc - 标准的表面材质照明模型;自动包括当你写表面着色器。
+    TerrainEngine.cginc - 辅助函数的地形和植被着色器。
 
 These files are found inside Unity application ({unity install path}/Data/CGIncludes/UnityCG.cginc on Windows,
 这些文件在里面Unity应用程序({统一安装路径} /数据/ CGIncludes / UnityCG。cginc在Windows上,
