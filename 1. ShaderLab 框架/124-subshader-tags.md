@@ -70,16 +70,15 @@ RenderType标签分类着色器分成几个预定义组,例如,是一个不透�
 
 当Draw Call Batching被使用的时候一些着色器不工作，那是因为批处理转换所有的多边形到世界空间，所以物体空间丢失。
 
-DisableBatching tag can be used to incidate that. There are three possible values: “True” (always disables batching for this shader), “False” (does not disable batching; this is default) and “LODFading” (disable batching when LOD fading is active; mostly used on trees).
-DisableBatching标记可用于incidate。有三个可能的值:“真正的”(总是禁用批处理这种材质),“假”(不会禁用批处理;这是缺省值)和“LODFading”(LOD衰落时禁用批处理活动,主要是用于树)。
+DisableBatching标记可用于incidate。有三个可能的值：“True”(总是禁用批处理这种材质)，“False”(不会禁用批处理；这是缺省值)和“LODFading”(LOD衰落时禁用批处理活动，主要是用于树)。
 
-ForceNoShadowCasting tag
-If ForceNoShadowCasting tag is given and has a value of “True”, then an object that is rendered using this subshader will never cast shadows. This is mostly useful when you are using shader replacement on transparent objects and you do not wont to inherit a shadow pass from another subshader.
-如果ForceNoShadowCasting标记的值为“True”,然后使用这个subshader呈现的对象永远不会阴影。这是很有用的,当你使用材质替换透明的对象和你不不会继承一个影子从另一个subshader。
+####ForceNoShadowCasting tag
 
-IgnoreProjector tag
-If IgnoreProjector tag is given and has a value of “True”, then an object that uses this shader will not be affected by Projectors. This is mostly useful on semitransparent objects, because there is no good way for Projectors to affect them.
-如果IgnoreProjector标记的值为“True”,然后一个对象,使用这种材质投影仪将不受影响。这主要是有用的半透明的对象,因为没有投影仪影响他们的好方法。
+如果ForceNoShadowCasting标记的值为“True”，然后使用这个subshader呈现的对象永远不会阴影。这是很有用的，当你使用材质替换透明的对象和你不会从另一个subshader继承一个影子。
+
+####IgnoreProjector tag
+
+如果IgnoreProjector标记的值为“True”,然后一个对象,使用这种材质投影仪将不受影响。这主要是有用的半透明的对象，因为没有投影仪有影响他们的好方法。
 
 CanUseSpriteAtlas tag
 Set CanUseSpriteAtlas tag to “False” if the shader is meant for sprites, and will not work when they are packed into atlases (see Sprite Packer).
