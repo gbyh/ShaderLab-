@@ -238,12 +238,11 @@ Shader "Tessellation Sample" {
 
 ####基于边缘的长度的镶嵌
 
-Purely distance based tessellation is good only when triangle sizes are quite similar. In the image above, you can see that objects that have small triangles are tessellated too much, while objects that have large triangles aren’t tessellated enough.
 纯粹的基于距离的镶嵌好只有当三角形大小非常相似。在上面的图片中,你可以看到有小三角形的对象是完全嵌合太多,虽然有大量三角形不够完全嵌合的对象。
-Instead, tessellation levels could be computed based on triangle edge length on the screen - the longer the edge, the larger tessellation factor should be applied.
-相反,镶嵌水平可以计算基于三角形边缘长度在屏幕上边缘的时间越长,更大的镶嵌因素应该被应用。
 
+相反，镶嵌的水平可以基于三角形边长在屏幕的长边计算，应采用较大的细分因子。
 
+```
 Shader "Tessellation Sample" {
         Properties {
             _EdgeLength ("Edge length", Range(2,50)) = 15
@@ -305,6 +304,7 @@ Shader "Tessellation Sample" {
         }
         FallBack "Diffuse"
     }
+```
 
 Here again, we just call UnityEdgeLengthBasedTess function from Tessellation.cginc to do all the actual work.
 在这里,我们调用UnityEdgeLengthBasedTess函数从镶嵌。cginc做实际的工作。
