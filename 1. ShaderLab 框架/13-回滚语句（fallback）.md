@@ -12,6 +12,7 @@ After all Subshaders a Fallback can be defined. It basically says “if none of 
 ```
     Fallback Off
 ```
+
 Explicitly state that there is no fallback and no warning should be printed, even if no subshaders can run on this hardware.
 显式地声明,没有后退,没有警告应打印,即使没有subshaders能在这个硬件上运行。
 
