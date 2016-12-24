@@ -112,7 +112,7 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
 
 片段着色器可以接收被呈现为一个特殊的VPOS语义的像素位置。此功能只存在从Shader Model 3，所以着色器需要有 `#pragma target 3.0` 汇编指令。
 
-
+在不同的平台上的屏幕空间位置输入基础类型不同，所以为了获得最大的可移植性是使用UNITY_VPOS_TYPE型（它将float4在大多数平台上，并在Direct3D 9 float2）。
 
 
 
