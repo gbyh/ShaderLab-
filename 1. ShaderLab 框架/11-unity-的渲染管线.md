@@ -23,7 +23,7 @@ If forward rendering is used, but a shader does not have forward-suitable passes
 
 Deferred pass renders all information needed for lighting (in built-in shaders: diffuse color, specular color, smoothness, world space normal, emission). It also adds lightmaps, reflection probes and ambient lighting into the emission channel. See Deferred Shading for details.
 
-Legacy Deferred Lighting path
+####Legacy Deferred Lighting path
 
 PrepassBase pass renders normals & specular exponent; PrepassFinal pass renders final color by combining textures, lighting & emissive material properties. All regular in-scene lighting is done separately in screen-space. See Deferred Lighting for details.
 
