@@ -231,9 +231,9 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
 
 ####Vertex ID: SV_VertexID
 
+顶点着色器可以接收一个变量，该变量具有“顶点数”作为无符号整数.。这是非常有用的当你想获取额外的每从纹理或computebuffers顶点数据。
 
-
-
+此功能只存在于DX10（Shader Model 4）和glcore / OpenGL ES 3，所以着色器需要有 `#pragma target 3.5` 汇编指令。
 
 
 
