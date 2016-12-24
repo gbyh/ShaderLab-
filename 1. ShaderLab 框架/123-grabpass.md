@@ -2,7 +2,7 @@
 
 GrabPass是一个特殊的passtype -它抓住对象所在的屏幕即将进入一个纹理的内容。这种纹理可以在后续的传递中使用先进的基于图像的效果。
 
-Syntax
+####语法：
 The GrabPass belongs inside a subshader. It can take two forms:
 GrabPass所属subshader。它可以采取两种形式:
 
