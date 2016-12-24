@@ -48,8 +48,7 @@ UnityCG.cginc
     float DecodeFloatRGBA (float4 enc) - 解码RGBA颜色到一个浮点数。
     同样,float2 EncodeFloatRG(v)浮动,浮动DecodeFloatRG(float2 enc)使用两个颜色通道。
     float2 EncodeViewNormalStereo (float3 n) - 编码正常视图空间中两个数字0 . .1范围。
-    float3 DecodeViewNormalStereo (float4 enc4) - decodes view space normal from enc4.xy.
-    从enc4.xy解码视图法线空间。
+    float3 DecodeViewNormalStereo (float4 enc4) - 从enc4.xy解码视图法线空间。
 
 Forward rendering helper functions in UnityCG.cginc
 前向渲染辅助函数在UnityCG.cginc
