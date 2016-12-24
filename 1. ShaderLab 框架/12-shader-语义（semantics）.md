@@ -96,4 +96,22 @@ Color0和COLOR1语义在顶点输出和片段输入是低精度的，0–1范围
 最好的跨平台支持，顶点输出和片段输入如TEXCOORDn语义。
 
 ####Interpolator count limits
+有限制多少插值变量可用于总传递信息从顶点到片段着色器。极限取决于平台和GPU，和一般原则：
+
+```
+Up to 8 interpolators: OpenGL ES 2.0 (iOS/Android), Direct3D 11 9.x level (Windows Phone) and Direct3 9 shader model 2.0 (old PCs). Since the interpolator count is limited, but each interpolator can be a 4-component vector, some shaders pack things together to stay within limits. For example, two texture coordinates can be passed in one float4 variable (.xy for one coordinate, .zw for the second coordinate).
+Up to 10 interpolators: Direct3D 9 shader model 3.0 (#pragma target 3.0).
+Up to 16 interpolators: OpenGL ES 3.0 (iOS/Android), Metal (iOS).
+Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
+```
+
+
+
+
+
+
+
+
+
+
 
