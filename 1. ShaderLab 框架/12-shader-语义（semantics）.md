@@ -68,7 +68,7 @@
 
 从片段着色器返回结构主要是用于着色，不只是返回一个单一的颜色。由片段着色器输出支持的附加语义如下。
 
-
-
+####SV_TargetN: Multiple render targets
+sv_target1，sv_target2，等：这些额外的颜色由着色器编写。这是用在渲染成多个渲染目标一次（称为多个渲染目标的渲染技术，或MRT）。SV_Target0是SV_Target相同。
 
 
