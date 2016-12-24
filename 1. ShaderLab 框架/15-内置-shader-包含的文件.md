@@ -53,7 +53,7 @@ UnityCG.cginc
 ####在UnityCG.cginc中的前向渲染辅助函数
 
 These functions are only useful when using forward rendering (ForwardBase or ForwardAdd pass types).
-这些函数使用向前渲染时只有有用(ForwardBase或ForwardAdd通过类型)。
+这些函数使用向前渲染时只有有用(ForwardBase或ForwardAdd Pass类型)。
 
     float3 WorldSpaceLightDir (float4 v) - 计算世界空间方向(非标准化),给定对象空间顶点位置。
     float3 ObjSpaceLightDir (float4 v) - 计算对象空间方向(非标准化),给定对象空间顶点位置。
