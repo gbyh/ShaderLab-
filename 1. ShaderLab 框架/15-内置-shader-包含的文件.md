@@ -29,8 +29,7 @@ UnityShaderVariables.cginc
 这个文件是编译时自动包括着色器。它宣称各种内置的着色器中常用的全局变量。
 
 UnityCG.cginc
-This file is often included in Unity shaders to bring in many helper functions.
-这个文件通常是包含在统一着色器将在许多辅助功能。
+这个文件通常是包含在Unity着色器将有许多辅助功能。
 
 Data structures in UnityCG.cginc
 
