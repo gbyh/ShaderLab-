@@ -1,6 +1,5 @@
 ##内置着色器包含的文件
 
-Unity contains several files that can be used by your shader programs to bring in predefined variables and helper functions. This is done by the standard #include directive, e.g.:
 Unity包含多个文件，这些文件可以被着色器程序使用，以提供预定义的变量和辅助函数。这是标准的#include指令，例如：
 
 ```
