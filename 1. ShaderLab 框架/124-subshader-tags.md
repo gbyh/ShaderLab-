@@ -20,14 +20,13 @@ Rendering Order - Queue tag
 可以使用队列标记确定对象的顺序。一个着色器决定对象属于的渲染队列，这样任何透明着色器确保他们在不透明的物体之后被绘制等等。
 
 有四个预定义的渲染队列，但可以有更多的队列之间的预定义的。预定义的队列是：
-
-Background - 此渲染队列在任何其他人之前呈现。
-
-Geometry (default) - 这是用于大多数对象。不透明的几何体使用此队列。
+|队列|说明|
+|:--|:--|
+|Background|此渲染队列在任何其他人之前呈现。|
+|Geometry (default)|这是用于大多数对象。不透明的几何体使用此队列。|
+|AlphaTest|alpha test的几何结构使用此队列。这是一个单独的队列从几何之一，因为它是更有效地渲染alpha test对象后，所有不透明的绘制。|
+|Transparent|该渲染队列渲染几何和透明度测试后，从后到前的顺序。什么alpha混合（即着色器，不写入深度缓冲）应该去这里（玻璃、粒子效果）。|
 		
-AlphaTest - alpha tested geometry uses this queue. It’s a separate queue from Geometry one since it’s more efficient to render alpha-tested objects after all solid ones are drawn.
-		α测试几何使用此队列。从几何的一个一个单独的队列,因为它更高效的渲染alpha-tested物体毕竟固体的。
-		Transparent - this render queue is rendered after Geometry and AlphaTest, in back-to-front order. Anything alpha-blended (i.e. shaders that don’t write to depth buffer) should go here (glass, particle effects).
 		这个渲染队列呈现几何和AlphaTest后,前后颠倒的顺序。阿尔法混合的东西(即着色器,不要写深度缓冲)应该在这里(玻璃、粒子效果)。
 		Overlay - this render queue is meant for overlay effects. Anything rendered last should go here (e.g. lens flares).
 		这个渲染队列是用来覆盖效果。任何最后应该呈现(如镜头耀斑)。
