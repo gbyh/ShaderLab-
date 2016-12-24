@@ -5,11 +5,11 @@
 
 例如这些着色器属性:
 ```
-_MyColor ("Some Color", Color) = (1,1,1,1) 
-_MyVector ("Some Vector", Vector) = (0,0,0,0) 
-_MyFloat ("My float", Float) = 0.5 
-_MyTexture ("Texture", 2D) = "white" {} 
-_MyCubemap ("Cubemap", CUBE) = "" {} 
+	_MyColor ("Some Color", Color) = (1,1,1,1) 
+	_MyVector ("Some Vector", Vector) = (0,0,0,0) 
+	_MyFloat ("My float", Float) = 0.5 
+	_MyTexture ("Texture", 2D) = "white" {} 
+	_MyCubemap ("Cubemap", CUBE) = "" {} 
 ```
 
 would be declared for access in Cg/HLSL code as:
