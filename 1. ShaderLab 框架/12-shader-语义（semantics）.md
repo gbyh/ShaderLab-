@@ -115,4 +115,4 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
 在不同的平台上的屏幕空间位置输入基础类型不同，所以为了获得最大的可移植性是使用UNITY_VPOS_TYPE型（它将float4在大多数平台上，并在Direct3D 9 float2）。
 
 
-
+此外，使用像素位置的语义难以有剪辑的空间位置（SV_POSITION）和相同的顶点VPOS片段结构。因此顶点着色器应该将剪辑空间位置作为单独的“输出”变量输出.。看到下面的示例着色：
