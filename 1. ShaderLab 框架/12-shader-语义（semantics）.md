@@ -175,3 +175,6 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
         }
     }
 ```
+
+![](/assets/SemanticsScreenPosition.png)
+
