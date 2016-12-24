@@ -1,4 +1,4 @@
-临时：
+ 临时：
 
 Pixel Shader的input，DX11里改为了SV_Position，output里，COLOR被SV_Target替代
 
