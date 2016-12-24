@@ -32,12 +32,16 @@ UnityCG.cginc
 
 ####在UnityCG.cginc中的结构体：
 
-		struct appdata_base: vertex shader input with position, normal, one texture coordinate.
-		struct appdata_tan: vertex shader input with position, normal, tangent, one texture coordinate.
-		struct appdata_full: vertex shader input with position, normal, tangent, vertex color and two texture coordinates.
-		struct appdata_img: vertex shader input with position and one texture coordinate.
+```javascript
+    struct appdata_base: vertex shader input with position, normal, one texture coordinate.
+    struct appdata_tan: vertex shader input with position, normal, tangent, one texture coordinate.
+    struct appdata_full: vertex shader input with position, normal, tangent, vertex color and two texture coordinates.
+    struct appdata_img: vertex shader input with position and one texture coordinate.
+```
 
 ####UnityCG.cginc通用的辅助函数
+
+```javascript
 
     float3 WorldSpaceViewDir (float4 v) - 返回世界空间方向(非规范化)从给定对象空间顶点位置对着镜头。
     float3 ObjSpaceViewDir (float4 v) - 返回对象空间方向(非规范化)从给定对象空间顶点位置对着镜头。
@@ -49,6 +53,7 @@ UnityCG.cginc
     同样,float2 EncodeFloatRG(v)浮动,浮动DecodeFloatRG(float2 enc)使用两个颜色通道。
     float2 EncodeViewNormalStereo (float3 n) - 编码正常视图空间中两个数字0 . .1范围。
     float3 DecodeViewNormalStereo (float4 enc4) - 从enc4.xy解码视图法线空间。
+```
 
 ####在UnityCG.cginc中的前向渲染辅助函数
 
