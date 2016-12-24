@@ -1,7 +1,6 @@
 ##GLSL着色器程序
 
-In addition to using Cg/HSL shader programs, OpenGL Shading Language (GLSL) shaders can be written directly.
-除了使用Cg /HLSL着色器程序,OpenGL着色语言(GLSL)着色器可以直接写。
+除了使用Cg/HSL着色器程序，OpenGL着色语言（GLSL着色器可以直接写）。
 
 However, use of raw GLSL is only recommended for testing, or when you know you will only target Mac OS X, OpenGL ES 2.0 mobile devices or Linux. In all normal cases, Unity will cross-compile Cg/HLSL into optimized GLSL when needed.
 然而,使用原始GLSL只是推荐给测试,或者当你知道你只会针对Mac OS X,OpenGL ES 2.0移动设备或Linux。在正常情况下,Unity将保存Cg / HLSL优化GLSL时必要的。
