@@ -7,7 +7,7 @@ UsePass 命令使用另一个着色器中命名为Name的pass。
 ```
 
 Inserts all passes with a given name from a given shader. Shader/Name contains the name of the shader and the name of the pass, separated by a slash character. Note that only first supported subshader is taken into account.
-插入所有通过与给定的名字从给定的材质。材质/名称包含材质的名称和名称,由一个斜杠字符分开。注意,只有第一个支持subshader考虑。
+用给定的着色器插入给定名称的所有通道。着色器/名称包含着色器的名称和通道的名称，由斜杠字符分隔。注意，只考虑第一次支持的着色器。
 
 Details
 Some of the shaders could reuse existing passes from other shaders, reducing code duplication. For example, you might have a shader pass that draws object outline, and you’d want to reuse that pass in other shaders. The UsePass command does just that - it includes a given pass from another shader. As an example the following command uses the pass with the name “SHADOWCASTER” from the built-in VertexLit shader:
