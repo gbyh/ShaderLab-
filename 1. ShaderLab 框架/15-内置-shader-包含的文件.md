@@ -10,7 +10,6 @@ Unity包含多个文件，这些文件可以被着色器程序使用，以提供
     ENDCG
 ```
 
-Shader include files in Unity are with .cginc extension, and the built-in ones are:
 Unity的着色器包含文件的用.cginc扩展,内置的是:
 
     HLSLSupport.cginc - (包括自动)跨平台着色器编译的自动宏和定义。
