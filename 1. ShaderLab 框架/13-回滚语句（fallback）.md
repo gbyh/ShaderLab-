@@ -1,11 +1,13 @@
 ##Fallback
 After all Subshaders a Fallback can be defined. It basically says “if none of subshaders can run on this hardware, try using the ones from another shader”.
-毕竟Subshaders应变可以被定义。基本上说,“如果没有subshaders可以在这个硬件上运行,尝试使用的另一个着色器”。
+在所有的Subshaders之后可以定义Fallback。“如果没有subshaders可以在这个硬件上运行，尝试使用的另一个着色器”。
 
-Syntax
-Fallback "name"
-Fallback to shader with a given name or…
-回退到材质与给定名称或…
+语法：
+```
+    Fallback "name"
+```
+
+回退到给定名称name的shader…
 
 Fallback Off
 
