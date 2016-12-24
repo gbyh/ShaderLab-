@@ -86,7 +86,7 @@ CanUseSpriteAtlas标记设置为“False”，如果材质是精灵,当他们在
 
 ####PreviewType tag
 
-PreviewType表明material在监视面板预览应该显示material。默认情况下显示材质球，但PreviewType也可以设置为“Plane”(将显示为2 d)或“Skybox”(将显示天空体)。
+PreviewType表明material在监视面板预览应该显示material。默认情况下显示材质球，但PreviewType也可以设置为“Plane”(将显示为2d)或“Skybox”(将显示天空体)。
 
 See Also
 Passes can be given Tags as well, see Pass Tags.
