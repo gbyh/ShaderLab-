@@ -34,7 +34,8 @@ Shader "Transparent Queue Example"
 {
      SubShader
      {
-        Tags { "Queue" = "Transparent" }
+        Tags { "Queue" = "Transparent" } // 如何在透明队列中呈现
+
         Pass
         {
             // rest of the shader body...
@@ -43,19 +44,18 @@ Shader "Transparent Queue Example"
 }
 ```
 
-一个例子，说明如何在透明队列中呈现
+每个队列是由整数指数为代表：
 
-For special uses in-between queues can be used. Internally each queue is represented by integer index; Background is 1000, Geometry is 2000, AlphaTest is 2450, Transparent is 3000 and Overlay is 4000. If a shader uses a queue like this:
-可以使用特殊用途中间队列。内部每个队列是由整数指数; 
-Background是1000, 
-Geometry是2000,
-AlphaTest是2450, 
-Transparent是3000, 
-Overlay 4000。
+    Background 是 1000, 
+    Geometry 是 2000,
+    AlphaTest 是 2450, 
+    Transparent 是 3000, 
+    Overlay 4000。
+    
 如果一个着色器使用一个队列:
-
-Tags { "Queue" = "Geometry+1" }
-
+```
+    Tags { "Queue" = "Geometry+1" }
+```
 This will make the object be rendered after all opaque objects, but before transparent objects, as render queue index will be 2001 (geometry plus one). This is useful in situations where you want some objects be always drawn between other sets of objects. For example, in most cases transparent water should be drawn after opaque objects but before transparent objects.
 毕竟这将使物体呈现不透明的物体,但是在透明物体之前,渲染队列指数将达到2001(几何+ 1)。这是有用的情况下,你想要一些对象之间总是吸引其他的对象集。例如,在大多数情况下,透明的水后应绘制不透明的物体,但之前透明的对象。
 
