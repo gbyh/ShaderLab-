@@ -186,8 +186,45 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
 
 此功能只存在于Shader Model 3起，所以着色器需要有 `#pragma target 3.0` 汇编指令。
 
-
-
+```javascript
+    Shader "Unlit/Face Orientation"
+    {
+        Properties
+        {
+            _ColorFront ("Front Color", Color) = (1,0.7,0.7,1)
+            _ColorBack ("Back Color", Color) = (0.7,1,0.7,1)
+        }
+        SubShader
+        {
+            Pass
+            {
+                Cull Off // turn off backface culling
+    
+                CGPROGRAM
+                #pragma vertex vert
+                #pragma fragment frag
+                #pragma target 3.0
+    
+                float4 vert (float4 vertex : POSITION) : SV_POSITION
+                {
+                    return UnityObjectToClipPos(vertex);
+                }
+    
+                fixed4 _ColorFront;
+                fixed4 _ColorBack;
+    
+                fixed4 frag (fixed facing : VFACE) : SV_Target
+                {
+                    // VFACE input positive for frontbaces,
+                    // negative for backfaces. Output one
+                    // of the two colors depending on that.
+                    return facing > 0 ? _ColorFront : _ColorBack;
+                }
+                ENDCG
+            }
+        }
+    }
+```
 
 
 
