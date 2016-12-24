@@ -3,11 +3,11 @@
 Unity包含多个文件，这些文件可以被着色器程序使用，以提供预定义的变量和辅助函数。这是标准的#include指令，例如：
 
 ```
-CGPROGRAM
-// ...
-#include "UnityCG.cginc"
-// ...
-ENDCG
+    CGPROGRAM
+    // ...
+    #include "UnityCG.cginc"
+    // ...
+    ENDCG
 ```
 
 Shader include files in Unity are with .cginc extension, and the built-in ones are:
