@@ -12,7 +12,10 @@ Windows和微软平台（DX9，DX11，DX12和Xbox One）全部使用微软的HLS
 
 OpenGL核心，OpenGL ES 3和金属的使用微软的HLSL其次是字节码翻译成GLSL，使用修改后的版本的hlslcc。
 
-OpenGL ES 2.0 uses source level translation via hlsl2glslfork and glsl optimizer.
-Other console platforms use their respective compilers (e.g. PSSL on PS4).
-Surface Shaders use Cg 2.2 and MojoShader for code generation analysis step.
-In case you really need to identify which compiler is being used (to use HLSL syntax only supported by one compiler, or to work around a compiler bug), predefined shader macros can be used. For example, UNITY_COMPILER_HLSL is set when compiling with HLSL compiler (for D3D or GLCore/GLES3 platforms); and UNITY_COMPILER_HLSL2GLSL when compiling via hlsl2glsl.
+OpenGL ES 2使用源代码级的翻译，通过hlsl2glslfork GLSL优化器。
+
+其他游戏平台使用各自的编译器（例如PSSL PS4）。
+
+表面着色器使用CG 2.2和mojoshader生成代码的分析步骤。
+
+如果你真的需要确定哪些编译器被使用（使用HLSL语法的一个编译器，支持或解决编译错误），预定义的材质可以使用宏。例如，unity_compiler_hlsl设置编译时编译器（对于D3D HLSL或glcore / gles3平台）；和unity_compiler_hlsl2glsl编译时通过hlsl2glsl。
