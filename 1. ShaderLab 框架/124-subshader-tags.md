@@ -56,6 +56,7 @@ Shader "Transparent Queue Example"
 ```
     Tags { "Queue" = "Geometry+1" }
 ```
+
 This will make the object be rendered after all opaque objects, but before transparent objects, as render queue index will be 2001 (geometry plus one). This is useful in situations where you want some objects be always drawn between other sets of objects. For example, in most cases transparent water should be drawn after opaque objects but before transparent objects.
 毕竟这将使物体呈现不透明的物体,但是在透明物体之前,渲染队列指数将达到2001(几何+ 1)。这是有用的情况下,你想要一些对象之间总是吸引其他的对象集。例如,在大多数情况下,透明的水后应绘制不透明的物体,但之前透明的对象。
 
