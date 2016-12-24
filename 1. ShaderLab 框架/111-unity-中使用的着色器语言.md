@@ -6,7 +6,7 @@
 
 ####Shader Compilers
 
-Internally, different shader compilers are used for shader program compilation:
+在内部，不同着色器编译器用于着色器程序编译：
 
 Windows & Microsoft platforms (DX9, DX11, DX12 and Xbox One) all use Microsoft’s HLSL compiler (currently d3dcompiler_47).
 OpenGL Core, OpenGL ES 3 and Metal use Microsoft’s HLSL followed by bytecode translation into GLSL, using a modified version of hlslcc.
