@@ -23,7 +23,6 @@ In order for UsePass to work, a name must be given to the pass one wishes to use
     Name "MyPassName"
 ```
 
-Note that internally all pass names are uppercased, so UsePass must refer to the name in uppercase.
 注意：UsePass必须是大写的名字。
 
 
