@@ -80,7 +80,7 @@ DisableBatching标记可用于incidate。有三个可能的值：“True”(总�
 
 如果IgnoreProjector标记的值为“True”,然后一个对象,使用这种材质投影仪将不受影响。这主要是有用的半透明的对象，因为没有投影仪有影响他们的好方法。
 
-CanUseSpriteAtlas tag
+####CanUseSpriteAtlas tag
 Set CanUseSpriteAtlas tag to “False” if the shader is meant for sprites, and will not work when they are packed into atlases (see Sprite Packer).
 CanUseSpriteAtlas标记设置为“False”,如果材质是精灵,不工作时挤在地图册(见雪碧封隔器)。
 
