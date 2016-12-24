@@ -83,3 +83,16 @@ SV_Target1，SV_Target2，等：这些额外的颜色由着色器编写。这是
 ####Vertex shader outputs and fragment shader inputs
 
 顶点着色器需要输出最终的剪辑空间位置的一个顶点，使GPU知道屏幕上的栅格化，在什么样的深度。这个输出需要有SV_Position语义，并成为一个float4类型。
+
+其他输出（“interpolators”或“varyings”）的顶点着色器是什么您需要产生特定的着色器。从顶点着色器输出的值将在渲染三角形的面内进行插值，每个像素的值将被传递给片段着色器。
+
+
+许多现代GPU真的不在乎这些变量的语义；但是一些老的系统（最值得注意的是，Shader Model 2的GPU在Direct3D 9）有关于语义的特殊规则：
+
+
+
+
+
+
+
+
