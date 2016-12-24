@@ -36,8 +36,7 @@ Shader "GrabPassInvert"
 }
 ```
 
-This shader has two passes: First pass grabs whatever is behind the object at the time of rendering, then applies that in the second pass. Now of course, the same effect could be achieved much cheaper using an invert blend mode.
-这材质有两个:首先通过抓住一切背后的物体呈现的时候,然后应用在第二步。当然,同样的效果能够达到更便宜的使用一个反混合模式。
+这个着色器有两个通道：第一次捕获在渲染时后面的物体，然后在第二遍中应用。当然，同样的效果可以使用反向混合模式便宜得多。
 
 See Also
 Regular Pass command
