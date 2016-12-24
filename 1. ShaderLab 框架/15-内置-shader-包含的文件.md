@@ -31,34 +31,24 @@ UnityShaderVariables.cginc
 UnityCG.cginc
 这个文件通常是包含在Unity着色器将有许多辅助功能。
 
-Data structures in UnityCG.cginc
+在UnityCG.cginc中的结构体：
 
 		struct appdata_base: vertex shader input with position, normal, one texture coordinate.
 		struct appdata_tan: vertex shader input with position, normal, tangent, one texture coordinate.
 		struct appdata_full: vertex shader input with position, normal, tangent, vertex color and two texture coordinates.
 		struct appdata_img: vertex shader input with position and one texture coordinate.
 
-Generic helper functions in UnityCG.cginc
-通用在UnityCG.cginc辅助函数
+UnityCG.cginc通用的辅助函数
 
-		float3 WorldSpaceViewDir (float4 v) - returns world space direction (not normalized) from given object space vertex position towards the camera.
-		返回世界空间方向(非规范化)从给定对象空间顶点位置对着镜头。
-		float3 ObjSpaceViewDir (float4 v) - returns object space direction (not normalized) from given object space vertex position towards the camera.
-		返回对象空间方向(非规范化)从给定对象空间顶点位置对着镜头。
-		float2 ParallaxOffset (half h, half height, half3 viewDir) - calculates UV offset for parallax normal mapping.
-		计算UV偏移视差法线贴图。
-		fixed Luminance (fixed3 c) - converts color to luminance (grayscale).
-		将颜色转换为亮度(灰度)。
-		fixed3 DecodeLightmap (fixed4 color) - decodes color from Unity lightmap (RGBM or dLDR depending on platform).
-		解码颜色从Unity lightmap(RGBM或dLDR取决于平台)。
-		float4 EncodeFloatRGBA (float v) - encodes [0..1) range float into RGBA color, for storage in low precision render target.
-		编码[0 . . 1)浮动范围为RGBA颜色,用于存储在低精度渲染目标。
-		float DecodeFloatRGBA (float4 enc) - decodes RGBA color into a float.
-		解码RGBA颜色到一个浮点数。
-		Similarly, float2 EncodeFloatRG (float v) and float DecodeFloatRG (float2 enc) that use two color channels.
-		同样,float2 EncodeFloatRG(v)浮动,浮动DecodeFloatRG(float2 enc)使用两个颜色通道。
-		float2 EncodeViewNormalStereo (float3 n) - encodes view space normal into two numbers in 0..1 range.
-		编码正常视图空间中两个数字0 . .1范围。
+    float3 WorldSpaceViewDir (float4 v) - 返回世界空间方向(非规范化)从给定对象空间顶点位置对着镜头。
+    float3 ObjSpaceViewDir (float4 v) - 返回对象空间方向(非规范化)从给定对象空间顶点位置对着镜头。
+    float2 ParallaxOffset (half h, half height, half3 viewDir) - 计算UV偏移视差法线贴图。
+    fixed Luminance (fixed3 c) - 将颜色转换为亮度(灰度)。
+    fixed3 DecodeLightmap (fixed4 color) - 解码颜色从Unity lightmap(RGBM或dLDR取决于平台)。
+    float4 EncodeFloatRGBA (float v) - 编码[0 . . 1)浮动范围为RGBA颜色,用于存储在低精度渲染目标。
+    float DecodeFloatRGBA (float4 enc) - 解码RGBA颜色到一个浮点数。
+    同样,float2 EncodeFloatRG(v)浮动,浮动DecodeFloatRG(float2 enc)使用两个颜色通道。
+    float2 EncodeViewNormalStereo (float3 n) - 编码正常视图空间中两个数字0 . .1范围。
 		float3 DecodeViewNormalStereo (float4 enc4) - decodes view space normal from enc4.xy.
 		从enc4.xy解码视图法线空间。
 
@@ -68,12 +58,9 @@ Forward rendering helper functions in UnityCG.cginc
 These functions are only useful when using forward rendering (ForwardBase or ForwardAdd pass types).
 这些函数使用向前渲染时只有有用(ForwardBase或ForwardAdd通过类型)。
 
-		float3 WorldSpaceLightDir (float4 v) - computes world space direction (not normalized) to light, given object space vertex position.
-		计算世界空间方向(非标准化),给定对象空间顶点位置。
-		float3 ObjSpaceLightDir (float4 v) - computes object space direction (not normalized) to light, given object space vertex position.
-		计算对象空间方向(非标准化),给定对象空间顶点位置。
-		float3 Shade4PointLights (...) - computes illumination from four point lights, with light data tightly packed into vectors. Forward rendering uses this to compute per-vertex lighting.
-		计算从四个点光源照明,光数据紧密到向量。向前渲染使用这个计算种每个顶点都具备的照明。
+    float3 WorldSpaceLightDir (float4 v) - 计算世界空间方向(非标准化),给定对象空间顶点位置。
+    float3 ObjSpaceLightDir (float4 v) - 计算对象空间方向(非标准化),给定对象空间顶点位置。
+    float3 Shade4PointLights (...) - 计算从四个点光源照明,光数据紧密到向量。向前渲染使用这个计算种每个顶点都具备的照明。
 
 Vertex-lit helper functions in UnityCG.cginc
 顶点光照辅助函数在UnityCG.cginc中
