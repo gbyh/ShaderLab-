@@ -6,8 +6,7 @@
 
 ####GLSL片段
 
-GLSL program snippets are written between GLSLPROGRAM and ENDGLSL keywords.
-GLSL GLSLPROGRAM和编写程序片段ENDGLSL关键词。
+GLSL程序片段被写入在GLSLPROGRAM和ENDGLSL关键字之间。
 
 In GLSL, all shader function entry points have to be called main(). When Unity loads the GLSL shader, it loads the source once for the vertex program, with the VERTEX preprocessor define, and once more for the fragment program, with the FRAGMENT preprocessor define. So the way to separate vertex and fragment program parts in GLSL snippet is to surround them with #ifdef VERTEX .. #endif and #ifdef FRAGMENT .. #endif. Each GLSL snippet must contain both a vertex program and a fragment program.
 在GLSL,所有着色器函数入口点主要有被称为main()。当Unity加载GLSL材质,它加载的源一旦顶点程序,预处理器定义顶点,一旦更多的片段程序,预处理器定义的片段。所以独立的顶点和片段程序部分GLSL片段与# ifdef顶点在他们的周围。# endif和# ifdef片段. .# endif。每个GLSL片段必须同时包含一个顶点程序和一个片段程序。
