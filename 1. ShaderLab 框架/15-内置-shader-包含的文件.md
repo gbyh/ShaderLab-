@@ -12,13 +12,14 @@ Unity包含多个文件，这些文件可以被着色器程序使用，以提供
 
 Unity的着色器包含文件的用.cginc扩展,内置的是:
 
-    HLSLSupport.cginc - (包括自动)跨平台着色器编译的自动宏和定义。
-		
+```
+    HLSLSupport.cginc - (包括自动)跨平台着色器编译的自动宏和定义。	
     UnityShaderVariables.cginc - (包括自动) 常用的全局变量。
     UnityCG.cginc - 常用的辅助函数。
     AutoLight.cginc - 照明&跟踪功能,如表面着色器在内部使用这个文件。
     Lighting.cginc - 标准的表面材质照明模型;自动包括当你写表面着色器。
     TerrainEngine.cginc - 辅助函数的地形和植被着色器。
+```
 
 HLSLSupport.cginc
 这个文件是编译时自动包括着色器。它声明了各种预处理器宏在多平台材质发展援助。
