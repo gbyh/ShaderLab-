@@ -43,8 +43,7 @@ Shader "Transparent Queue Example"
 }
 ```
 
-An example illustrating how to render something in the transparent queue
-一个例子说明如何呈现在透明的队列
+一个例子，说明如何在透明队列中呈现
 
 For special uses in-between queues can be used. Internally each queue is represented by integer index; Background is 1000, Geometry is 2000, AlphaTest is 2450, Transparent is 3000 and Overlay is 4000. If a shader uses a queue like this:
 可以使用特殊用途中间队列。内部每个队列是由整数指数; 
