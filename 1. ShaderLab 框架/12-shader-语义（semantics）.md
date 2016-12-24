@@ -78,3 +78,6 @@ SV_Target1，SV_Target2，等：这些额外的颜色由着色器编写。这是
 多GPU这让一些深度缓存优化，注，所以不要重写Z缓冲区的值没有一个好的理由。SV_Depth招致的成本取决于GPU架构，但总的说来是相当类似的α测试的成本（使用HLSL内置clip()功能）。渲染着色器，修改深度毕竟规则不透明的着色器（例如，通过使用透明度测试渲染队列。
 
 输出的深度值必须被定义为float类型的。
+
+
+####Vertex shader outputs and fragment shader inputs
