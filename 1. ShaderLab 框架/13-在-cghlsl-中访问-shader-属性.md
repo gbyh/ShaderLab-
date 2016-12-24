@@ -4,22 +4,21 @@
 
 
 例如这些着色器属性:
-```
+
 	_MyColor ("Some Color", Color) = (1,1,1,1) 
 	_MyVector ("Some Vector", Vector) = (0,0,0,0) 
 	_MyFloat ("My float", Float) = 0.5 
 	_MyTexture ("Texture", 2D) = "white" {} 
 	_MyCubemap ("Cubemap", CUBE) = "" {} 
-```
 
-would be declared for access in Cg/HLSL code as:
-将宣布访问在Cg / HLSL代码:
 
-fixed4 _MyColor; // low precision type is usually enough for colors
-float4 _MyVector;
-float _MyFloat; 
-sampler2D _MyTexture;
-samplerCUBE _MyCubemap;
+在Cg / HLSL代码中声明:
+
+	fixed4 _MyColor; // low precision type is usually enough for colors
+	float4 _MyVector;
+	float _MyFloat; 
+	sampler2D _MyTexture;
+	samplerCUBE _MyCubemap;
 
 Cg/HLSL can also accept uniform keyword, but it is not necessary:
 Cg / HLSL也可以接受统一的关键字,但没有必要:
