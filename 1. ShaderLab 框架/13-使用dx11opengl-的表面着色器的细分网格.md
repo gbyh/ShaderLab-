@@ -155,19 +155,16 @@ Shader "Tessellation Sample" {
     }
 ```
 
-The tessellation function, tessFixed in our shader, returns four tessellation factors as a single float4 value: tree factors for each edge of the triangle, and one factor for the inside of the triangle. Here, we just return a constant value that is set in material properties.
 镶嵌功能,tessFixed着色器,返回四个镶嵌因素作为单个float4值:三角形的每条边的树因素,并为三角形的内部因素之一。在这里,我们只是返回一个恒定值设置材料属性。
 
-￼
+￼![](/assets/SurfaceShaderTess2-fixed.png)
 
 
 
-Distance-based tessellation
-基于距离的镶嵌
+####基于距离的镶嵌
 
-We can also change tessellation level based on distance from the camera. For example, we could define two distance values; distance at which tessellation is at maximum (say, 10 meters), and distance towards which tessellation level gradually decreases (say, 20 meters).
-我们也可以改变镶嵌水平基于相机的距离。值;例如,我们可以定义两个距离距离,镶嵌在最大(10米),和距离对镶嵌水平逐渐降低(20米)。
-
+我们还可以把基于距离相机镶嵌水平。例如，我们可以定义两个距离值；距离，镶嵌在最大（比如说，10米），和距离对镶嵌水平逐渐降低（比如说，20米）。
+```
 Shader "Tessellation Sample" {
         Properties {
             _Tess ("Tessellation", Range(1,32)) = 4
@@ -230,17 +227,16 @@ Shader "Tessellation Sample" {
         }
         FallBack "Diffuse"
     }
+```
 
-Here the tessellation function takes three parameters; the vertex data of three triangle corners before tessellation. This is needed to compute tessellation levels, which depend on vertex positions now. We include a built-in helper file Tessellation.cginc and call UnityDistanceBasedTess function from it to do all the work. That function computes distance of each vertex to the camera and derives final tessellation factors.
-这里的镶嵌函数接受三个参数;镶嵌前三个三角形的顶点数据的角落。这是需要计算镶嵌水平,取决于顶点位置。我们包括一个内置的辅助文件镶嵌。cginc并调用UnityDistanceBasedTess函数做所有的工作。这个函数计算每个顶点的距离相机,最后镶嵌的因素。
+这里的三角函数需要三个参数；在三角镶嵌三角形顶点数据。这是需要计算的镶嵌水平，这取决于顶点的位置，现在。我们包括一个内置的帮助文件tessellation.cginc叫unitydistancebasedtess功能由它来做所有的工作。这个函数计算每个顶点的距离相机导出最终的细分因子。
 
-
+![](/assets/SurfaceShaderTess3-distance.png)
 ￼
 
 
 
-Edge length based tessellation
-基于边缘的长度的镶嵌
+####基于边缘的长度的镶嵌
 
 Purely distance based tessellation is good only when triangle sizes are quite similar. In the image above, you can see that objects that have small triangles are tessellated too much, while objects that have large triangles aren’t tessellated enough.
 纯粹的基于距离的镶嵌好只有当三角形大小非常相似。在上面的图片中,你可以看到有小三角形的对象是完全嵌合太多,虽然有大量三角形不够完全嵌合的对象。
