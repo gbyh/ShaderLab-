@@ -82,19 +82,17 @@ Shader "Tessellation Sample" {
 		它使用自定义顶点数据输入”结构（数据）而不是默认的appdata_full。这是不需要的，但它的镶嵌使用尽可能小的结构是更有效的。
 		由于我们的顶点数据没有第二UV坐标，我们添加nolightmap指令排除光照贴图。
 
+下面是一些简单对象的外观：
 
-Here’s how some simple objects would look like with this shader:
-这是一些简单的对象如何看起来像这样材质:
+![](/assets/SurfaceShaderTess1-none.png)
 
 ￼
 
 
-Fixed amount of tessellation
-固定数量的镶嵌
+####固定数量的镶嵌
 
-Let’s add fixed amount of tessellation, i.e. the same tessellation level for the whole mesh. This approach is suitable if your model’s faces are roughly the same size on screen. Some script could then change the tessellation level from code, based on distance to the camera.
 让我们添加固定数量的镶嵌,即相同的镶嵌水平对整个网。这种方法是合适的,如果你的模型的脸大致相同大小的屏幕上。一些脚本可以改变从代码的镶嵌水平,基于与摄像机之间的距离。
-
+```
 Shader "Tessellation Sample" {
         Properties {
             _Tess ("Tessellation", Range(1,32)) = 4
@@ -155,7 +153,7 @@ Shader "Tessellation Sample" {
         }
         FallBack "Diffuse"
     }
-
+```
 
 The tessellation function, tessFixed in our shader, returns four tessellation factors as a single float4 value: tree factors for each edge of the triangle, and one factor for the inside of the triangle. Here, we just return a constant value that is set in material properties.
 镶嵌功能,tessFixed着色器,返回四个镶嵌因素作为单个float4值:三角形的每条边的树因素,并为三角形的内部因素之一。在这里,我们只是返回一个恒定值设置材料属性。
