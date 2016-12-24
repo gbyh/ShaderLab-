@@ -8,7 +8,8 @@
 
 在内部，不同着色器编译器用于着色器程序编译：
 
-Windows & Microsoft platforms (DX9, DX11, DX12 and Xbox One) all use Microsoft’s HLSL compiler (currently d3dcompiler_47).
+Windows和微软平台（DX9，DX11，DX12和Xbox One）全部使用微软的HLSL编译器（目前d3dcompiler_47）。
+
 OpenGL Core, OpenGL ES 3 and Metal use Microsoft’s HLSL followed by bytecode translation into GLSL, using a modified version of hlslcc.
 OpenGL ES 2.0 uses source level translation via hlsl2glslfork and glsl optimizer.
 Other console platforms use their respective compilers (e.g. PSSL on PS4).
