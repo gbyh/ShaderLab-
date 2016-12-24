@@ -9,9 +9,9 @@
 
 指定 TagName1 的值为 Value1, TagName2 的值为 Value2。你可以有尽可能多的标签。
 
-细节：
-Tags are basically key-value pairs. Inside a SubShader tags are used to determine rendering order and other parameters of a subshader. Note that the following tags recognized by Unity must be inside SubShader section and not inside Pass!
-标签基本上是键值对。在SubShader标签是用来确定SubShader呈现顺序和其他参数。注意,下面的标签被Unity必须SubShader部分,而不是在Pass内部!
+####细节：
+
+标签基本上是键值对。在SubShader标签是用来确定SubShader呈现顺序和其他参数。注意,下面的标签被Unity必须SubShader部分，而不是在Pass内部!
 
 In addition to built-in tags recognized by Unity, you can use your own tags and query them using Material.GetTag function.
 Unity除了内置标签,你可以使用你自己的标签和使用Material.GetTag函数查询它们。
