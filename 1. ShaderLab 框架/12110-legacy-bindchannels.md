@@ -22,6 +22,7 @@ Source can be one of:
 		Texcoord: primary UV coordinate
 		Texcoord1: secondary UV coordinate
 		Color: per-vertex color
+		
 Target can be one of:
 		Vertex: vertex position
 		Normal: vertex normal
