@@ -1,6 +1,6 @@
 ##Shading Language used in Unity
 
-In Unity, shader programs are written in a variant of HLSL language (also called Cg but for most practical uses the two are the same).
+在Unity中，着色程序是用HLSL语言的一个变种（也叫CG但最实际的使用两者是相同的）。
 
 Currently, for maximum portability between different platforms, writing in DX9-style HLSL (e.g. use DX9 style sampler2D and tex2D for texture sampling instead of DX10 style Texture2D, SamplerState and tex.Sample).
 
