@@ -38,7 +38,7 @@ Shader "GrabPassInvert"
 
 这个着色器有两个通道：第一次捕获在渲染时后面的物体，然后在第二遍中应用。当然，同样的效果可以使用反向混合模式便宜得多。
 
-See Also
+参见：
 Regular Pass command
 
 
