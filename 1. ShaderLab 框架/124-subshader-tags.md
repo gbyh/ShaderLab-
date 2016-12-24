@@ -59,9 +59,8 @@ Shader "Transparent Queue Example"
 
 这将使对象在所有不透明对象之后呈现，但在透明对象之前，呈现队列索引将是2001（几何加1）。这是非常有用的情况下，你希望一些对象总是在其他对象集之间绘制。例如，在大多数情况下，透明的水应该绘制在不透明的物体，但在透明物体之前。
 
-Queues up to 2500 (“Geometry+500”) are consided “opaque” and optimize the drawing order of the objects for best performance. Higher rendering queues are considered for “transparent objects” and sort objects by distance, starting rendering from the furthest ones and ending with the closest ones. Skyboxes are drawn in between all opaque and all transparent objects.
 队列2500（“Geometry + 500”）被认为“不透明”和优化为最佳性能对象的绘制顺序。更高的渲染队列被认为是“透明对象”和对象根据距离排序，开始渲染从最远到最接近的。天空盒被绘制在所有不透明和透明物体之间。
-队列2500(“Geometry + 500”)认为“不透明”的绘制顺序和优化对象的最佳性能。高渲染队列被认为是“透明物体”,对象的距离,开始从最远的呈现,以最接近的人。包厢之间在所有不透明和透明的对象。
+
 
 RenderType tag
 RenderType tag categorizes shaders into several predefined groups, e.g. is is an opaque shader, or an alpha-tested shader etc. This is used by Shader Replacement and in some cases used to produce camera’s depth texture.
