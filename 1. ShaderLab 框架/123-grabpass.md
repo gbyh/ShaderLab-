@@ -1,7 +1,6 @@
 ##GrabPass
 
-GrabPass is a special passtype - it grabs the contents of the screen where the object is about to be drawn into a texture. This texture can be used in subsequent passes to do advanced image based effects.
-GrabPass是一种特殊的passtype——它抓取屏幕上的内容,对象将被卷入一个纹理。可以使用此结构在后续通过先进的基于图像的影响。
+GrabPass是一个特殊的passtype -它抓住对象所在的屏幕即将进入一个纹理的内容。这种纹理可以在后续的传递中使用先进的基于图像的效果。
 
 Syntax
 The GrabPass belongs inside a subshader. It can take two forms:
