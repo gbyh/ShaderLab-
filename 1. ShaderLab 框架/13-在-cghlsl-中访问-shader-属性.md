@@ -20,9 +20,10 @@
 	sampler2D _MyTexture;
 	samplerCUBE _MyCubemap;
 
-Cg/HLSL can also accept uniform keyword, but it is not necessary:
-Cg / HLSL也可以接受统一的关键字,但没有必要:
-uniform float4 _MyColor;
+
+Cg / HLSL也可以接受Unity的关键字,但没有必要:
+
+	uniform float4 _MyColor;
 
 Property types in ShaderLab map to Cg/HLSL variable types this way:
 属性类型在ShaderLab映射到Cg / HLSL变量类型：
