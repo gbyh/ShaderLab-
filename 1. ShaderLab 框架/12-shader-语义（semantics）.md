@@ -95,5 +95,5 @@ Color0和COLOR1语义在顶点输出和片段输入是低精度的，0–1范围
 
 最好的跨平台支持，顶点输出和片段输入如TEXCOORDn语义。
 
-
+####Interpolator count limits
 
