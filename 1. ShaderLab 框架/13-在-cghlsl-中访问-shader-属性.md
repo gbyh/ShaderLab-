@@ -21,7 +21,7 @@
 	samplerCUBE _MyCubemap;
 
 
-Cg / HLSL也可以接受Unity的关键字,但没有必要:
+Cg / HLSL也可以接受uniform的关键字,但没有必要:
 
 	uniform float4 _MyColor;
 
