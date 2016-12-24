@@ -10,7 +10,8 @@
 
 Windows和微软平台（DX9，DX11，DX12和Xbox One）全部使用微软的HLSL编译器（目前d3dcompiler_47）。
 
-OpenGL Core, OpenGL ES 3 and Metal use Microsoft’s HLSL followed by bytecode translation into GLSL, using a modified version of hlslcc.
+OpenGL核心，OpenGL ES 3和金属的使用微软的HLSL其次是字节码翻译成GLSL，使用修改后的版本的hlslcc。
+
 OpenGL ES 2.0 uses source level translation via hlsl2glslfork and glsl optimizer.
 Other console platforms use their respective compilers (e.g. PSSL on PS4).
 Surface Shaders use Cg 2.2 and MojoShader for code generation analysis step.
