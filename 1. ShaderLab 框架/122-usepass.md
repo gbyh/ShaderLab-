@@ -17,12 +17,14 @@ UsePass 命令使用另一个着色器中命名为Name的pass。
 ```
 
 In order for UsePass to work, a name must be given to the pass one wishes to use. The Name command inside the pass gives it a name:
-为了UsePass工作,一个名字必须通过一个愿望。内的名字命令传递给它一个名字:
+为了UsePass工作,为了给其他通道使用必须命名。在Pass中使用Name命令命名。
 
-Name "MyPassName"
+```
+    Name "MyPassName"
+```
 
 Note that internally all pass names are uppercased, so UsePass must refer to the name in uppercase.
-注意内部所有通过名称大写,所以UsePass必须参考的名字大写。
+注意：UsePass必须是大写的名字。
 
 
 
