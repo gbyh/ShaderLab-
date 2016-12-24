@@ -66,7 +66,7 @@ These functions are only useful when using forward rendering (ForwardBase or For
 
 这些函数只有在逐顶点光照着色器中才有用。
 
-    float3 ShadeVertexLights (float4 vertex, float3 normal) - 计算从四种每个顶点都具备的灯光和环境照明,给定对象的空间位置和正常。
+    float3 ShadeVertexLights (float4 vertex, float3 normal) - 计算从四种每个顶点都具备的灯光和环境照明,给定对象的空间位置和法线。
 
 
 
