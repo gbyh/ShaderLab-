@@ -10,13 +10,13 @@ GrabPass所属subshader。它可以采取两种形式:
 
 GrabPass {“TextureName”}将抓取屏幕上的内容转换成纹理，但只会做对每帧中第一个使用给定纹理名字的对象。纹理可以被进一步访问通过给定的纹理名称。当你有多个对象在场景中使用grab pass，这是一个更高效的方式。
 		
-Additionally, GrabPass can use Name and Tags commands.
-此外,GrabPass可以使用命令名称和标记。
+此外,GrabPass可以使用Name和Tags命令。
 
-Example
-Here is an expensive way to invert the colors of what was rendered before:
-这是一个昂贵的方式转化的颜色呈现的是什么:
+例如：
 
+这里是一个昂贵的方式来反转渲染之前的颜色：
+
+```
 Shader "GrabPassInvert"
 {
     SubShader
@@ -34,6 +34,7 @@ Shader "GrabPassInvert"
         }
     }
 }
+```
 
 This shader has two passes: First pass grabs whatever is behind the object at the time of rendering, then applies that in the second pass. Now of course, the same effect could be achieved much cheaper using an invert blend mode.
 这材质有两个:首先通过抓住一切背后的物体呈现的时候,然后应用在第二步。当然,同样的效果能够达到更便宜的使用一个反混合模式。
