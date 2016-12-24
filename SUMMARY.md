@@ -49,7 +49,7 @@
         * [1.6 特定平台的渲染差异](1. ShaderLab 框架/16-特定平台的渲染差异.md)
         * [1.7 着色器细节等级](1. ShaderLab 框架/17-着色器细节等级.md)
         * [1.8 纹理数组](1. ShaderLab 框架/18-纹理数组.md)
-        * 1.9 使用 Visual Studio 调试 DirectX11 着色器
+        * [1.9 使用 Visual Studio 调试 DirectX11 着色器](1. ShaderLab 框架/19-使用-visual-studio-调试-directx11-着色器.md)
         * 1.10 固定功能着色器示例
 * [2. Cg 语法](2. Cg 语法/2.0 Cg 语法.md)
     * [第1章 简介](2. Cg 语法/第1章-简介.md)
