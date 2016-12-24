@@ -86,11 +86,12 @@ SV_Target1，SV_Target2，等：这些额外的颜色由着色器编写。这是
 
 其他输出（“interpolators”或“varyings”）的顶点着色器是什么您需要产生特定的着色器。从顶点着色器输出的值将在渲染三角形的面内进行插值，每个像素的值将被传递给片段着色器。
 
-
 许多现代GPU真的不在乎这些变量的语义；但是一些老的系统（最值得注意的是，Shader Model 2的GPU在Direct3D 9）有关于语义的特殊规则：
 
-
-
+```
+TEXCOORD0, TEXCOORD1 etc are used to indicate arbitrary high precision data such as texture coordinates and positions.
+COLOR0 and COLOR1 semantics on vertex outputs and fragment inputs are for low-precision, 0–1 range data (like simple color values).
+```
 
 
 
