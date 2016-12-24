@@ -62,8 +62,7 @@ These functions are only useful when using forward rendering (ForwardBase or For
     float3 ObjSpaceLightDir (float4 v) - 计算对象空间方向(非标准化),给定对象空间顶点位置。
     float3 Shade4PointLights (...) - 计算从四个点光源照明,光数据紧密到向量。向前渲染使用这个计算种每个顶点都具备的照明。
 
-Vertex-lit helper functions in UnityCG.cginc
-顶点光照辅助函数在UnityCG.cginc中
+在UnityCG.cginc中顶点光照辅助函数
 
 These functions are only useful when using per-vertex lit shaders (“Vertex” pass type).
 这些函数只有在逐顶点光照着色器中才有用。
