@@ -71,4 +71,4 @@
 ####SV_TargetN: Multiple render targets
 SV_Target1，SV_Target2，等：这些额外的颜色由着色器编写。这是用在渲染成多个渲染目标一次（称为多个渲染目标的渲染技术，或MRT）。SV_Target0是SV_Target相同。
 
-
+####SV_Depth: Pixel shader depth output
