@@ -18,9 +18,9 @@
 
 ####没有GPU镶嵌,顶点位移的修饰符
 
-Let’s start with a surface shader that does some displacement mapping without using tessellation. It just moves vertices along their normals based on amount coming from a displacement map:
-让我们先从一个表面材质,不使用镶嵌一些位移映射。它只是移动顶点沿着法线基于位移量来自地图:
+让我们做一些表面着色器位移映射不使用镶嵌的开始。它只是沿着量的基础上从一个顶点法线位移图：
 
+```
 Shader "Tessellation Sample" {
         Properties {
             _MainTex ("Base (RGB)", 2D) = "white" {}
@@ -73,15 +73,14 @@ Shader "Tessellation Sample" {
         }
         FallBack "Diffuse"
     }
+```
 
-The above shader is fairly standard, points of intetest:
-上面的材质是相当标准,殷帖的点:
-		Vertex modifier disp samples the displacement map and moves vertices along their normals.
-		顶点修饰符disp样本位移贴图和移动顶点法线。
-		It uses custom “vertex data input” structure (appdata) instead of default appdata_full. This is not needed yet, but it’s more efficient for tessellation to use as small structure as possible.
-		它使用自定义“顶点数据输入”结构(appdata)而不是默认appdata_full。这是没有必要的,但它是更有效率镶嵌使用尽可能小的结构。
-		Since our vertex data does not have 2nd UV coordinate, we add nolightmap directive to exclude lightmaps.
-		因为我们的顶点数据没有第二UV坐标,我们nolightmap指令添加到排除以及材质。
+
+上面的材质是相当标准的，点的目的：
+
+		顶点修改显示样品的位移图和移动顶点沿其法线。
+		它使用自定义顶点数据输入”结构（数据）而不是默认的appdata_full。这是不需要的，但它的镶嵌使用尽可能小的结构是更有效的。
+		由于我们的顶点数据没有第二UV坐标，我们添加nolightmap指令排除光照贴图。
 
 
 Here’s how some simple objects would look like with this shader:
