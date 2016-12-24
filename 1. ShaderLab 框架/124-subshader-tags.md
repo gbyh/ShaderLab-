@@ -84,7 +84,7 @@ DisableBatching标记可用于incidate。有三个可能的值：“True”(总�
 
 CanUseSpriteAtlas标记设置为“False”，如果材质是精灵,当他们在图集中是无用的(见Sprite Packer)。
 
-PreviewType tag
+####PreviewType tag
 PreviewType indicates how the material inspector preview should display the material. By default materials are displayed as spheres, but PreviewType can also be set to “Plane” (will display as 2D) or “Skybox” (will display as skybox).
 PreviewType表明材料检查员预览应该显示材料。默认情况下显示材料领域,但PreviewType也可以设置为“Plane”(将显示为2 d)或“Skybox”(将显示天空体)。
 
