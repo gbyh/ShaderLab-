@@ -43,3 +43,11 @@
 ```
 
 ![](/assets/SemanticsShowUVs.png)
+
+
+####片段着色器输出语义
+最常见的一个片段（像素着色器输出色彩，）有sv_target语义。上面例子中的片段着色器确实是这样的：
+
+```
+    fixed4 frag (v2f i) : SV_Target
+```
