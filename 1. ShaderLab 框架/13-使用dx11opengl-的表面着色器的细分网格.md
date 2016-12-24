@@ -1,5 +1,5 @@
-##Surface Shaders with DX11 Tessellation
-表面着色器和DX11镶嵌
+##表面着色器和DX11镶嵌
+
 表面着色器需要DirectX 11 GPU镶嵌一些支持。思想是：
 
 		镶嵌所显示的是细分：函数名修饰。这个函数计算三角形边缘和内部镶嵌的因素。
@@ -9,16 +9,14 @@
 		表面着色器可以计算Phong镶嵌平滑模型表面甚至没有任何位移映射。
 
 
-Current limitations of tessellation support:
 当前的局限性镶嵌支持:
-		Only triangle domain - no quads, no isoline tessellation.
+
 		只有三角域——四、等值线镶嵌。
-		When tessellation is used, shader is automatically compiled into Shader Model 5.0 target, which means it will only work on DX11.
 		当使用镶嵌时,材质是自动编译成着色模型5.0的目标,这意味着它将只在DX11工作。
 
 
-No GPU tessellation, displacement in the vertex modifier
-没有GPU镶嵌,顶点位移的修饰符
+
+####没有GPU镶嵌,顶点位移的修饰符
 
 Let’s start with a surface shader that does some displacement mapping without using tessellation. It just moves vertices along their normals based on amount coming from a displacement map:
 让我们先从一个表面材质,不使用镶嵌一些位移映射。它只是移动顶点沿着法线基于位移量来自地图:
