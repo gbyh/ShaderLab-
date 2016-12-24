@@ -7,10 +7,9 @@
     Tags { "TagName1" = "Value1" "TagName2" = "Value2" }
 ```
 
-Specifies TagName1 to have Value1, TagName2 to have Value2. You can have as many tags as you like.
-指定TagName1 Value1,TagName2 Value2。你可以尽可能多的标签。
+指定 TagName1 的值为 Value1, TagName2 的值为 Value2。你可以有尽可能多的标签。
 
-Details
+细节：
 Tags are basically key-value pairs. Inside a SubShader tags are used to determine rendering order and other parameters of a subshader. Note that the following tags recognized by Unity must be inside SubShader section and not inside Pass!
 标签基本上是键值对。在SubShader标签是用来确定SubShader呈现顺序和其他参数。注意,下面的标签被Unity必须SubShader部分,而不是在Pass内部!
 
