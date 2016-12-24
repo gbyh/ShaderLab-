@@ -50,8 +50,7 @@ UnityCG.cginc
     float2 EncodeViewNormalStereo (float3 n) - 编码正常视图空间中两个数字0 . .1范围。
     float3 DecodeViewNormalStereo (float4 enc4) - 从enc4.xy解码视图法线空间。
 
-Forward rendering helper functions in UnityCG.cginc
-前向渲染辅助函数在UnityCG.cginc
+####在UnityCG.cginc中的前向渲染辅助函数
 
 These functions are only useful when using forward rendering (ForwardBase or ForwardAdd pass types).
 这些函数使用向前渲染时只有有用(ForwardBase或ForwardAdd通过类型)。
