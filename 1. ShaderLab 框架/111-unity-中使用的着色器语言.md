@@ -2,7 +2,7 @@
 
 在Unity中，着色程序是用HLSL语言的一个变种（也叫CG但最实际的使用两者是相同的）。
 
-Currently, for maximum portability between different platforms, writing in DX9-style HLSL (e.g. use DX9 style sampler2D and tex2D for texture sampling instead of DX10 style Texture2D, SamplerState and tex.Sample).
+目前，对于不同的平台之间最大的可移植性，在DX9 HLSL的写作风格（例如使用DX9和纹理采样方式为sampler2D tex2D代替DX10风格Texture2D，samplerstate和tex.sample）。
 
 ####Shader Compilers
 
