@@ -67,7 +67,7 @@ Shader "Transparent Queue Example"
 RenderType标签分类着色器分成几个预定义组,例如,是一个不透明的材质,或一个alpha-tested材质等。这是材质替换和在某些情况下使用的用于生产相机的深度纹理。
 
 ####DisableBatching tag
-Some shaders (mostly ones that do object-space vertex deformations) do not work when Draw Call Batching is used – that’s because batching transforms all geometry into world space, so “object space” is lost.
+
 当Draw Call Batching被使用的时候一些着色器不工作，那是因为批处理转换所有的多边形到世界空间，所以物体空间丢失。
 
 DisableBatching tag can be used to incidate that. There are three possible values: “True” (always disables batching for this shader), “False” (does not disable batching; this is default) and “LODFading” (disable batching when LOD fading is active; mostly used on trees).
