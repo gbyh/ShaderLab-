@@ -19,8 +19,7 @@ Rendering Order - Queue tag
 
 可以使用队列标记确定对象的顺序。一个着色器决定对象属于的渲染队列，这样任何透明着色器确保他们在不透明的物体之后被绘制等等。
 
-There are four pre-defined render queues, but there can be more queues in between the predefined ones. The predefined queues are:
-有四个预定义的渲染队列,但可以有更多的队列在预定义的。预定义的队列:
+有四个预定义的渲染队列，但可以有更多的队列之间的预定义的。预定义的队列是：
 		Background - this render queue is rendered before any others. You’d typically use this for things that really need to be in the background.
 		任何其他人之前呈现这个渲染队列。你通常使用这个东西真的需要在后台。
 		Geometry (default) - this is used for most objects. Opaque geometry uses this queue.
