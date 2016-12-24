@@ -9,7 +9,7 @@ GrabPass所属subshader。它可以采取两种形式:
 只是GrabPass {}将抓取当前屏幕内容到一个纹理。纹理可以在之后的Pass中通过_grabtexture名称使用。注：这种形式抓取的pass将对每个对象做昂贵的屏幕抓取操作！
 
 		GrabPass { "TextureName" } will grab screen contents into a texture, but will only do that once per frame for the first object that uses the given texture name. The texture can be accessed in further passes by the given texture name. This is a more performant way when you have multiple objects using grab pass in the scene.
-		GrabPass {“TextureName”}将抓取屏幕上的内容转换成纹理，但只会做对每帧中第一个使用给定纹理名字的对象。纹理可以被进一步访问通过给定的纹理名称。这是一个更高效的方式，当你有多个对象在场景中使用grab pass。
+		GrabPass {“TextureName”}将抓取屏幕上的内容转换成纹理，但只会做对每帧中第一个使用给定纹理名字的对象。纹理可以被进一步访问通过给定的纹理名称。当你有多个对象在场景中使用grab pass，这是一个更高效的方式。
 		
 Additionally, GrabPass can use Name and Tags commands.
 此外,GrabPass可以使用命令名称和标记。
