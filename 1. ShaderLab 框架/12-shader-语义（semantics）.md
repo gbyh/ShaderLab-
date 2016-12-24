@@ -72,3 +72,5 @@
 SV_Target1，SV_Target2，等：这些额外的颜色由着色器编写。这是用在渲染成多个渲染目标一次（称为多个渲染目标的渲染技术，或MRT）。SV_Target0是SV_Target相同。
 
 ####SV_Depth: Pixel shader depth output
+
+通常的片段着色器不重写Z缓冲区的值，和一个默认的值是从规则的三角形光栅化用。然而，对于某些影响，它是有用的输出自定义Z缓冲区深度值每像素。
