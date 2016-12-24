@@ -106,10 +106,11 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
 ```
 
 
+####其他特殊语义
 
+屏幕空间像素坐标: VPOS
 
-
-
+片段着色器可以接收被呈现为一个特殊的VPOS语义的像素位置。此功能只存在从Shader Model 3，所以着色器需要有 `#pragma target 3.0` 汇编指令。
 
 
 
