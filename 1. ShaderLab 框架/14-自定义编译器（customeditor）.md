@@ -16,10 +16,10 @@ CustomEditor声明影响所有使用这种材质的材质。
 
 示例：
 ```
-Shader "example" {
-    // properties and subshaders here...
-    CustomEditor "MyCustomEditor"
-}
+    Shader "example" {
+        // properties and subshaders here...
+        CustomEditor "MyCustomEditor"
+    }
 ```
 
 🔚
