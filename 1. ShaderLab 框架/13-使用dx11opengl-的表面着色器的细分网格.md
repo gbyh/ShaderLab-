@@ -317,15 +317,13 @@ Shader "Tessellation Sample" {
 
 
 
-Phong Tessellation
+####Phong Tessellation
 冯氏镶嵌
 
 
-Phong Tessellation modifies positions of the subdivided faces so that the resulting surface follows the mesh normals a bit. It’s quite an effective way of making low-poly meshes become more smooth.
-冯氏镶嵌细分面临这样的修改位置产生的表面的网格法线。很有效的方式使低多边形网格变得更加平滑。
+Phong镶嵌修改细分面位置，这样产生的表面网格法线点如下。这是一个非常有效的方法使低多边形网格变得更加光滑。
 
-Unity’s surface shaders can compute Phong tessellation automatically using tessphong:VariableName compilation directive. Here’s an example shader:
-Unity的表面着色器可以计算冯氏镶嵌自动使用tessphong:VariableName编译指令。这里有一个例子材质:
+Unity的表面着色器可以使用tessphong自动计算Phong镶嵌：variablename汇编指令。下面是一个例子着色：
 
 Shader "Phong Tessellation" {
         Properties {
