@@ -106,7 +106,8 @@ Shader "Examples/2 Alpha Blended Textures" {
 **Alpha控制自发光**
 
 这个着色器使用的_maintex alpha分量来决定在哪里使用照明。它通过将纹理应用到两个阶段，在第一阶段中，纹理的alpha值被用来在顶点颜色和实心颜色之间进行混合。在第二阶段，乘以纹理的RGB值。
-```
+
+```javascript
 Shader "Examples/Self-Illumination" {
     Properties {
         _MainTex ("Base (RGB) Self-Illumination (A)", 2D) = "white" {}
