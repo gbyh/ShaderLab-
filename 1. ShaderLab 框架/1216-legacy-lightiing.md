@@ -92,6 +92,8 @@ Shader "VertexLit White" {
 
 
 扩展版本,增加了在监视面板中的材质颜色属性:
+
+```
 Shader "VertexLit Simple" {
     Properties {
         _Color ("Main Color", COLOR) = (1,1,1,1)
@@ -106,8 +108,10 @@ Shader "VertexLit Simple" {
         }
     }
 }
+```
 
 最后，一个完整的顶点光照着色器（参见SetTexture参考页）：
+
 ```
 Shader "VertexLit" {
     Properties {
