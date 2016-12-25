@@ -4,7 +4,7 @@
 
 >注意：当片段程序使用时，SetTexture命令没有效果；建议使用可编程着色器替代SetTexture命令。
 
-固定功能纹理用于做旧风格的组合效果。你可以在一个Pass中有多个SetTexture命令，所有纹理被顺序的应用，如绘图程序的层。SetTexture命令必须放在Pass的最后。
+固定功能纹理用于传统风格的组合效果。你可以在一个Pass中有多个SetTexture命令，所有纹理被顺序的应用，如绘图程序的层。SetTexture命令必须放在Pass的最后。
 
 语法：
 ```
