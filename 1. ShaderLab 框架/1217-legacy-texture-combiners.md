@@ -135,7 +135,8 @@ Shader "Examples/Self-Illumination" {
 }
 ```
 
-```
+```javascript
+
 Shader "Examples/Self-Illumination 2" {
     Properties {
         _IlluminCol ("Self-Illumination color (RGB)", Color) = (1,1,1,1)
