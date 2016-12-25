@@ -20,7 +20,7 @@
 |纹理块组合命令|说明|
 |:--|:--|
 |combine src1 * src2|src1 乘 src2，结果是比每个单独的输入要暗。|
-|combine src1 + src2|src1 加 src2，结果是比每个单独的输入亮。
+|combine src1 + src2|src1 加 src2，结果是比每个单独的输入亮。|
 |combine src1 - src2|src1 减 src2。|
 |combine src1 lerp (src2) src3|使用src2的alpha值在src3和src1之间插值。注意，插值是相反的方向：当alpha是1的时候是src1，当alpha是0的时候使用src3。|
 |combine src1 * src2 + src3|src1 乘 scr2的alpha，然后加src3。|
