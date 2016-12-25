@@ -65,4 +65,5 @@
     * 第9章 高级论题
     * 第10章 Profile 和性能
 * [3. ShaderLab 开发实战](3. ShaderLab 开发实战/3.0 ShaderLab 开发实战.md)
+    * [第18章 案例](3. ShaderLab 开发实战/第18章-案例.md)
 
