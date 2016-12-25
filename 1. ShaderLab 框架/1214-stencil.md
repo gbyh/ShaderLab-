@@ -170,7 +170,8 @@ stencilBufferValue 值为2。
 
                 v2f vert(appdata v) 
                 { 
-                    v2f o; o.pos = mul(UNITY_MATRIX_MVP, v.vertex); 
+                    v2f o; 
+                    o.pos = mul(UNITY_MATRIX_MVP, v.vertex); 
                     return o; 
                 }  
 
