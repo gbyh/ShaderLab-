@@ -68,15 +68,20 @@ Ambient * Lighting Window’s Ambient Intensity setting + (Light Color * Diffuse
 
 例如：
 总是纯红色渲染对象:
-```
+
+```javascript
+
 Shader "Solid Red" {
     SubShader {
         Pass { Color (1,0,0,0) }
     }
 }
 ```
+
 基本的着色对象白色和应用顶点照明：
-```
+
+```javascript
+
 Shader "VertexLit White" {
     SubShader {
         Pass {
@@ -93,7 +98,8 @@ Shader "VertexLit White" {
 
 扩展版本,增加了在监视面板中的材质颜色属性:
 
-```
+```javascript
+
 Shader "VertexLit Simple" {
     Properties {
         _Color ("Main Color", COLOR) = (1,1,1,1)
@@ -112,7 +118,7 @@ Shader "VertexLit Simple" {
 
 最后，一个完整的顶点光照着色器（参见SetTexture参考页）：
 
-```
+```javascript
 Shader "VertexLit" {
     Properties {
         _Color ("Main Color", Color) = (1,1,1,0)
