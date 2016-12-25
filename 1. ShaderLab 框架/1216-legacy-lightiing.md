@@ -89,8 +89,9 @@ Shader "VertexLit White" {
     }
 }
 ```
-An extended version that adds material color as a property visible in Material Inspector:
-延长版本,增加了材料颜色属性可见材料检查员:
+
+
+扩展版本,增加了在监视面板中的材质颜色属性:
 Shader "VertexLit Simple" {
     Properties {
         _Color ("Main Color", COLOR) = (1,1,1,1)
