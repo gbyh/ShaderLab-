@@ -55,7 +55,7 @@
 
 ```javascript
     Blend SrcAlpha OneMinusSrcAlpha        // Alpha 混合
-    Blend One Ond                          // 叠加
+    Blend One One                          // 叠加
     Blend OneMinusDstColor One             // 软叠加
     Blend DstColor Zero                    // 乘法
     Blend DstColor SrcColor                // 2 倍乘法
