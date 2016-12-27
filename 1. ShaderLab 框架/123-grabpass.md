@@ -168,9 +168,9 @@ Shader "Custom/GlassShader"
                 i.uvgrab.xy += distortion * _Magnitude;
 
                 // tex*proj()内置函数被用来执行投影纹理读取，其中的用来采样的纹理坐标 
-		// 在使用之前会除以第四个分量。
-		
-		//UNITY_PROJ_COORD传入四元纹理坐标用于给tex2Dproj读取,但是多数平台上,返回一样的值。
+                // 在使用之前会除以第四个分量。
+
+                //UNITY_PROJ_COORD传入四元纹理坐标用于给tex2Dproj读取,但是多数平台上,返回一样的值。
                 fixed4 col = tex2Dproj( _GrabTexture, UNITY_PROJ_COORD(i.uvgrab));
                 return col * mainColour * _Colour;
             }
