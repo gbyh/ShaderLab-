@@ -68,4 +68,5 @@
     * [第18章 案例](3. ShaderLab 开发实战/第18章-案例.md)
         * [18.1 ComputeShader介绍](3. ShaderLab 开发实战/181-computeshader介绍.md)
         * [18.2 轮廓](3. ShaderLab 开发实战/182-轮廓.md)
+        * [18.3 顶点和片段处理光照](3. ShaderLab 开发实战/183-顶点和片段处理光照.md)
 
