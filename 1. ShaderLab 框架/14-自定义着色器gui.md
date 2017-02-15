@@ -93,12 +93,12 @@ For a more comprehensive ShaderGUI example see the StandardShaderGUI.cs file tog
 
 Note that the simple example above could also be solved much simpler using MaterialPropertyDrawers. Add the following line to the Properties section of the Custom/Redify shader:
 
-```
+```csharp
     [Toggle(REDIFY_ON)] _Redify("Red?", Int) = 0
 ```
 
 and remove the:
 
-```
+```csharp
     CustomEditor "CustomShaderGUI"
 ```
