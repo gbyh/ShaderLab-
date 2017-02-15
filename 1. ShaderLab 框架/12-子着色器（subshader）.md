@@ -1,7 +1,7 @@
 ##子着色器（SubShader）
 
 ###语法
-```javascript
+```csharp
     SubShader { [Tags] [CommonState] Passdef [Passdef ...] }
 ```
 
