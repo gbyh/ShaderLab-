@@ -59,7 +59,7 @@ Shader "Custom/Redify" {
 
 As you can see the shader has a Keyword available for setting: REDIFY_ON. This can be changed be set on a per material basis by using the shaderKeywords property of the material. Below is an ShaderGUI instance that does this.
 
-```
+```csharp
 using UnityEngine;
 using UnityEditor;
 using System;
