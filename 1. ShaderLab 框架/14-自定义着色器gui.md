@@ -23,7 +23,7 @@ Any shader that has a custom editor defined (CustomEditor “CustomShaderGUI”)
 
 So we have a situation where we have a shader that can work in two modes; it renders standard diffuse lighting or it renders the blue and green channels with 50%.
 
-```
+```csharp
 Shader "Custom/Redify" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
