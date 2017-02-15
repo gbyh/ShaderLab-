@@ -8,14 +8,14 @@
 
 **示例**
 ```javascript
-        SubShader
+    SubShader
+    {
+        Pass 
         {
-            Pass 
-            {
-                Lightiing Off        // 关闭灯光
-                SetTexture [_MainTex] { }
-            }
+            Lighting Off        // 关闭灯光
+            SetTexture [_MainTex] { }
         }
+    }
 ```
 
 
