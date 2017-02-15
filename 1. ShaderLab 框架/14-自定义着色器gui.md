@@ -5,7 +5,7 @@ The first part to writing custom editor for your shader’s gui is defining a sh
 
 To define a custom editor you extend from the ShaderGUI class and place the script below an Editor folder in the assets directory.
 
-```javascript
+```csharp
 using UnityEditor;
 
 public class CustomShaderGUI : ShaderGUI 
