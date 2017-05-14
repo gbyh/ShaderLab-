@@ -65,6 +65,8 @@
 
 >请注意，每个纹理阶段可能会或可能不会被限制到0～1的范围内，这取决于平台。这可能会影响SetTexture阶段，可以产生大于1的值。
 
+---
+
 &emsp;&emsp;**单独的 Alpha & Color 计算**
 
 &emsp;&emsp;默认情况下，合并公式用于计算颜色的RGB和alpha分量。可选地，可以指定alpha计算的单独公式。这看起来像这样：
@@ -76,40 +78,42 @@
 ```
 &emsp;&emsp;在这里,我们RGB颜色相乘和叠加alpha。
 
-**高光：**
+&emsp;&emsp;**高光：**
 
-默认情况下，原色是漫反射、环境和镜面颜色的总和（如照明计算中定义的）。如果你将通道设置中的SeparateSpecular打开，镜面的颜色将被添加在合并计算后，而不是之前。这是内置顶点着色器的默认行为。
+&emsp;&emsp;默认情况下，原色是漫反射、环境和镜面颜色的总和（如照明计算中定义的）。如果你将通道设置中的SeparateSpecular打开，镜面的颜色将被添加在合并计算后，而不是之前。这是内置顶点着色器的默认行为。
 
-**图形硬件的支持**
+&emsp;&emsp;**图形硬件的支持**
 
-片段着色器支持现代图形卡（“Shader Model 2的桌面上，OpenGL ES 2移动）支持所有SetTexture模式和至少4个纹理贴图（他们中的许多人支持8）。如果你真的在很老的硬件上运行（前2003 PC，或在iPhone3GS手机），你可能有两个纹理阶段。着色器作者要写他或她想要支持的卡分开着色器。
+&emsp;&emsp;片段着色器支持现代图形卡（“Shader Model 2的桌面上，OpenGL ES 2移动）支持所有SetTexture模式和至少4个纹理贴图（他们中的许多人支持8）。如果你真的在很老的硬件上运行（前2003 PC，或在iPhone3GS手机），你可能有两个纹理阶段。着色器作者要写他或她想要支持的卡分开着色器。
 
-例如：
-Alpha 混合两个纹理
+---
 
-这个小例子需要两个纹理。第一集的第一组合是以_maintex，然后利用_blendtex Alpha通道在_blendtex RGB颜色褪色
+####例如：
+&emsp;&emsp;Alpha 混合两个纹理
 
-这个小例子有两个纹理。第一集第一组合器取_MainTex,然后使用alpha通道_BlendTex淡入_BlendTex的RGB颜色
+&emsp;&emsp;这个小例子需要两个纹理。第一集的第一组合是以_maintex，然后利用_blendtex Alpha通道在_blendtex RGB颜色褪色
 
-```javascript
-Shader "Examples/2 Alpha Blended Textures" {
-    Properties {
-        _MainTex ("Base (RGB)", 2D) = "white" {}
-        _BlendTex ("Alpha Blended (RGBA) ", 2D) = "white" {}
-    }
-    SubShader {
-        Pass {
-            // Apply base texture
-            SetTexture [_MainTex] {
-                combine texture
-            }
-            // Blend in the alpha texture using the lerp operator
-            SetTexture [_BlendTex] {
-                combine texture lerp (texture) previous
+&emsp;&emsp;这个小例子有两个纹理。第一集第一组合器取_MainTex,然后使用alpha通道_BlendTex淡入_BlendTex的RGB颜色
+
+```csharp
+    Shader "Examples/2 Alpha Blended Textures" {
+        Properties {
+            _MainTex ("Base (RGB)", 2D) = "white" {}
+            _BlendTex ("Alpha Blended (RGBA) ", 2D) = "white" {}
+        }
+        SubShader {
+            Pass {
+                // Apply base texture
+                SetTexture [_MainTex] {
+                    combine texture
+                }
+                // Blend in the alpha texture using the lerp operator
+                SetTexture [_BlendTex] {
+                    combine texture lerp (texture) previous
+                }
             }
         }
     }
-}
 ```
 
 **Alpha控制自发光**
