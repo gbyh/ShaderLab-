@@ -24,57 +24,57 @@
 
 ---
 
-####1. Ref（参考值）
+####&emsp;&emsp;1. Ref（参考值）
 ```javascript
     Ref referenceValue
 ```
 
-Ref用来设定参考值 `referenceValue`，这个值将用来与模板缓冲中的值进行比较。`referenceValue` 是一个取值范围位 0~255 的整数。
+&emsp;&emsp;Ref用来设定参考值 `referenceValue`，这个值将用来与模板缓冲中的值进行比较。`referenceValue` 是一个取值范围位 0~255 的整数。
 
 
-####2. ReadMask（读遮罩）
+####&emsp;&emsp;2. ReadMask（读遮罩）
 ```javascript
     ReadMask readMask
 ```
 
-`readMask` 将和 `referenceValue` 以及 `stencilBufferValue` 进行按位与（&）操作，`readMask` 取值范围也是 0～255 的整数，默认值为 255，二进制位 1111 1111，即读取的时候不对`referenceValue` 和 `stencilBufferValue` 产生效果，读取的还是原始值。
+&emsp;&emsp;`readMask` 将和 `referenceValue` 以及 `stencilBufferValue` 进行按位与（&）操作，`readMask` 取值范围也是 0～255 的整数，默认值为 255，二进制位 1111 1111，即读取的时候不对`referenceValue` 和 `stencilBufferValue` 产生效果，读取的还是原始值。
 
 
-####3. WriteMask（写遮罩）
+####&emsp;&emsp;3. WriteMask（写遮罩）
 ```javascript
     WriteMask writeMask
 ```
-`WriteMask` 是当写入模板缓冲时进行掩码操作（按位与【&】），`writeMask` 取值范围是 0～255 的整数，默认值也是 255，即当修改 `stencilBufferValue` 值时，写入的仍然是原始值。
+&emsp;&emsp;`WriteMask` 是当写入模板缓冲时进行掩码操作（按位与【&】），`writeMask` 取值范围是 0～255 的整数，默认值也是 255，即当修改 `stencilBufferValue` 值时，写入的仍然是原始值。
 
 
 
-####4. Comp（比较）
+####&emsp;&emsp;4. Comp（比较）
 ```javascript
     Comp comparisonFunction
 ```
-Comp 是定义参考值（`referenceValue`）与缓冲值（`stencilBufferValue`）比较的操作函数，默认值：always。
+&emsp;&emsp;Comp 是定义参考值（`referenceValue`）与缓冲值（`stencilBufferValue`）比较的操作函数，默认值：always。
 
 
 
-####5. Pass
+####&emsp;&emsp;5. Pass
 ```javascript
     Pass stencilOperation
 ```
-Pass 是定义当模板测试（和深度测试）通过时，则根据（`stencilOperation`值）对模板缓冲值（`stencilBufferValue`）进行处理，默认值：keep。
+&emsp;&emsp;Pass 是定义当模板测试（和深度测试）通过时，则根据（`stencilOperation`值）对模板缓冲值（`stencilBufferValue`）进行处理，默认值：keep。
 
 
 
-####6. Fail
+####&emsp;&emsp;6. Fail
 ```javascript
     Fail stencilOperation
 ```
-Fail 是定义当模板测试（和深度测试）失败时，则根据（`stencilOperation`值）对模板缓冲值（`stencilBufferValue`）进行处理，默认值：keep。
+&emsp;&emsp;Fail 是定义当模板测试（和深度测试）失败时，则根据（`stencilOperation`值）对模板缓冲值（`stencilBufferValue`）进行处理，默认值：keep。
 
-####7. ZFail
+####&emsp;&emsp;7. ZFail
 ```javascript
     ZFail stencilOperation
 ```
-ZFail 是定义当模板测试通过而深度测试失败时，则根据（`stencilOperation` 值）对模板缓冲值（`stencilBufferValue`）进行处理，默认值：keep。
+&emsp;&emsp;ZFail 是定义当模板测试通过而深度测试失败时，则根据（`stencilOperation` 值）对模板缓冲值（`stencilBufferValue`）进行处理，默认值：keep。
 
 >Comp、Pass、Fail 和 ZFail 被应用于背面消隐的几何体（只渲染正面的几何体），除非指定 Cull Front 时才会被应用于正面消隐的几何体（只渲染几何体的背面）。你也可以明确指定双面的模板状态通过定义 CompFront，PassFront，FailFront，ZFailFront（几何体正面），和 CompBack、PassBack、FailBack、ZFailBack（几何体背面）。
 
