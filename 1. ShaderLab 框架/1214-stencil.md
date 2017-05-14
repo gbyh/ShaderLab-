@@ -78,8 +78,8 @@
 
 >Comp、Pass、Fail 和 ZFail 被应用于背面消隐的几何体（只渲染正面的几何体），除非指定 Cull Front 时才会被应用于正面消隐的几何体（只渲染几何体的背面）。你也可以明确指定双面的模板状态通过定义 CompFront，PassFront，FailFront，ZFailFront（几何体正面），和 CompBack、PassBack、FailBack、ZFailBack（几何体背面）。
 
-####模板测试判断依据
-和深度测试一样，在 unity 中，每个像素的模板测试也有它自己一套独立的依据，具体公式如下：
+####&emsp;&emsp;模板测试判断依据
+&emsp;&emsp;和深度测试一样，在 unity 中，每个像素的模板测试也有它自己一套独立的依据，具体公式如下：
 ```javascript
     if（referenceValue&readMask comparisonFunction stencilBufferValue&readMask）
         通过像素
@@ -87,13 +87,13 @@
         抛弃像素
 ```
 
-在这个公式中，主要分 `comparisonFunction` 的左边部分和右边部分
+&emsp;&emsp;在这个公式中，主要分 `comparisonFunction` 的左边部分和右边部分
 
-`referenceValue` 是有 `Ref` 来定义的，这个是由程序员来定义的，`readMask` 是模板值读取掩码，它和 `referenceValue` 进行按位与（&）操作作为公式左边的结果，默认值为255，即按位与（&）的结果就是 `referenceValue` 本身。
+&emsp;&emsp;`referenceValue` 是有 `Ref` 来定义的，这个是由程序员来定义的，`readMask` 是模板值读取掩码，它和 `referenceValue` 进行按位与（&）操作作为公式左边的结果，默认值为255，即按位与（&）的结果就是 `referenceValue` 本身。
 
-`stencilBufferValue` 是对应位置当前模板缓冲区的值，同样与`readMask` 做按位掩码与操作，结果做为右边的部分。
+&emsp;&emsp;`stencilBufferValue` 是对应位置当前模板缓冲区的值，同样与`readMask` 做按位掩码与操作，结果做为右边的部分。
 
-`comparisonFunction` 比较操作通过 `Comp` 命令定义，公式左右两边的结果将通过它进行判断，其取值及其意义如下面列表所示。
+&emsp;&emsp;`comparisonFunction` 比较操作通过 `Comp` 命令定义，公式左右两边的结果将通过它进行判断，其取值及其意义如下面列表所示。
 
 
 ####8. Comparison Function（比较函数）
