@@ -24,10 +24,10 @@ Pass块使一个对象的几何形状被渲染一次。
 
 
 ####1. Cull
-```javascript
+```csharp
     Cull Back | Front | Off
 ```
-设置多边形剔除模式。
+&emsp;&emsp;设置多边形剔除模式。
 
 ####2. ZTest
 ```javascript
