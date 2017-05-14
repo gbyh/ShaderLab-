@@ -12,7 +12,7 @@
 ---
 
 ####&emsp;&emsp;1. Cull
-```javascript    
+```csharp    
     Cull Back | Front | Off
 ```
 &emsp;&emsp;控制多边形应该剔除(不绘制)的面。
@@ -20,26 +20,28 @@
 ---
 
 ####&emsp;&emsp;2. ZWrite
-```javascript
+```csharp
     ZWrite On | Off
 ```
 &emsp;&emsp;控制像素从这个对象是否写入深度缓冲(默认)。如果你drawng固体物质,离开这。如果你要画半透明效果，切换到ZWrite。
 
 ####&emsp;&emsp;&emsp;&emsp;2.1 ZTest
-```javascript
+```csharp
         ZTest Less | Greater | LEqual | GEqual | Equal | NotEqual | Always
 ```
 &emsp;&emsp;如何进行深度测试。LEqual（默认是绘制对象或在距离为现有对象；隐藏在他们身后的物体）。
 
 ####&emsp;&emsp;&emsp;&emsp;2.2 Offset
-```javascript
+```csharp
         offset Factor, Units
 ```
 &emsp;&emsp;允许您指定两个参数的深度偏移量。因素和单位。因子缩放Z的最大斜率，相对于X或Y的多边形，和单位规模的可分辨的最小深度缓冲值。这允许你强制一个多边形被绘制在另一个，虽然他们实际上是在同一位置。例如偏移0，1拉的多边形更接近相机忽略了多边形的斜率，而偏移量的1，1将拉的多边形更接近时，看着一个掠角。
 
+---
+
 ###示例
 这个对象只渲染对象的背面:
-```javascript
+```csharp
     Shader "Show Insides"
     {
         SubShader
@@ -60,17 +62,17 @@
 
 ---
 
-####3. 使用深度写的半透明材质
+####&emsp;&emsp;3. 使用深度写的半透明材质
 
-通常半透明阴影不写进深度缓冲。然而，这会造成绘制顺序问题，尤其是在复杂的非凸网格。如果你想淡入和淡出网格，然后使用材质填充深度缓冲之前呈现透明可能是有用的。
+&emsp;&emsp;通常半透明阴影不写进深度缓冲。然而，这会造成绘制顺序问题，尤其是在复杂的非凸网格。如果你想淡入和淡出网格，然后使用材质填充深度缓冲之前呈现透明可能是有用的。
 
 ![](/assets/TransparentDiffuseZWrite.png)
 
-半透明对象
+&emsp;&emsp;半透明对象
 
-左：标准 `Transparent/Diffuse`
+&emsp;&emsp;左：标准 `Transparent/Diffuse`
 
-右：写入深度缓冲
+&emsp;&emsp;右：写入深度缓冲
 
 ```javascript
     Shader "Transparent/DiffuseZwrite"    
@@ -98,8 +100,8 @@
 
 ---
 
-####4. 法线调试
-物体背面显示亮紫色
+####&emsp;&emsp;4. 法线调试
+&emsp;&emsp;物体背面显示亮紫色
 
 ```javascript
     Shader "Reveal BackfaceTest" 
