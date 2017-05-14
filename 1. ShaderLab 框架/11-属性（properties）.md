@@ -1,6 +1,6 @@
 ##属性（Properties）
 
-###语法
+###&emsp&emsp语法
 
 ```csharp
         Properties { Property [Property ...] }
