@@ -2,7 +2,7 @@
 
 ###语法
 
-```javascript
+```csharp
         Shader "name" { [Properties] Subshaders [Fallback] [CustomEditor] }
 ```
 
