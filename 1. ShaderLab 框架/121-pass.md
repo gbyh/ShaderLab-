@@ -66,7 +66,7 @@ Pass块使一个对象的几何形状被渲染一次。
 ###● 固定功能着色器命令
 
      固定功能的照明和材质
-```javascript
+```csharp
         Lighting On | Off
         Material { Material Block }
         SeparateSpecular On | Off
