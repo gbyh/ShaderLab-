@@ -22,7 +22,9 @@
     BlendOp BlendOp: 非颜色混合操作
 ```
 
----
+<br>
+
+
 
 ####&emsp;&emsp;混合操作
 &emsp;&emsp;可以使用以下的混合运算
@@ -63,7 +65,9 @@
     Blend DstColor SrcColor                // 2 倍乘法
 ```
 
----
+<br>
+
+
 
 ####示例
 叠加一个纹理到屏幕
