@@ -9,7 +9,7 @@
 
 ###&emsp;&emsp;语法：
 
-```javascript
+```csharp
     stencil 
     {
         Ref referenceValue
