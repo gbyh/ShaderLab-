@@ -1,4 +1,4 @@
----
+
 ## 传统的 Fog
 
 &emsp;&emsp;用雾命令控制雾参数。
@@ -11,7 +11,9 @@
     Fog
     Fog {Fog Commands}
 ```
----
+<br>
+
+
 
 &emsp;&emsp;**指定花括号内的雾命令。**
 
