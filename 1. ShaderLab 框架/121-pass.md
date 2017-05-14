@@ -73,18 +73,18 @@ Pass块使一个对象的几何形状被渲染一次。
         Color Color-value
         ColorMaterial AmbientAndDiffuse | Emission
 ```
-所有这些控制固定功能，每个顶点照明：打开它，设置材料的颜色，打开高光的亮点，提供默认的颜色，如果顶点光照关闭，并控制网格顶点颜色如何影响照明。
+&emsp;&emsp;所有这些控制固定功能，每个顶点照明：打开它，设置材料的颜色，打开高光的亮点，提供默认的颜色，如果顶点光照关闭，并控制网格顶点颜色如何影响照明。
 
-####1. Fog
+####&emsp;&emsp;1. Fog
 ```javascript
     Fog { Fog Block }
 ```
 
-####2. AlphaTest
+####&emsp;&emsp;2. AlphaTest
 ```javascript
     AlphaTest ( Less | Greater | LEqual | GEqual | Equal | NotEqual | Always ) CutoffValue
 ```
-####3. Texture Combiners
+####&emsp;&emsp;3. Texture Combiners
 ```javascript
     SetTexture textureProperty { combine options }
 ```
