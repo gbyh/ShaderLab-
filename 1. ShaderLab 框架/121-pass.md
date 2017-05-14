@@ -30,26 +30,26 @@ Pass块使一个对象的几何形状被渲染一次。
 &emsp;&emsp;设置多边形剔除模式。
 
 ####2. ZTest
-```javascript
+```csharp
     ZTest (Less | Greater | LEqual | GEqual | Equal | NotEqual | Always)
 ```
 &emsp;&emsp;设置深度缓冲测试模式。
 
 ####3. ZWrite
-```javascript
+```csharp
     ZWrite On | Off
 ```
-设置深度缓冲的写模式。
+&emsp;&emsp;设置深度缓冲的写模式。
 
 ####4. Blend
-```javascript
+```csharp
     Blend SourceBlendMode DestBlendMode
     Blend SourceBlendMode DestBlendMode, AlphaSourceBlendMode AlphaDestBlendMode
 ```
-设置α混合模式。
+&emsp;&emsp;设置α混合模式。
 
 ####5. ColorMask
-```javascript
+```csharp
     ColorMask RGB | A | 0 | any combination of R, G, B, A
 ```
 设置彩色通道写掩码。设置为0将关闭所有渲染的颜色通道。默认模式是写所有通道（RGBA），但是对于一些特殊的效果，你可能想离开一定的渠道不被修改，或完全禁用颜色写。
