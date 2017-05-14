@@ -1,4 +1,4 @@
----
+
 ##Legacy Texture Combiners（传统的纹理合成）
 
 &emsp;&emsp;在计算基本顶点照明后，应用纹理。在ShaderLab，这是通过使用SetTexture命令。
