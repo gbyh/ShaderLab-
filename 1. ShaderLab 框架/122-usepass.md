@@ -1,12 +1,15 @@
+---
 ##UsePass
-UsePass 命令使用另一个着色器中命名为Name的pass。
+&emsp;&emsp;UsePass 命令使用另一个着色器中命名为Name的pass。
 
-语法
+####&emsp;&emsp;语法：
 ```
     UsePass "Shader/Name"
 ```
 
 用给定的着色器插入给定名称的所有通道。着色器/名称包含着色器的名称和通道的名称，由斜杠字符分隔。注意，只考虑第一次支持的着色器。
+
+---
 
 **细节：**
 
