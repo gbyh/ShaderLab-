@@ -28,10 +28,12 @@
 
 >所有的src属性可以是previous、constant、primary或texture其中之一。
 
+```
     Previous 是之前SetTexture的结果。		
     Primary 是从照明计算或顶点颜色的颜色。	
     Texture 纹理是在SetTexture TextureName指定纹理的颜色（见上图）。
     Constant 是ConstantColor指定的颜色。
+```
 		
 修饰符：
 
