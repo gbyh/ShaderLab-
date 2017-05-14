@@ -118,34 +118,34 @@
 
 &emsp;&emsp;**Alpha控制自发光**
 
-这个着色器使用的_maintex alpha分量来决定在哪里使用照明。它通过将纹理应用到两个阶段，在第一阶段中，纹理的alpha值被用来在顶点颜色和实心颜色之间进行混合。在第二阶段，乘以纹理的RGB值。
+&emsp;&emsp;这个着色器使用的_maintex alpha分量来决定在哪里使用照明。它通过将纹理应用到两个阶段，在第一阶段中，纹理的alpha值被用来在顶点颜色和实心颜色之间进行混合。在第二阶段，乘以纹理的RGB值。
 
-```javascript
-Shader "Examples/Self-Illumination" {
-    Properties {
-        _MainTex ("Base (RGB) Self-Illumination (A)", 2D) = "white" {}
-    }
-    SubShader {
-        Pass {
-            // Set up basic white vertex lighting
-            Material {
-                Diffuse (1,1,1,1)
-                Ambient (1,1,1,1)
-            }
-            Lighting On
-
-            // Use texture alpha to blend up to white (= full illumination)
-            SetTexture [_MainTex] {
-                constantColor (1,1,1,1)
-                combine constant lerp(texture) previous
-            }
-            // Multiply in texture
-            SetTexture [_MainTex] {
-                combine previous * texture
+```csharp
+    Shader "Examples/Self-Illumination" {
+        Properties {
+            _MainTex ("Base (RGB) Self-Illumination (A)", 2D) = "white" {}
+        }
+        SubShader {
+            Pass {
+                // Set up basic white vertex lighting
+                Material {
+                    Diffuse (1,1,1,1)
+                    Ambient (1,1,1,1)
+                }
+                Lighting On
+    
+                // Use texture alpha to blend up to white (= full illumination)
+                SetTexture [_MainTex] {
+                    constantColor (1,1,1,1)
+                    combine constant lerp(texture) previous
+                }
+                // Multiply in texture
+                SetTexture [_MainTex] {
+                    combine previous * texture
+                }
             }
         }
     }
-}
 ```
 
 ```javascript
