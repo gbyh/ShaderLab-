@@ -52,26 +52,27 @@
 
 **Material Block**
 
-这包含材质如何反应光的设置。任何这些属性都可以忽略，在这种情况下，它们默认为黑色（即没有影响）。
+&emsp;&emsp;这包含材质如何反应光的设置。任何这些属性都可以忽略，在这种情况下，它们默认为黑色（即没有影响）。
 
-**Diffuse color:** 漫反射颜色分量。这是一个对象的基本颜色。
+&emsp;&emsp;**Diffuse color:** 漫反射颜色分量。这是一个对象的基本颜色。
 
-**Ambient color:** 环境颜色分量。这是对象的颜色，在照明窗口中被环境光照射。
+&emsp;&emsp;**Ambient color:** 环境颜色分量。这是对象的颜色，在照明窗口中被环境光照射。
 
-**Specular color:** 对象的高光的颜色。
+&emsp;&emsp;**Specular color:** 对象的高光的颜色。
 
-**Shininess number:** 突出的清晰度，在1和0之间。0你得到了一个巨大的亮点，看起来像漫反射照明，1的时候你得到一个小的斑点。
+&emsp;&emsp;**Shininess number:** 突出的清晰度，在1和0之间。0你得到了一个巨大的亮点，看起来像漫反射照明，1的时候你得到一个小的斑点。
 
-**Emission color:** 物体不被任何光线击中时的颜色。
+&emsp;&emsp;**Emission color:** 物体不被任何光线击中时的颜色。
 
-灯光打到物体的全部颜色是:
+>灯光打到物体的全部颜色是:
 Ambient * Lighting Window’s Ambient Intensity setting + (Light Color * Diffuse + Light Color * Specular) + Emission
 该方程的光部分（括号内）是所有的灯光打在对象重复。
 通常你想继续扩散和环境颜色相同的（所有的Unity内置的着色器这样做）。
 
+---
 
-例如：
-总是纯红色渲染对象:
+####例如：
+&emsp;&emsp;总是纯红色渲染对象:
 
 ```javascript
 
@@ -82,7 +83,7 @@ Shader "Solid Red" {
 }
 ```
 
-基本的着色对象白色和应用顶点照明：
+&emsp;&emsp;基本的着色对象白色和应用顶点照明：
 
 ```javascript
 
@@ -100,54 +101,54 @@ Shader "VertexLit White" {
 ```
 
 
-扩展版本,增加了在监视面板中的材质颜色属性:
+&emsp;&emsp;扩展版本,增加了在监视面板中的材质颜色属性:
 
 ```javascript
 
-Shader "VertexLit Simple" {
-    Properties {
-        _Color ("Main Color", COLOR) = (1,1,1,1)
-    }
-    SubShader {
-        Pass {
-            Material {
-                Diffuse [_Color]
-                Ambient [_Color]
+    Shader "VertexLit Simple" {
+        Properties {
+            _Color ("Main Color", COLOR) = (1,1,1,1)
+        }
+        SubShader {
+            Pass {
+                Material {
+                    Diffuse [_Color]
+                    Ambient [_Color]
+                }
+                Lighting On
             }
-            Lighting On
         }
     }
-}
 ```
 
-最后，一个完整的顶点光照着色器（参见SetTexture参考页）：
+&emsp;&emsp;最后，一个完整的顶点光照着色器（参见SetTexture参考页）：
 
 ```javascript
-Shader "VertexLit" {
-    Properties {
-        _Color ("Main Color", Color) = (1,1,1,0)
-        _SpecColor ("Spec Color", Color) = (1,1,1,1)
-        _Emission ("Emmisive Color", Color) = (0,0,0,0)
-        _Shininess ("Shininess", Range (0.01, 1)) = 0.7
-        _MainTex ("Base (RGB)", 2D) = "white" {}
-    }
-    SubShader {
-        Pass {
-            Material {
-                Diffuse [_Color]
-                Ambient [_Color]
-                Shininess [_Shininess]
-                Specular [_SpecColor]
-                Emission [_Emission]
-            }
-            Lighting On
-            SeparateSpecular On
-            SetTexture [_MainTex] {
-                Combine texture * primary DOUBLE, texture * primary
+    Shader "VertexLit" {
+        Properties {
+            _Color ("Main Color", Color) = (1,1,1,0)
+            _SpecColor ("Spec Color", Color) = (1,1,1,1)
+            _Emission ("Emmisive Color", Color) = (0,0,0,0)
+            _Shininess ("Shininess", Range (0.01, 1)) = 0.7
+            _MainTex ("Base (RGB)", 2D) = "white" {}
+        }
+        SubShader {
+            Pass {
+                Material {
+                    Diffuse [_Color]
+                    Ambient [_Color]
+                    Shininess [_Shininess]
+                    Specular [_SpecColor]
+                    Emission [_Emission]
+                }
+                Lighting On
+                SeparateSpecular On
+                SetTexture [_MainTex] {
+                    Combine texture * primary DOUBLE, texture * primary
+                }
             }
         }
     }
-}
 ```
 
 
