@@ -34,6 +34,8 @@
     Texture 纹理是在SetTexture TextureName指定纹理的颜色（见上图）。
     Constant 是ConstantColor指定的颜色。
 ```
+
+---
 		
 修饰符：
 
