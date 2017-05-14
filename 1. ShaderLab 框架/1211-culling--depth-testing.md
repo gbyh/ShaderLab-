@@ -7,31 +7,31 @@
 
 
 
-###语法 ：
+###&emsp;&emsp;语法 ：
 
 ---
 
-####1. Cull
+####&emsp;&emsp;1. Cull
 ```javascript    
     Cull Back | Front | Off
 ```
-控制多边形应该剔除(不绘制)的面。
+&emsp;&emsp;控制多边形应该剔除(不绘制)的面。
 
 ---
 
-####2. ZWrite
+####&emsp;&emsp;2. ZWrite
 ```javascript
     ZWrite On | Off
 ```
-控制像素从这个对象是否写入深度缓冲(默认)。如果你drawng固体物质,离开这。如果你要画半透明效果，切换到ZWrite。
+&emsp;&emsp;控制像素从这个对象是否写入深度缓冲(默认)。如果你drawng固体物质,离开这。如果你要画半透明效果，切换到ZWrite。
 
-####&emsp;&emsp;2.1 ZTest
+####&emsp;&emsp;&emsp;&emsp;2.1 ZTest
 ```javascript
         ZTest Less | Greater | LEqual | GEqual | Equal | NotEqual | Always
 ```
 如何进行深度测试。LEqual（默认是绘制对象或在距离为现有对象；隐藏在他们身后的物体）。
 
-####&emsp;&emsp;2.2 Offset
+####&emsp;&emsp;&emsp;&emsp;2.2 Offset
 ```javascript
         offset Factor, Units
 ```
