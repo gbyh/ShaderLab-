@@ -209,7 +209,7 @@ stencilBufferValue 值为2。
 
 &emsp;&emsp;第二个着色器将只对第一个(红色)着色器通过,因为它是检查值等于 2。如果模版测试失败将值溢出型减 1。
 
-```javascript
+```csharp
     Shader "Green" 
     { 
         SubShader 
@@ -266,7 +266,7 @@ stencilBufferValue 值为2。
 
 &emsp;&emsp;第三个着色器将只通过模版值被减少了2次的像素，第一个着色器（红色）的深度测试失败的并且第二个着色器模版测试失败的像素。
 
-```javascript
+```csharp
     Shader "Blud" 
     { 
         SubShader 
@@ -316,7 +316,7 @@ stencilBufferValue 值为2。
 
 &emsp;&emsp;然后使用标准表面着色器再渲染一次，使用正面剔除，禁用深度测试和模版测试丢弃之前标记的像素。
 
-```javascript
+```csharp
     Shader "Hole" 
     { 
         Properties 
