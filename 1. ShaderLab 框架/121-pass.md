@@ -56,7 +56,7 @@ Pass块使一个对象的几何形状被渲染一次。
 
 
 ####&emsp;&emsp;6. Offset
-```javascript
+```csharp
     Offset OffsetFactor, OffsetUnits
 ```
 &emsp;&emsp;设置Z缓冲深度偏移量。
