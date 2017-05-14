@@ -37,15 +37,17 @@
 
 ---
 		
-修饰符：
+####&emsp;&emsp;修饰符：
 
-上述公式可由Double或Quad使得颜色亮度2倍或4倍。
+&emsp;&emsp;上述公式可由Double或Quad使得颜色亮度2倍或4倍。
 
-所有的src属性的值，除了lerp，可以选择其中之一。	
+&emsp;&emsp;所有的src属性的值，除了lerp，可以选择其中之一。	
 
-所有的src属性可以跟一个alpha用来只使用alpha通道。 
+&emsp;&emsp;所有的src属性可以跟一个alpha用来只使用alpha通道。 
+
+<br>
 		
-Texture 块 constantColor 命令：
+&emsp;&emsp;**Texture 块 constantColor 命令：**
 
 ConstantColor color: 定义了一个固定颜色，可用于组合命令。
 
