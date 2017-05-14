@@ -1,24 +1,28 @@
+
+---
 ##传统的 Alpha Testing
 
-alpha测试是拒绝将像素写入屏幕的最后机会。
+&emsp;&emsp;alpha测试是拒绝将像素写入屏幕的最后机会。
 
-注：当使用片段程序时，透明度测试命令是没有效果的；大多数平台上的测试是使用HLSL着色器做clip()功能。建议使用可编程着色器这些天而不是SetTexture命令。
+>注：当使用片段程序时，透明度测试命令是没有效果的；大多数平台上的测试是使用HLSL着色器做clip()功能。建议使用可编程着色器这些而不是SetTexture命令。
 
-在计算最终输出颜色后，颜色可以相对于固定值具有alpha值。如果测试失败，则像素不会写入显示器。
+&emsp;&emsp;在计算最终输出颜色后，颜色可以相对于固定值具有alpha值。如果测试失败，则像素不会写入显示器。
 
-####语法：
+####&emsp;&emsp;语法：
 ```
-AlphaTest Off
+    AlphaTest Off
 ```
 
-渲染所有像素（默认）或…
-比较alphavalue AlphaTest
+&emsp;&emsp;渲染所有像素（默认）或…
 
-设置alpha测试只渲染alpha值在一定范围内的像素。
+&emsp;&emsp;**比较：** AlphaTest alphavalue
 
+&emsp;&emsp;设置alpha测试只渲染alpha值在一定范围内的像素。
 
-####比较
-比较是下列单词之一：
+---
+
+####&emsp;&emsp;比较：
+&emsp;&emsp;比较是下列单词之一：
 
 |关键字|说明|
 |:--|:--|
