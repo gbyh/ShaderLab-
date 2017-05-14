@@ -127,7 +127,7 @@
             Pass  
             { 
                 Color (1, 0, 1, 1) 
-                Cull Front } 
+                Cull Front
             } 
         } 
     }
@@ -135,7 +135,7 @@
 
 ---
 
-####5. 玻璃剔除
+####&emsp;&emsp;5. 玻璃剔除
 
 ```javascript
     Shader "Simple Glass" 
