@@ -1,4 +1,4 @@
----
+
 ##属性（Properties）
 
 ###&emsp;&emsp;语法：
@@ -7,7 +7,7 @@
         Properties { Property [Property ...] }
 ```
 
-----
+<br>
 
 ####定义属性的块。大括号内的多个属性定义如下。
 
@@ -33,7 +33,7 @@
         name ("display name", 3D) = "defaulttexture" {}
 ```
 
-----
+<br>
 
 **示例**
 ```csharp
