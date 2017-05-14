@@ -2,7 +2,7 @@
 
 ###语法
 
-```javascript
+```csharp
         Properties { Property [Property ...] }
 ```
 
