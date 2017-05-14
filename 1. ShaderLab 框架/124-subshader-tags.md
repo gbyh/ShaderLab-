@@ -20,7 +20,7 @@
 
 ---
 
-####&emsp;&emsp;Rendering Order - Queue tag
+####&emsp;&emsp;1、Rendering Order - Queue tag
 
 &emsp;&emsp;可以使用队列标记确定对象的顺序。一个着色器决定对象属于的渲染队列，这样任何透明着色器确保他们在不透明的物体之后被绘制等等。
 
@@ -64,37 +64,35 @@
     Tags { "Queue" = "Geometry+1" }
 ```
 
-这将使对象在所有不透明对象之后呈现，但在透明对象之前，呈现队列索引将是2001（几何加1）。这是非常有用的情况下，你希望一些对象总是在其他对象集之间绘制。例如，在大多数情况下，透明的水应该绘制在不透明的物体，但在透明物体之前。
+&emsp;&emsp;这将使对象在所有不透明对象之后呈现，但在透明对象之前，呈现队列索引将是2001（几何加1）。这是非常有用的情况下，你希望一些对象总是在其他对象集之间绘制。例如，在大多数情况下，透明的水应该绘制在不透明的物体，但在透明物体之前。
 
-队列2500（“Geometry + 500”）被认为“不透明”和优化为最佳性能对象的绘制顺序。更高的渲染队列被认为是“透明对象”和对象根据距离排序，开始渲染从最远到最接近的。天空盒被绘制在所有不透明和透明物体之间。
+&emsp;&emsp;队列2500（“Geometry + 500”）被认为“不透明”和优化为最佳性能对象的绘制顺序。更高的渲染队列被认为是“透明对象”和对象根据距离排序，开始渲染从最远到最接近的。天空盒被绘制在所有不透明和透明物体之间。
 
-####RenderType tag
+####&emsp;&emsp;2、RenderType tag
 
-RenderType标签分类着色器分成几个预定义组,例如,是一个不透明的材质,或一个alpha-tested材质等。这是材质替换和在某些情况下使用的用于生产相机的深度纹理。
+&emsp;&emsp;RenderType标签分类着色器分成几个预定义组,例如,是一个不透明的材质,或一个alpha-tested材质等。这是材质替换和在某些情况下使用的用于生产相机的深度纹理。
 
-####DisableBatching tag
+####&emsp;&emsp;3、DisableBatching tag
 
-当Draw Call Batching被使用的时候一些着色器不工作，那是因为批处理转换所有的多边形到世界空间，所以物体空间丢失。
+&emsp;&emsp;当Draw Call Batching被使用的时候一些着色器不工作，那是因为批处理转换所有的多边形到世界空间，所以物体空间丢失。
 
-DisableBatching标记可用于incidate。有三个可能的值：“True”(总是禁用批处理这种材质)，“False”(不会禁用批处理；这是缺省值)和“LODFading”(LOD衰落时禁用批处理活动，主要是用于树)。
+&emsp;&emsp;DisableBatching标记可用于incidate。有三个可能的值：“True”(总是禁用批处理这种材质)，“False”(不会禁用批处理；这是缺省值)和“LODFading”(LOD衰落时禁用批处理活动，主要是用于树)。
 
-####ForceNoShadowCasting tag
+####&emsp;&emsp;4、ForceNoShadowCasting tag
 
-如果ForceNoShadowCasting标记的值为“True”，然后使用这个subshader呈现的对象永远不会阴影。这是很有用的，当你使用材质替换透明的对象和你不会从另一个subshader继承一个影子。
+&emsp;&emsp;如果ForceNoShadowCasting标记的值为“True”，然后使用这个subshader呈现的对象永远不会阴影。这是很有用的，当你使用材质替换透明的对象和你不会从另一个subshader继承一个影子。
 
-####IgnoreProjector tag
+####&emsp;&emsp;5、IgnoreProjector tag
 
-如果IgnoreProjector标记的值为“True”，然后一个对象，使用这种材质投影仪将不受影响。这主要是有用的半透明的对象，因为没有投影仪有影响他们的好方法。
+&emsp;&emsp;如果IgnoreProjector标记的值为“True”，然后一个对象，使用这种材质投影仪将不受影响。这主要是有用的半透明的对象，因为没有投影仪有影响他们的好方法。
 
-####CanUseSpriteAtlas tag
+####&emsp;&emsp;6、CanUseSpriteAtlas tag
 
 CanUseSpriteAtlas标记设置为“False”，如果材质是精灵,当他们在图集中是无用的(见Sprite Packer)。
 
-####PreviewType tag
+####&emsp;&emsp;7、PreviewType tag
 
-PreviewType表明material在监视面板预览应该显示material。默认情况下显示材质球，但PreviewType也可以设置为“Plane”(将显示为2d)或“Skybox”(将显示天空体)。
+&emsp;&emsp;PreviewType表明material在监视面板预览应该显示material。默认情况下显示材质球，但PreviewType也可以设置为“Plane”(将显示为2d)或“Skybox”(将显示天空体)。
 
-####See Also
-Passes 也可以设置 Tags，见 Pass Tags。
 
 🔚
