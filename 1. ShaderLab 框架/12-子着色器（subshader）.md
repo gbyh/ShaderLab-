@@ -1,7 +1,7 @@
 ---
 ##子着色器（SubShader）
 
-###&emsp&emsp语法：
+###&emsp;&emsp;语法：
 ```csharp
     SubShader { [Tags] [CommonState] Passdef [Passdef ...] }
 ```

@@ -4,7 +4,7 @@
 
 
 
-###&emsp&emsp语法：
+###&emsp;&emsp;语法：
 
 ```csharp
     Pass { [Name and Tags] [RenderSetup] }
@@ -14,7 +14,8 @@
 ---
 
 ####● Name and tags
-&emsp&emspPass 可以定义它的名称和任意数量的标签-传递给渲染引擎的传递意图的名称／值的字符串。
+
+&emsp;&emsp;Pass 可以定义它的名称和任意数量的标签-传递给渲染引擎的传递意图的名称／值的字符串。
 
 
 ####● RenderSetup

@@ -1,11 +1,12 @@
+---
 ##ShaderLab 语法
 
-###语法
+###&emsp;&emsp;语法
 
 ```csharp
         Shader "name" { [Properties] Subshaders [Fallback] [CustomEditor] }
 ```
-
+---
 
 ###示例：
 
