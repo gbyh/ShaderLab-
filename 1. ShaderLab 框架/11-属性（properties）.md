@@ -6,8 +6,7 @@
 ```csharp
         Properties { Property [Property ...] }
 ```
-&emsp;&emsp;
----
+
 
 ####定义属性的块。大括号内的多个属性定义如下。
 
