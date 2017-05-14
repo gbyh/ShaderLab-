@@ -52,8 +52,8 @@
 |OneMinusDstAlpha| 1 - 目标 alpha 值|
 
 
-####细节
-下面是最常见的混合类型：
+####&emsp;&emsp;细节
+&emsp;&emsp;下面是最常见的混合类型：
 
 ```javascript
     Blend SrcAlpha OneMinusSrcAlpha        // Alpha 混合
@@ -63,6 +63,7 @@
     Blend DstColor SrcColor                // 2 倍乘法
 ```
 
+---
 
 ####示例
 叠加一个纹理到屏幕
