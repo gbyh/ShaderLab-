@@ -1,4 +1,4 @@
----
+
 ##传统的 BindChannels
 
 &emsp;&emsp;bindchannels命令允许您指定顶点数据映射到图形硬件。
