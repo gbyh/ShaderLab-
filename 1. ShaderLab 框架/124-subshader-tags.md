@@ -18,6 +18,7 @@
 
 &emsp;&emsp;Unity除了内置标签,你可以使用你自己的标签和使用Material.GetTag函数查询它们。
 
+---
 
 ####&emsp;&emsp;Rendering Order - Queue tag
 
@@ -33,30 +34,32 @@
 |Transparent|该渲染队列渲染几何和AlphaTest后，从后到前的顺序。什么alpha混合（即着色器，不写入深度缓冲）应该去这里（玻璃、粒子效果）。|
 |Overlay|此渲染队列是用于覆盖效果。最后渲染的任何东西都应该放在这里（例如镜头光晕）|
 		 
-```
-Shader "Transparent Queue Example"
-{
-     SubShader
-     {
-        Tags { "Queue" = "Transparent" } // 如何在透明队列中呈现
-
-        Pass
-        {
-            // rest of the shader body...
+```csharp
+    Shader "Transparent Queue Example"
+    {
+         SubShader
+         {
+            Tags { "Queue" = "Transparent" } // 如何在透明队列中呈现
+    
+            Pass
+            {
+                // rest of the shader body...
+            }
         }
     }
-}
 ```
 
-每个队列是由整数指数为代表：
+&emsp;&emsp;每个队列是由整数指数为代表：
 
+```
     Background 是 1000, 
     Geometry 是 2000,
     AlphaTest 是 2450, 
     Transparent 是 3000, 
     Overlay 4000。
+```
     
-如果一个着色器使用一个队列:
+&emsp;&emsp;如果一个着色器使用一个队列:
 ```
     Tags { "Queue" = "Geometry+1" }
 ```
