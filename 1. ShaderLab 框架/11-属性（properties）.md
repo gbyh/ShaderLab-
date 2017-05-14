@@ -6,7 +6,9 @@
         Properties { Property [Property ...] }
 ```
 
-定义属性的块。括号内的多个属性定义如下。
+<br>
+
+###定义属性的块。括号内的多个属性定义如下。
 
 **数字和滑动条**
 ```javascript
