@@ -19,7 +19,7 @@
 
 &emsp;&emsp;这里是一个昂贵的方式来反转渲染之前的颜色：
 
-```
+```csharp
     Shader "GrabPassInvert"
     {
         SubShader
@@ -44,141 +44,141 @@
 
 ---
 
-```javascript
-Shader "Custom/GrabShader"
-{
-    SubShader
+```csharp
+    Shader "Custom/GrabShader"
     {
-        Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Opaque"}
-        ZWrite On Lighting Off Cull Off Fog { Mode Off } Blend One Zero
-
-        GrabPass { "_GrabTexture" }
-
-        Pass
+        SubShader
         {
-            CGPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
-            #include "UnityCG.cginc"
-
-            sampler2D _GrabTexture;
-
-            struct vin_vct
+            Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Opaque"}
+            ZWrite On Lighting Off Cull Off Fog { Mode Off } Blend One Zero
+    
+            GrabPass { "_GrabTexture" }
+    
+            Pass
             {
-                float4 vertex : POSITION;
-            };
-
-            struct v2f_vct
-            {
-                float4 vertex : POSITION;
-                float4 uvgrab : TEXCOORD1;
-            };
-
-            // Vertex function
-            v2f_vct vert (vin_vct v)
-            {
-                v2f_vct o;
-                o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
-                o.uvgrab = ComputeGrabScreenPos(o.vertex);
-                return o;
+                CGPROGRAM
+                #pragma vertex vert
+                #pragma fragment frag
+                #include "UnityCG.cginc"
+    
+                sampler2D _GrabTexture;
+    
+                struct vin_vct
+                {
+                    float4 vertex : POSITION;
+                };
+    
+                struct v2f_vct
+                {
+                    float4 vertex : POSITION;
+                    float4 uvgrab : TEXCOORD1;
+                };
+    
+                // Vertex function
+                v2f_vct vert (vin_vct v)
+                {
+                    v2f_vct o;
+                    o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+                    o.uvgrab = ComputeGrabScreenPos(o.vertex);
+                    return o;
+                }
+    
+                // Fragment function
+                half4 frag (v2f_vct i) : COLOR
+                {
+                    fixed4 col = tex2Dproj( _GrabTexture, UNITY_PROJ_COORD(i.uvgrab));
+                    return col;
+                }
+                ENDCG
             }
-
-            // Fragment function
-            half4 frag (v2f_vct i) : COLOR
-            {
-                fixed4 col = tex2Dproj( _GrabTexture, UNITY_PROJ_COORD(i.uvgrab));
-                return col;
-            }
-            ENDCG
         }
     }
-}
 ```
 
-### 玻璃着色
+###&emsp;&emsp; 玻璃着色
 
-```javascript
-Shader "Custom/GlassShader"
-{
-    Properties
+```csharp
+    Shader "Custom/GlassShader"
     {
-        _MainTex ("Base (RGB) Trans (A)", 2D) = "white" {}
-        _Colour ("Colour", Color) = (1,1,1,1)
-
-        _BumpMap ("Noise text", 2D) = "bump" {}
-        _Magnitude ("Magnitude", Range(0,1)) = 0.05
-    }
-
-    SubShader
-    {
-        Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Opaque"}
-        ZWrite On Lighting Off Cull Off Fog { Mode Off } Blend One Zero
-
-        GrabPass { "_GrabTexture" }
-        Pass
+        Properties
         {
-            CGPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
-            #include "UnityCG.cginc"
-
-            sampler2D _GrabTexture;
-
-            sampler2D _MainTex;
-            fixed4 _Colour;
-
-            sampler2D _BumpMap;
-            float _Magnitude;
-
-            struct vin_vct
+            _MainTex ("Base (RGB) Trans (A)", 2D) = "white" {}
+            _Colour ("Colour", Color) = (1,1,1,1)
+    
+            _BumpMap ("Noise text", 2D) = "bump" {}
+            _Magnitude ("Magnitude", Range(0,1)) = 0.05
+        }
+    
+        SubShader
+        {
+            Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Opaque"}
+            ZWrite On Lighting Off Cull Off Fog { Mode Off } Blend One Zero
+    
+            GrabPass { "_GrabTexture" }
+            Pass
             {
-                float4 vertex : POSITION;
-                float4 color : COLOR;
-                float2 texcoord : TEXCOORD0;
-            };
-
-            struct v2f_vct
-            {
-                float4 vertex : POSITION;
-                fixed4 color : COLOR;
-                float2 texcoord : TEXCOORD0;
-
-                float4 uvgrab : TEXCOORD1;
-            };
-
-            // Vertex function
-            v2f_vct vert (vin_vct v)
-            {
-                v2f_vct o;
-                o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
-                o.color = v.color;
-
-                o.texcoord = v.texcoord;
-
-                o.uvgrab = ComputeGrabScreenPos(o.vertex);
-                return o;
+                CGPROGRAM
+                #pragma vertex vert
+                #pragma fragment frag
+                #include "UnityCG.cginc"
+    
+                sampler2D _GrabTexture;
+    
+                sampler2D _MainTex;
+                fixed4 _Colour;
+    
+                sampler2D _BumpMap;
+                float _Magnitude;
+    
+                struct vin_vct
+                {
+                    float4 vertex : POSITION;
+                    float4 color : COLOR;
+                    float2 texcoord : TEXCOORD0;
+                };
+    
+                struct v2f_vct
+                {
+                    float4 vertex : POSITION;
+                    fixed4 color : COLOR;
+                    float2 texcoord : TEXCOORD0;
+    
+                    float4 uvgrab : TEXCOORD1;
+                };
+    
+                // Vertex function
+                v2f_vct vert (vin_vct v)
+                {
+                    v2f_vct o;
+                    o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+                    o.color = v.color;
+    
+                    o.texcoord = v.texcoord;
+    
+                    o.uvgrab = ComputeGrabScreenPos(o.vertex);
+                    return o;
+                }
+    
+                // Fragment function
+                half4 frag (v2f_vct i) : COLOR
+                {
+                    half4 mainColour = tex2D(_MainTex, i.texcoord);
+                    half4 bump = tex2D(_BumpMap, i.texcoord);
+                    half2 distortion = UnpackNormal(bump).rg;
+    
+                    i.uvgrab.xy += distortion * _Magnitude;
+    
+                    // tex*proj()内置函数被用来执行投影纹理读取，其中的用来采样的纹理坐标 
+                    // 在使用之前会除以第四个分量。
+    
+                    //UNITY_PROJ_COORD传入四元纹理坐标用于给tex2Dproj读取,但是多数平台上,返回一样的值。
+                    fixed4 col = tex2Dproj( _GrabTexture, UNITY_PROJ_COORD(i.uvgrab));
+                    return col * mainColour * _Colour;
+                }
+                ENDCG
             }
-
-            // Fragment function
-            half4 frag (v2f_vct i) : COLOR
-            {
-                half4 mainColour = tex2D(_MainTex, i.texcoord);
-                half4 bump = tex2D(_BumpMap, i.texcoord);
-                half2 distortion = UnpackNormal(bump).rg;
-
-                i.uvgrab.xy += distortion * _Magnitude;
-
-                // tex*proj()内置函数被用来执行投影纹理读取，其中的用来采样的纹理坐标 
-                // 在使用之前会除以第四个分量。
-
-                //UNITY_PROJ_COORD传入四元纹理坐标用于给tex2Dproj读取,但是多数平台上,返回一样的值。
-                fixed4 col = tex2Dproj( _GrabTexture, UNITY_PROJ_COORD(i.uvgrab));
-                return col * mainColour * _Colour;
-            }
-            ENDCG
         }
     }
-}
 ```
 
 🔚
