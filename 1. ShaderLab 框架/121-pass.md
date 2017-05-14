@@ -9,7 +9,7 @@
 ```csharp
     Pass { [Name and Tags] [RenderSetup] }
 ```
-基本Pass命令包含一个呈现状态设置命令的列表。
+&emsp;&emsp;基本Pass命令包含一个呈现状态设置命令的列表。
 
 ---
 
