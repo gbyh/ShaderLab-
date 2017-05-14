@@ -38,11 +38,11 @@
 ```csharp
         Properties
         {
-            _WaveScale ("Wave scale", Range (0.02, 0.15)) = 0.07           // sliders
+            _WaveScale ("Wave scale", Range (0.02, 0.15)) = 0.07           // 滑动条
             _ReflDistort ("Reflection distort", Range (0, 1.5)) = 0.5
             _RefrDistort ("Refraction distort", Range (0, 1.5)) = 0.4
-            _RefrColor ("Refraction color", Color) = (.34, .85, .92, 1)    // color
-            _ReflectionTex ("Environment Reflection", 2D) = "" {}          // textures
+            _RefrColor ("Refraction color", Color) = (.34, .85, .92, 1)    // 颜色
+            _ReflectionTex ("Environment Reflection", 2D) = "" {}          // 贴图
             _RefractionTex ("Environment Reflection", 2D) = "" {}
             _Fresnel ("Fresnel (A)", 2D) = "" {}
             _BumpMap ("Bumpmap (RGB)", 2D) = "" {}
