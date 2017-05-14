@@ -1,31 +1,32 @@
 ---
 ## 传统的 Fog
 
-用雾命令控制雾参数。
+&emsp;&emsp;用雾命令控制雾参数。
 
-雾化混合生成的像素到基于摄像头的距离不变的颜色。雾不修改像素的alpha值，只有它的RGB分量。
+&emsp;&emsp;雾化混合生成的像素到基于摄像头的距离不变的颜色。雾不修改像素的alpha值，只有它的RGB分量。
 
 ####&emsp;&emsp;语法：
 
 ```
-Fog
-Fog {Fog Commands}
+    Fog
+    Fog {Fog Commands}
 ```
 ---
 
-指定花括号内的雾命令。
+&emsp;&emsp;**指定花括号内的雾命令。**
 
 ```
-Mode
-Mode Off | Global | Linear | Exp | Exp2
+    Mode
+    Mode Off | Global | Linear | Exp | Exp2
 ```
 
-定义雾模式。默认是全局的，这意味着关闭或EXP2取决于是否打开渲染设置中的雾。
+&emsp;&emsp;定义雾模式。默认是全局的，这意味着关闭或EXP2取决于是否打开渲染设置中的雾。
 
+&emsp;&emsp;**设置雾的颜色**
 ```
-Color
-Color ColorValue
-设置雾的颜色
+    Color
+    Color ColorValue
+
 ```
 
 #### 密度
