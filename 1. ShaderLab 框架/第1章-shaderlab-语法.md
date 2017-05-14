@@ -9,7 +9,7 @@
 
 ###示例：
 
-```javascript
+```csharp
         Shader "Simple colored lighting"
         {
             Properties 
