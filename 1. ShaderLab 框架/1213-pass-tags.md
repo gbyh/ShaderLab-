@@ -13,13 +13,13 @@
 
 ---
 
-####细节
-标签基本上是 “键“-”值“ 对。Pass 标签被用来控制这个通道的作用，在灯光管道（环境光，顶点光照，像素光照等）和其他一些选项。注意，下面的标签必须在 Pass 部分而不在 SubShader 部分！
+####&emsp;&emsp;细节
+&emsp;&emsp;标签基本上是 “键“-”值“ 对。Pass 标签被用来控制这个通道的作用，在灯光管道（环境光，顶点光照，像素光照等）和其他一些选项。注意，下面的标签必须在 Pass 部分而不在 SubShader 部分！
 
 ---
 
-####LightMode tag
-LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的细节。这些标签很少使用手动；大多数着色器需要与灯光的配合，写成表面着色器，然后照顾所有这些细节。
+####&emsp;&emsp;LightMode tag
+&emsp;&emsp;LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的细节。这些标签很少使用手动；大多数着色器需要与灯光的配合，写成表面着色器，然后照顾所有这些细节。
 
 &emsp;&emsp;**LightMode 标签可以使用的值：**
 
@@ -39,7 +39,7 @@ LightMode 标签定义了 Pass 在光照管线中的作用。见渲染管道的�
 
 ---
 
-####RequireOptions tag
+####&emsp;&emsp;RequireOptions tag
 
 只有当外部条件满足的情况下 Pass 才能被执行。这是通过使用requireoptions标签，其值是一个空格分隔的字符串选项。目前，Unity 支持的选项是：
 
