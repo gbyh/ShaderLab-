@@ -59,7 +59,7 @@ Pass块使一个对象的几何形状被渲染一次。
 ```javascript
     Offset OffsetFactor, OffsetUnits
 ```
-设置Z缓冲深度偏移量。
+&emsp;&emsp;设置Z缓冲深度偏移量。
 
 
 ###● 固定功能着色器命令
