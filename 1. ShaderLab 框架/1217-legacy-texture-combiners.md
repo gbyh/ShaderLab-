@@ -1,20 +1,20 @@
 ---
 ##Legacy Texture Combiners（传统的纹理合成）
 
-在计算基本顶点照明后，应用纹理。在ShaderLab，这是通过使用SetTexture命令。
+&emsp;&emsp;在计算基本顶点照明后，应用纹理。在ShaderLab，这是通过使用SetTexture命令。
 
 >注意：当片段程序使用时，SetTexture命令没有效果；建议使用可编程着色器替代SetTexture命令。
 
-固定功能纹理用于传统风格的组合效果。你可以在一个Pass中有多个SetTexture命令，所有纹理被顺序的应用，如绘图程序的层。SetTexture命令必须放在Pass的最后。
+&emsp;&emsp;固定功能纹理用于传统风格的组合效果。你可以在一个Pass中有多个SetTexture命令，所有纹理被顺序的应用，如绘图程序的层。SetTexture命令必须放在Pass的最后。
 
 ###&emsp;&emsp;语法：
 ```
     SetTexture [TextureName] {Texture Block}
 ```
 
-分配一个纹理。TextureName必须定义为一个纹理属性。如何应用一个在纹理块内定义的纹理。
+&emsp;&emsp;分配一个纹理。TextureName必须定义为一个纹理属性。如何应用一个在纹理块内定义的纹理。
 
-纹理块控制纹理的应用。在纹理块内可以有两个命令：combine和constantColor。
+&emsp;&emsp;纹理块控制纹理的应用。在纹理块内可以有两个命令：combine和constantColor。
 
 ---
 
