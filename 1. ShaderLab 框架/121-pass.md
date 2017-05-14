@@ -33,7 +33,7 @@ Pass块使一个对象的几何形状被渲染一次。
 ```javascript
     ZTest (Less | Greater | LEqual | GEqual | Equal | NotEqual | Always)
 ```
-设置深度缓冲测试模式。
+&emsp;&emsp;设置深度缓冲测试模式。
 
 ####3. ZWrite
 ```javascript
