@@ -2,7 +2,7 @@
 
 Unity包含多个文件，这些文件可以被着色器程序使用，以提供预定义的变量和辅助函数。这是标准的#include指令，例如：
 
-```
+```csharp
     CGPROGRAM
     // ...
     #include "UnityCG.cginc"
@@ -12,7 +12,7 @@ Unity包含多个文件，这些文件可以被着色器程序使用，以提供
 
 Unity的着色器包含文件的用.cginc扩展,内置的是:
 
-```
+```csharp
     HLSLSupport.cginc - (包括自动)跨平台着色器编译的自动宏和定义。	
     UnityShaderVariables.cginc - (包括自动) 常用的全局变量。
     UnityCG.cginc - 常用的辅助函数。
@@ -32,7 +32,7 @@ UnityCG.cginc
 
 ####在UnityCG.cginc中的结构体：
 
-```javascript
+```csharp
     struct appdata_base: vertex shader input with position, normal, one texture coordinate.
     struct appdata_tan: vertex shader input with position, normal, tangent, one texture coordinate.
     struct appdata_full: vertex shader input with position, normal, tangent, vertex color and two texture coordinates.
@@ -41,7 +41,7 @@ UnityCG.cginc
 
 ####UnityCG.cginc通用的辅助函数
 
-```javascript
+```csharp
 
     float3 WorldSpaceViewDir (float4 v) - 返回世界空间方向(非规范化)从给定对象空间顶点位置对着镜头。
     float3 ObjSpaceViewDir (float4 v) - 返回对象空间方向(非规范化)从给定对象空间顶点位置对着镜头。
@@ -59,7 +59,7 @@ UnityCG.cginc
 
 这些函数使用向前渲染时只有(ForwardBase或ForwardAdd Pass类型)时有用。
 
-```javascript
+```csharp
 
     float3 WorldSpaceLightDir (float4 v) - 计算世界空间方向(非标准化),给定对象空间顶点位置。
     float3 ObjSpaceLightDir (float4 v) - 计算对象空间方向(非标准化),给定对象空间顶点位置。
@@ -70,7 +70,7 @@ UnityCG.cginc
 
 这些函数只有在逐顶点光照着色器中才有用。
 
-```javascript
+```csharp
 
     float3 ShadeVertexLights (float4 vertex, float3 normal) - 计算从四种每个顶点都具备的灯光和环境照明,给定对象的空间位置和法线。
 ```
