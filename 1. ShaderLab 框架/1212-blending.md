@@ -10,15 +10,15 @@
 
 ###语法：
 
-```javascript
+```csharp
     Blend Off: 关闭混合
     Blend SrcFactor DstFactor: 启用混合。生成的颜色乘以 SrcFactor。已经在屏幕上的颜色乘以 DstFactor 和两个加在一起。
 ```
-```javascript
+```csharp
     Blend SrcFactor DstFactor, ScrFactorA DstFactorA: 后面两个参数是Alpha通道的混合因子
 ```
 
-```javascript
+```csharp
     BlendOp BlendOp: 非颜色混合操作
 ```
 
@@ -57,7 +57,7 @@
 ####&emsp;&emsp;细节
 &emsp;&emsp;下面是最常见的混合类型：
 
-```javascript
+```csharp
     Blend SrcAlpha OneMinusSrcAlpha        // Alpha 混合
     Blend One One                          // 叠加
     Blend OneMinusDstColor One             // 软叠加
@@ -71,7 +71,7 @@
 
 ####示例
 叠加一个纹理到屏幕
-```javascript
+```csharp
     Shader "Simple Additive" 
     { 
         Properties 
