@@ -5,7 +5,7 @@
 主要的顶点着色器函数（由# pragma指令表示顶点）需要在所有的输入参数的语义。这些对应于单独的网格数据元素，如顶点位置，法线网格，纹理坐标。查看更多细节的顶点程序输入。
 
 这里有一个简单的顶点着色器，它以顶点位置和纹理坐标作为输入。像素着色器将纹理坐标作为一种颜色。
-```javascript
+```csharp
     Shader "Unlit/Show UVs"
     {
         SubShader
@@ -48,13 +48,13 @@
 ####片段着色器输出语义
 最常见的一个片段（像素着色器输出色彩，）有sv_target语义。上面例子中的片段着色器确实是这样的：
 
-```javascript
+```csharp
     fixed4 frag (v2f i) : SV_Target
 ```
 
 也可以返回具有输出的结构.。上面的片段着色器也可以这样重写，它会完全一样：
 
-```javascript
+```csharp
     struct fragOutput {
         fixed4 color : SV_Target;
     };            
@@ -117,7 +117,7 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
 
 此外，使用像素位置的语义难以有剪辑的空间位置（SV_POSITION）和相同的顶点VPOS片段结构。因此顶点着色器应该将剪辑空间位置作为单独的“输出”变量输出。看到下面的示例着色：
 
-```
+```csharp
     Shader "Unlit/Screen Position"
     {
         Properties
@@ -186,7 +186,7 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
 
 此功能只存在于Shader Model 3起，所以着色器需要有 `#pragma target 3.0` 汇编指令。
 
-```javascript
+```csharp
     Shader "Unlit/Face Orientation"
     {
         Properties
@@ -235,7 +235,7 @@ Up to 32 interpolators: Direct3D 10 shader model 4.0 (#pragma target 4.0).
 
 此功能只存在于DX10（Shader Model 4）和glcore / OpenGL ES 3，所以着色器需要有 `#pragma target 3.5` 汇编指令。
 
-```javascript
+```csharp
     Shader "Unlit/VertexID"
     {
         SubShader
