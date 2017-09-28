@@ -16,7 +16,7 @@
 ```
 
 &emsp;&emsp;指定顶点数据源映射到硬件目标。
-```
+```csharp
 		Source can be one of:
 				Vertex: vertex position
 				Normal: vertex normal
