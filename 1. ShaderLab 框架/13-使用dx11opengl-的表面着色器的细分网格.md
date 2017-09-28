@@ -20,7 +20,7 @@
 
 让我们做一些表面着色器位移映射不使用镶嵌的开始。它只是沿着量的基础上从一个顶点法线位移图：
 
-```
+```csharp
 Shader "Tessellation Sample" {
         Properties {
             _MainTex ("Base (RGB)", 2D) = "white" {}
@@ -92,7 +92,7 @@ Shader "Tessellation Sample" {
 ####固定数量的镶嵌
 
 让我们添加固定数量的镶嵌,即相同的镶嵌水平对整个网。这种方法是合适的,如果你的模型的脸大致相同大小的屏幕上。一些脚本可以改变从代码的镶嵌水平,基于与摄像机之间的距离。
-```
+```csharp
 Shader "Tessellation Sample" {
         Properties {
             _Tess ("Tessellation", Range(1,32)) = 4
@@ -164,7 +164,7 @@ Shader "Tessellation Sample" {
 ####基于距离的镶嵌
 
 我们还可以把基于距离相机镶嵌水平。例如，我们可以定义两个距离值；距离，镶嵌在最大（比如说，10米），和距离对镶嵌水平逐渐降低（比如说，20米）。
-```
+```csharp
 Shader "Tessellation Sample" {
         Properties {
             _Tess ("Tessellation", Range(1,32)) = 4
@@ -242,7 +242,7 @@ Shader "Tessellation Sample" {
 
 相反，镶嵌的水平可以基于三角形边长在屏幕的长边计算，应采用较大的细分因子。
 
-```
+```csharp
 Shader "Tessellation Sample" {
         Properties {
             _EdgeLength ("Edge length", Range(2,50)) = 15
@@ -325,7 +325,7 @@ Phong镶嵌修改细分面位置，这样产生的表面网格法线点如下。
 
 Unity的表面着色器可以使用tessphong自动计算Phong镶嵌：variablename汇编指令。下面是一个例子着色：
 
-```
+```csharp
 Shader "Phong Tessellation" {
         Properties {
             _EdgeLength ("Edge length", Range(2,50)) = 5
