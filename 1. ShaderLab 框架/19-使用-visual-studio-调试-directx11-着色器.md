@@ -47,7 +47,7 @@ Let’s try to create a basic example:
 
 Your shader should look like this:
 
-```
+```csharp
 Shader "Custom/NewShader" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
