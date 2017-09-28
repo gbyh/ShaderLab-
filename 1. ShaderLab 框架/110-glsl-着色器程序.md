@@ -12,13 +12,13 @@ GLSL程序片段被写入在GLSLPROGRAM和ENDGLSL关键字之间。
 
 标准包括文件匹配提供了Cg着色器;他们只是有一个.glslinc扩展:
 
-```
+```csharp
     UnityCG.glslinc
 ```
 
 顶点着色器的输入来自预定义GLSL变量(gl_Vertex、gl_MultiTexCoord0…)或用户定义的属性。切向量通常只需要一个用户定义的属性:
 
-```
+```csharp
     attribute vec4 Tangent;
 ```
 
