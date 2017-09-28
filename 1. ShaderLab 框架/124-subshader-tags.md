@@ -4,7 +4,7 @@
 &emsp;&emsp;着色器使用Tags来告诉他们如何和何时会被渲染到渲染引擎。
 
 ####&emsp;&emsp;语法：
-```
+```csharp
     Tags { "TagName1" = "Value1" "TagName2" = "Value2" }
 ```
 
@@ -51,7 +51,7 @@
 
 &emsp;&emsp;每个队列是由整数指数为代表：
 
-```
+```csharp
     Background 是 1000, 
     Geometry 是 2000,
     AlphaTest 是 2450, 
@@ -60,7 +60,7 @@
 ```
     
 &emsp;&emsp;如果一个着色器使用一个队列:
-```
+```csharp
     Tags { "Queue" = "Geometry+1" }
 ```
 
